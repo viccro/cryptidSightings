@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- version 0.1: 2020-10-31: cryptid-sightings-0.1.xsd -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="cryptidSighting" targetNamespace="cryptidSighting" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:documentation>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            xx    Cryptid Sightings Schema (Version 0.1) was created as a draft for LIS 445: Metadata at Simmons 
+            xx    University, in the School of Library and Information Science (SLIS). The schema was created by:
+            xx    * Tish Albro
+            xx    * Stephanie Bennett
+            xx    * Vicki Crosson
+            xx    * Alex Werbizky Ehrhardt
+            xx
+            xx    This version of the schema will be documented at www.example-url.com
+            xx
+            xx    The Cryptid Sightings Schema will be used to document any sighting of a cryptid (any animal whose 
+            xx    existence is unsubstantiated). 
+            xx    
+            xx    The schema makes use of ___???
+            xx    
+            xx    Change log:
+            xx
+            xx
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </xs:documentation>
+    </xs:annotation>
+    <xs:element name="cryptid">
+        <xs:annotation>
+            <xs:documentation>An object identifying and describing a cryptid </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cryptidCanonicalName" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="cryptidIdentifier" minOccurs="0" maxOccurs="1"/> <!-- TODO set attribute for CV type--> 
+                <xs:element name="cryptidAlternativeName" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="cryptidDescription" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="estimatedDimensions" minOccurs="0"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+        
+    <xs:element name="evidence">
+        <xs:annotation>
+            <xs:documentation>An object describing a piece of evidence, for or against, related to the claim of the sighting</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personWhoSaysThis" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A person who stands behind the piece of evidence</xs:documentation>
+                    </xs:annotation>
+                </xs:element> <!-- TODO pick a better name-->
+                <xs:element name="evidenceType" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>The type of thing that comprises the evidence, taken from ??? controlled vocabulary</xs:documentation>
+                    </xs:annotation>
+                </xs:element> <!-- TODO what does CV look like -->
+                <xs:element ref="media" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Used to identify media evidence, like a video recording or photograph</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="location">
+        <xs:annotation>
+            <xs:documentation>An object describing a geographic location</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="coordinates" minOccurs="0"></xs:element> <!-- Making this a separate object allows us to demand that if one is filled in, both are required -->
+                <xs:element name="continent" minOccurs="0"></xs:element>
+                <xs:element ref="postalAddress" minOccurs="0"></xs:element>
+                <xs:element name="locationDescription" minOccurs="0"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+        
+    <xs:element name="coordinates">
+        <xs:annotation>
+            <xs:documentation>An object describing a geographic location using the Geographic coordinate system</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="longitude"></xs:element>
+                <xs:element name="latitude"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>  
+    
+    <xs:element name="postalAddress">
+        <xs:annotation>
+            <xs:documentation>An object describing a geographic location using postal code standards</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="addressCountry" minOccurs="0"></xs:element>
+                <xs:element name="addressLocality" minOccurs="0"></xs:element>
+                <xs:element name="addressRegion" minOccurs="0"></xs:element>
+                <xs:element name="postalCode" minOccurs="0"></xs:element>
+                <xs:element name="streetAddress" minOccurs="0"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="account">
+        <xs:annotation>
+            <xs:documentation>An object describing a report of the sighting, as in a newspaper article or book</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="media" minOccurs="1"></xs:element>                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="media">
+        <xs:annotation>
+            <xs:documentation>An object describing a report of the sighting, as in a newspaper article or book</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="typeOfMedia" minOccurs="0"></xs:element>
+                <xs:element name="mediaName" minOccurs="0"></xs:element>
+                <xs:element name="affiliation" minOccurs="0"></xs:element>
+                <xs:element name="mediaDimensions" minOccurs="0"></xs:element>
+                <xs:element name="mediaIdentifier" minOccurs="0"></xs:element> <!-- set attribute -->
+            </xs:sequence> 
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="date">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:choice> <!-- this choice type allows us to say "only one of these can exist" -->
+                <xs:element name="exactDate" type="xs:date" ></xs:element>
+                <xs:element name="approximateDate" type="xs:string"></xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sighting">
+        <xs:annotation>
+            <xs:documentation>Documentation surrounding a singular sighting of a cryptid</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="observerName" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="cryptid" minOccurs="0" maxOccurs="unbounded"/> 
+                <xs:element ref="date" minOccurs="0"></xs:element>
+                <xs:element name="time" minOccurs="0"></xs:element>
+                <xs:element ref="location" minOccurs="0" maxOccurs="1"></xs:element>
+                <xs:element ref="account" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="evidenceAffirmative" minOccurs="0" maxOccurs="unbounded"></xs:element> <!-- attach to evidence type -->
+                <xs:element name="evidenceNegative" minOccurs="0" maxOccurs="unbounded"></xs:element> <!-- attach to evidence type -->
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>
