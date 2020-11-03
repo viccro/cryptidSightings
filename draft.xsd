@@ -144,6 +144,7 @@
                 </xs:complexType>
             </xs:element>
             <xs:element name="mediaAffiliation" minOccurs="0"></xs:element>
+            <xs:element name="mediaDate" type="date" minOccurs="0"></xs:element>
             <xs:element name="mediaDimensions" minOccurs="0"></xs:element> 
             <xs:element name="mediaDescription"></xs:element>
         </xs:all>
