@@ -8,7 +8,7 @@ University, in the School of Library and Information Science (SLIS). The schema 
 * Vicki Crosson
 * Alex Werbizky Ehrhardt
 
-This version of the schema will be documented at www.github.com/viccro/cryptidSightings/tree/main/dataDict/main.md
+This version of the schema will be documented at www.github.com/viccro/cryptidSightings/tree/main/dataDict/sighting.md
 
 The Cryptid Sightings Schema will be used to document any sighting of a cryptid (any animal whose 
 existence is unsubstantiated). 
