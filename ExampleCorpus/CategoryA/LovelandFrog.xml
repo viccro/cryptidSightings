@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sighting xmlns="cryptidSighting"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="cryptidSighting file:/Users/stephaniescuba/Desktop/LIS-445-01/Cryptid/cryptid-sightings-0.2.xsd">
+    xsi:schemaLocation="cryptidSighting https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-sightings-0.2.xsd">
     
     <!-- Draft xml document created by Stephanie Bennett to test the  Cryptid Sightings Schema (Version 0.2) 2020-11-14.-->
     

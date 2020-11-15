@@ -2,7 +2,7 @@
 <sighting xmlns="cryptidSighting"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ns1="cryptidSighting"
-    xsi:schemaLocation="cryptidSighting file:/Users/vicki/Documents/OtherStuff/SLIS/LIS_445/cryptidSightings/draft.xsd">
+    xsi:schemaLocation="cryptidSighting https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-sightings-0.2.xsd">
     <reportOfSighting>
         <observerName>Roger Patterson</observerName>
         <cryptidSeen>
