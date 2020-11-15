@@ -1,6 +1,6 @@
-# Element: cryptidSeen
+# Element: cryptid
 
-**Element tag:** `<cs:cryptidSeen>`
+**Element tag:** `<cs:cryptid>`
 
 **Description:** An object identifying and describing a cryptid.
 
