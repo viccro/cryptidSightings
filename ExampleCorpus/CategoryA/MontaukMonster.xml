@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/Users/stephaniescuba/Desktop/LIS-445-01/Cryptid/cryptid-sightings-0.2.xsd">
+    
+    <!-- Draft xml document created by Stephanie Bennett to test the  Cryptid Sightings Schema (Version 0.2) 2020-11-14.-->
+    
+    <accountOfSighting>
+        <observerName>Hewitt, Jenna</observerName>
+        <cryptidSeen>
+            <cryptidDescription>
+                <cryptidCanonicalName termSource="fandomWikiLoC">Montauk Monster</cryptidCanonicalName>
+                <estimatedDimensions>2.5 to 3-feet long</estimatedDimensions>
+            </cryptidDescription>
+        </cryptidSeen>
+        
+        <descriptionOfReport>Observer Jenna Hewitt is credited as the original photographer of the Montauk Monster and one of the initial discoverers, along with her group of friends.</descriptionOfReport>
+        
+        <mediaSource>
+            <mediaType termSource="AAT" termSourceId="300266224">JPEG</mediaType>
+            <mediaName>Montauk Monster digital photograph</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:identifierType="URI">https://www.danspapers.com/wp-content/uploads/2018/07/MontaukMonster-JennaHewitt.jpg</mediaIdentifier>
+            <mediaAffiliation>Dan's Papers</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2018-07-12</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>770 × 513 pixels</mediaDimensions>
+            <mediaDescription>The original photograph distributed to media, including the initial publisher "The Independent" newspaper in East Hampton, New York.</mediaDescription>
+        </mediaSource>
+        
+        <mediaSource>
+            <mediaType termSource="AAT" termSourceId="300265722">Blogs</mediaType>
+            <mediaName>The Montauk Monster Legend Endures 10 Years After It Broke the Internet</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:identifierType="URI">https://www.danspapers.com/2018/07/montauk-monster-10-years-later/</mediaIdentifier>
+            <mediaAffiliation xmlns:ns1="cryptidSighting" ns1:evidenceSource="URI">danspapers.com</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2018-07-12</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions></mediaDimensions>
+            <mediaDescription>Retrospective on the 10 year anniversary of the discovery of the Montauk Monster. Includes historic highlights, possible scientific explanations, and enduring theories in support of the Montauk Monster's existence.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    <sightingDate>
+        <exactDate>2008-07-12</exactDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime>Day</approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <geoCoordinates>
+            <longitude>-71.918714</longitude>
+            <latitude>41.039132</latitude>
+        </geoCoordinates>
+        <locationDescription>Ditch Plains Beach, East Hampton, New York</locationDescription>
+    </sightingLocation>
+    
+    <evidenceAffirmative>
+        <mediaEvidence>
+            <mediaName>Montauk Monster digital photograph</mediaName>
+            <mediaDescription>The original photograph distributed to media, including the initial publisher "The Independent" newspaper in East Hampton, New York.</mediaDescription>
+        </mediaEvidence>
+    </evidenceAffirmative>
+    
+    <evidenceNegative>
+        <personWhoSaysThis>Jeff Corwin appeared on Fox news debunking the cryptid as a water bloated, decomposing raccoon with a missing upper jaw. Other scientists confirm the same theory.</personWhoSaysThis>
+    </evidenceNegative>
+    
+</sighting>

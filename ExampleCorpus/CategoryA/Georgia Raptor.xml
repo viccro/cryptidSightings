@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/nalex/Downloads/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <observerName>Y. Philips</observerName>
+        <cryptidSeen>
+            <cryptidCanonicalName>Georgia Raptor</cryptidCanonicalName>
+        </cryptidSeen>
+        <descriptionOfReport>
+            Philips and his grandfather were hunting on his grandfather's land
+            when they heard an unusual, unidentifieable noise.  Investigating, they saw a creature walk
+            out approximately 150 in front of them that "looked just like a raptor from the popular
+            Jurassic Park movies."  It was bipedal, with a long tail and short arms, and had large claws on
+            its feet and hands.  Philips stated it to be about 5 feet tall, at the shoulders.  Philips
+            and his grandfather stayed still, and waited for the creature to pass.  It sniffed the air
+            then ran into the bushes Once they felt safe, Philips and his grandfather returned to the truck and left.
+        </descriptionOfReport>
+        <mediaSource>
+            <mediaType>Web Article</mediaType>
+            <mediaName>Raptor Sighting In Georgia</mediaName>
+            <mediaIdentifier>https://web.archive.org/web/20171014164210/
+                https://www.thoughtco.com/raptor-sighting-in-georgia-2594568</mediaIdentifier>
+            <mediaAffiliation>ThoughtCo.com</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2016-03-08</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>486 words</mediaDimensions>
+            <mediaDescription>Philips' report makes up the entire article.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    <sightingDate>
+        <exactDate>2008-06-25</exactDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime>3:00-3:30 PM</approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <postalAddress>
+            <addressCountry>US</addressCountry>
+            <addressRegion>Georgia</addressRegion>
+        </postalAddress>
+    </sightingLocation>
+    <evidenceAffirmative></evidenceAffirmative>
+    <evidenceNegative></evidenceNegative>
+</sighting>

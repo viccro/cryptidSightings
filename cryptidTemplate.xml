@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/Users/stephaniescuba/Desktop/LIS-445-01/Cryptid/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <observerName></observerName>
+        <cryptidSeen>
+            <cryptidDescription>
+                <cryptidCanonicalName termSource="DICTIONARY" termSourceId="REFERNCE VALUE"></cryptidCanonicalName>
+                <cryptidAlternativeName></cryptidAlternativeName>
+                <estimatedDimensions></estimatedDimensions>
+            </cryptidDescription>
+        </cryptidSeen>
+        
+        <descriptionOfReport></descriptionOfReport>
+        
+        <mediaSource>
+            <mediaType></mediaType>
+            <mediaName></mediaName>
+            <mediaIdentifier></mediaIdentifier>
+            <mediaAffiliation></mediaAffiliation>
+            <!-- pubicationDate needs attributes to qualify either "approximate" or "exact" date value-->
+            <mediaPublicationDate></mediaPublicationDate>
+            <mediaDimensions></mediaDimensions>
+            <mediaDescription></mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    
+    <!-- sightingDate and sightingTime need attributes to qualify either "approximate" or "exact" values-->
+    <sightingDate></sightingDate>
+    <sightingTime></sightingTime>
+    <sightingLocation></sightingLocation>
+    <evidenceAffirmative></evidenceAffirmative>
+    <evidenceNegative></evidenceNegative>
+    
+</sighting>

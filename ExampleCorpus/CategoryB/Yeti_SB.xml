@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/Users/stephaniescuba/Desktop/LIS-445-01/Cryptid/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <!-- If an observer's name appears in the "naf" of LOC or a like vocabulary, we can use the "termSource" attribute to cite the location "naf" stands for "Name Authority File" from Library of Congress-->
+        <observerName termSource="naf" termSourceId="50023235">Shipton, Eric, 1907-1977</observerName>
+        <cryptidSeen>
+            <cryptidDescription>
+                <cryptidCanonicalName termSource="wikiLLC" termSourceId="https://en.wikipedia.org/wiki/Yeti">Yeti</cryptidCanonicalName>
+                <cryptidAlternativeName termSource="wikiLLC" termSourceId="https://en.wikipedia.org/wiki/Yeti">Abominable snowman</cryptidAlternativeName>
+                <cryptidAlternativeName termSource="wikiLLC" termSourceId="https://en.wikipedia.org/wiki/Yeti">Meh-teh</cryptidAlternativeName>
+                <estimatedDimensions>8-x-10-inch footprints (approximate)</estimatedDimensions>
+            </cryptidDescription>
+        </cryptidSeen>
+        
+        <descriptionOfReport>While on an expedition to Mount Everest Eric Shipton and his team came upon a series of unidentifiable tracks resemblind a large, bipedal creature. Quoted text:
+            "Eric Shipton’s account of the matter, from The Six Mountains-Travel Books [Pg. 621] follows: ”It was on one of the glaciers of the Menlung basin, at a height of about 19,000 feet, that, late one afternoon, we came across those curious footprints in the snow, the report of which has caused a certain amount of public interest in Britain. We did not follow them further than was convenient, a mile or so, for we were carrying heavy loads at the time, and besides we had reached a particularly interesting stage in the exploration of the basin. I have in the past found many sets of these curious footprints and have tried to follow them, but have always lost them on the moraine or rocks at the side of thc glacier. These particular ones seemed to be very fresh, probably not more than 24 hours old. When Murray and Bourdillon followed us a few days later the tracks had been almost obliterated by melting. Sen Tensing, who had no doubt whatever that the creatures (for there had been at least two) that had made the tracks were ‘Yetis’ or wild men, told me that two years before, he and a number of other Sherpas had seen one of them at a distance of about 25 yards at Thyangboche. He described it as half man and half beast, standing about five feet six inches, with a tall pointed head, its body covered with reddish brown hair, but with a hairless face. When we reached Katmandu at the end of November, I had him cross-examined in Nepali (I conversed with him in Hindustani). He left no doubt as to his sincerity. Whatever it was that he had seen, he was convinced that it was neither a bear nor a monkey, with both of which animals he was, of course, very familiar.”
+        </descriptionOfReport>
+        
+        <mediaSource>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="AAT" ns1:termSourceID="300048715">Articles</mediaType>
+            <mediaName>A Short History of the Shipton Snowman Track Photographs and the Tchernezky Cast</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:identifierType="URI">http://www.cryptozoonews.com/shipton-cast/</mediaIdentifier>
+            <mediaAffiliation>CRYPTOZOONEWS</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2012-04-09</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>4463 words; 33 digital images</mediaDimensions>
+            <mediaDescription>Overview and analysis of the photographs by Eric Shipton, the caste made at an undetermined date of one of those footprints, and the claims by cryptozoologists that those footprints were made by a yeti. Some claims discounting the yeti footprints are included.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    
+    <sightingDate>
+        <exactDate>1951-11-08</exactDate>
+    </sightingDate>
+    <sightingTime>
+        <exactTime>16:00:00+05:45</exactTime>
+    </sightingTime>
+    <sightingLocation>
+        <locationDescription>Menlung Tsu Glacier, Menlung Basin, Gauri Sanka Range, Nepal, en route to Mount Everest.</locationDescription>
+    </sightingLocation>
+    <evidenceAffirmative>
+        <mediaEvidence>
+            <mediaName>Footprint photographs</mediaName>
+            <mediaDescription>Black and white track footprints photographed in a series by the observer, Eric Shipton, on the same day of their discovery, 1951-11-08.</mediaDescription>
+        </mediaEvidence>
+    </evidenceAffirmative>
+    <evidenceNegative>
+        <personWhoSaysThis xmlns:ns1="cryptidSighting" ns1:termSource="naf" ns1:termSourceID="81062514">Gillman, Peter</personWhoSaysThis>
+        <mediaEvidence>
+            <mediaName>Sunday Times Magazine</mediaName>
+            <mediaDescription>Gilman postulates that Shipton jokingly fabricated the footprint, which he photographed together with the ice axe; but that, like the Piltdown Skull, the joke got out of hand. So, Gillman affirms, Shipton had to keep up the myth in relaliation against the Establishment that had snubbed him over the leadership of the 1953 expedition.</mediaDescription>
+        </mediaEvidence>
+    </evidenceNegative>
+    
+</sighting>

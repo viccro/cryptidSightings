@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/Users/stephaniescuba/Desktop/LIS-445-01/Cryptid/cryptid-sightings-0.2.xsd">
+    
+    <!-- Draft xml document created by Stephanie Bennett to test the  Cryptid Sightings Schema (Version 0.2) 2020-11-14.-->
+    
+    
+    <accountOfSighting>
+        <!-- Need to standardize how names are entered and displayed. Possible model is MODS xml. https://www.google.com/url?q=https://www.loc.gov/standards/mods/v3/mods-userguide-elements.html&sa=D&ust=1605390155546000&usg=AOvVaw3Hpjz5PEXCKmjOApttFend
+        -->
+        <observerName>Jacobs, Sam</observerName>
+        <cryptidSeen>
+            <!--Need to standardize data dictionaries (and how we will abbreviate them for the termSource reference) to use for the Cannonical name-->
+            <cryptidDescription>
+                <cryptidCanonicalName termSource="wikiLLC" termSourceId="https://en.wikipedia.org/wiki/Loveland_frog">Loveland frog</cryptidCanonicalName>
+                <cryptidAlternativeName>Loveland frog</cryptidAlternativeName>
+                <cryptidAlternativeName>Loveland lizard</cryptidAlternativeName>
+                <!-- Need to standardize dimension description. We can use another data dictionary - not sure which is best. CDWA Lite? -->
+                <estimatedDimensions>4-feet-tall</estimatedDimensions>
+            </cryptidDescription>
+        </cryptidSeen>
+        
+        <descriptionOfReport>Quoted text from article: 
+            As for Wednesday night's sighting, Jacobs said, "We saw a huge frog near the water. Not in the game (Pokemon Go), this was an actual giant frog. I took a couple of pictures and a video 'cause I'd never seen one that big.  Then the thing stood up and walked on its hind legs". Jacobs went on to say he realizes some people will think he's crazy. "I swear on my grandmother's grave that this is the truth", Jacobs said.  "I'm not sure whether it was a Frogman or just a giant frog.  Either way, I've never seen anything like it." The observer recorded a digital video and took a digital photograph.</descriptionOfReport>
+
+        <mediaSource>
+            <!-- From the XSD it looks like termSource and termSourceID are optional attributes of "<mediaType> Is this right? They aren't validating in my document.-->
+            <mediaType termSource="AAT" termSourceId="300266224">JPEG</mediaType>
+            <mediaName>Loveland frog digital photograph</mediaName>
+            <!-- Am I using these attributes correctly?-->
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:identifierType="URI">https://www.fox19.com/resizer/chLW15sm_XV6jhgCEVOcG0JKu_I=/1400x0/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/2NFL35VYG5EA7IV76FEI5YLZYI.jpg</mediaIdentifier>
+            <mediaAffiliation xmlns:ns1="cryptidSighting" ns1:evidenceSource="URI">https://www.fox19.com/</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2016-08-04</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>856 x 605 pixels</mediaDimensions>
+            <mediaDescription>Altered digital photograph originally taken by observer Sam Jacobs. The image depicts the alleged loveland frog head and torso in the water. The legs are not visible below the water. The image light balance was altered by Fox 19 to improve visibility of the figure.</mediaDescription>
+        </mediaSource>
+
+        <mediaSource>
+            <!-- Am I using these attributes correctly?-->
+            <mediaType termSource="AAT" termSourceId="300312050">Digital moving image formats</mediaType>
+            <mediaName termSource="local">Loveland frog digital video</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:identifierType="URI">https://www.fox19.com/story/32688947/legend-of-loveland-frogman-lives-on/</mediaIdentifier>
+            <mediaAffiliation xmlns:ns1="cryptidSighting" ns1:evidenceSource="URI">https://www.fox19.com/</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2016-08-04</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>12 seconds</mediaDimensions>
+            <mediaDescription>12 second video of the alleged Loveland frog in the dark originally recorded by observer Sam Jacobs. The main visible element are two glowing lights.</mediaDescription>
+        </mediaSource>
+
+        
+        <mediaSource>
+            <mediaType termSource="AAT" termSourceID="300048715">Articles</mediaType>
+            <mediaName>Fox 19 now</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:identifierType="URI">https://www.fox19.com/story/32688947/legend-of-loveland-frogman-lives-on/</mediaIdentifier>
+            <mediaAffiliation xmlns:ns1="cryptidSighting" ns1:evidenceSource="URI">https://www.fox19.com/</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2016-08-04</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions></mediaDimensions>
+            <mediaDescription>News report of the Loveland frog sighting observed by Sam Jacobs with brief historical background and associated media evidence.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    
+    <sightingDate>
+        <exactDate>2016-08-03</exactDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime>Night</approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <postalAddress>
+            <streetAddress>9894 E Loveland Madeira Rd, Loveland, Ohio 45140</streetAddress>
+        </postalAddress>
+        <geoCoordinates>
+            <longitude>39.237869</longitude>
+            <latitude>84.303352</latitude>
+        </geoCoordinates>
+        <locationDescription>Loveland, Ohio between Loveland Madeira Road and Lake Isabella.</locationDescription>
+    </sightingLocation>
+    
+    <evidenceAffirmative>
+        <mediaEvidence>
+            <mediaName>Loveland frog digital photograph</mediaName>
+            <mediaDescription>12 second video of the alleget Loveland frog in the dark originally recorded by observer Sam Jacobs. The main visible element are two glowing lights.</mediaDescription>
+        </mediaEvidence>
+        
+        <mediaEvidence>
+            <mediaName>Loveland frog digital video</mediaName>
+            <mediaDescription>1Altered digital photograph originally taken by observer Sam Jacobs. The image depicts the alleged loveland frog head and torso in the water. The legs are not visible below the water. The image light balance was altered by Fox 19 to improve visibility of the figure.</mediaDescription>
+        </mediaEvidence>
+    </evidenceAffirmative>
+    
+</sighting>

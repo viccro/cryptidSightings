@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <observerName></observerName>
+        <cryptidSeen>
+            <cryptidCanonicalName>Jersey Devil</cryptidCanonicalName>
+            <cryptidAlternativeName>Leed's Devil</cryptidAlternativeName>
+        </cryptidSeen>
+        <descriptionOfReport>For a week in January of 1909, footprints were found across the Delaware Valley. These footprints were described as if a horse were to walk on its two hind legs.</descriptionOfReport>
+        <mediaSource>
+            <mediaType>Web Article</mediaType>
+            <mediaName>The Jersey Devil</mediaName>
+            <mediaIdentifier>https://weirdnj.com/stories/jersey-devil/</mediaIdentifier>
+            <mediaAffiliation>weirdnj.com</mediaAffiliation>
+            <mediaPublicationDate>
+                <approximateDate>2018</approximateDate>
+            </mediaPublicationDate>
+            <mediaDimensions>3335 words</mediaDimensions>
+            <mediaDescription>This article goes into the history of the Jersey Devil, including the lore behind where the creature came from.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    <sightingDate>
+        <approximateDate>1909</approximateDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime></approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <postalAddress>
+            <addressCountry>US</addressCountry>
+            <addressRegion>New Jersey</addressRegion>
+        </postalAddress>
+    </sightingLocation>
+    <evidenceAffirmative></evidenceAffirmative>
+    <evidenceNegative></evidenceNegative>
+</sighting>

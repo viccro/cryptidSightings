@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/Users/stephaniescuba/Desktop/LIS-445-01/Cryptid/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <observerName>Three Ainu fishermen</observerName>
+        <!-- If an observer's name appears in the "naf" of LOC or a like vocabulary, we can use the "termSource" attribute to cite the location "naf" stands for "Name Authority File" from Library of Congress-->
+        <observerName termSource="naf" termSourceId="85253806">Batchelor, John, 1854-1944</observerName>
+        <cryptidSeen>
+            <cryptidDescription>
+                <cryptidCanonicalName termSource="wikiLLC" termSourceId="https://en.wikipedia.org/wiki/Akkorokamui">Akkorokamui</cryptidCanonicalName>
+                <estimatedDimensions>6-meters long</estimatedDimensions>
+            </cryptidDescription>
+        </cryptidSeen>
+        
+        <descriptionOfReport>John Batchelor, an English missionary, studied the Ainu people of Japan and published works describing his impression of their culture. One of his accounts is credited as being one of the earliest accounts in English of the Akkorokamui. Quoted text, page 530: 
+            "After inspecting the boats we returned to our 
+            inn, fully expecting to hold our meeting the next 
+            day. But we were doomed to disappointment once 
+            again. On inquiring about the matter in the morn- 
+            ing we found the whole village under a cloud. 
+            Three men, it was said, were out trying to catch 
+            a sword-fish, when all at once a great sea-monster, 
+            with large staring eyes, appeared in front of them 
+            and proceeded to attack the boat. A desperate 
+            fight ensued. The monster was round in shape, 
+            and emitted a dark fluid which had a very powerful 
+            and noxious odour.* The three men fled in dismay, 
+            not so much indeed for fear, they say, but on 
+            account of the dreadful smell. However that may 
+            have been, they were so scared that the next morn- 
+            ing all three refused to get up and eat ; they were 
+            lying in their beds pale and trembling.
+            
+            *The men say it was a devil; and I am inclined to think from the description that it was really a 'devil-fish' or an octopus."
+        </descriptionOfReport>
+        
+        <mediaSource>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="AAT" ns1:termSourceID="300028051">Books</mediaType>
+            <mediaName>Ainu and their folk-lore</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:identifierType="URI">https://archive.org/details/ainutheirfolklor00batcrich/page/530/mode/2up</mediaIdentifier>
+            <mediaAffiliation>Internet Archive</mediaAffiliation>
+            <mediaPublicationDate>
+                <!-- Books are published with only one year for the date. This is a known publication date, but the schema only allows for a year without month and day to be approximate. How should we approach this? Any change needed? -->
+                <approximateDate>1901</approximateDate>
+            </mediaPublicationDate>
+            <mediaDimensions>607 pages</mediaDimensions>
+            <mediaDescription>The description of what is thought by scholars to be a reference to an Akkookamui appears on page 301 of "Ainu and their folk-lore" by missionary John Batchelor.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+
+    <sightingDate>
+        <approximateDate>19th Century</approximateDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime>Daylight</approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <locationDescription>Ocean waters off the coast of Hokkaido, Japan.</locationDescription>
+    </sightingLocation>
+    <evidenceAffirmative>
+        <personWhoSaysThis xmlns:ns1="cryptidSighting" ns1:termSource="lcsh">Ainu</personWhoSaysThis>
+        <personWhoSaysThis xmlns:ns1="cryptidSighting" ns1:evidenceSource="lcsh">Shinto legends</personWhoSaysThis>
+    </evidenceAffirmative>
+    <evidenceNegative>
+        <personWhoSaysThis>Marine biology confirms the existence of giant cephalapods living in the Earth's oceans.</personWhoSaysThis>
+    </evidenceNegative>
+    
+</sighting>

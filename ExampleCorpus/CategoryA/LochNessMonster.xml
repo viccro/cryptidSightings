@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <observerName>Wilson, Robert Kenneth</observerName>
+        <cryptidSeen>
+            <cryptidCanonicalName>Loch Ness monster</cryptidCanonicalName>
+        </cryptidSeen>
+        <descriptionOfReport>Robert Kenneth Wilson went to Loch Ness, Scotland in 1934 determined to get a photograph of the monster. He succeeded, resulting in the most popular photograph of the monster, titled the "Surgeon's Photograph." The picture was published in the Daily Mail which sparked international interest.</descriptionOfReport>
+        <mediaSource>
+            <mediaType>Web Article</mediaType>
+            <mediaName>Loch Ness monster</mediaName>
+            <mediaIdentifier>https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+            <mediaAffiliation>britannica.com</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2020-05-04</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>512 words</mediaDimensions>
+            <mediaDescription>More sightings are listed in this article, however Robert Kenneth Wilson's produced the most notable evidence.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    <sightingDate>
+        <approximateDate>1934</approximateDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime></approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <postalAddress>
+            <addressCountry>GB</addressCountry>
+            <addressRegion>Scotland</addressRegion>
+        </postalAddress>
+    </sightingLocation>
+    <evidenceAffirmative></evidenceAffirmative>
+    <evidenceNegative></evidenceNegative>
+</sighting>
