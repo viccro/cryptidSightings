@@ -1,7 +1,5 @@
 # Element: cryptid
 
-**Element tag:** `<cs:cryptid>`
-
 **Description:** An object identifying and describing a cryptid.
 
 **Repeatable, Required** 
