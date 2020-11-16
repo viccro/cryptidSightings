@@ -70,7 +70,7 @@
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>  
-            <xs:element name="cryptidAlternativeName" minOccurs="0" maxOccurs="1">
+            <xs:element name="cryptidAlternativeName" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Any alternative name used to refer to the type of creature or individual creature observed</xs:documentation>
                 </xs:annotation>
