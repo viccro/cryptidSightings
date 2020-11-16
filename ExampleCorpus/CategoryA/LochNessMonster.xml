@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sighting xmlns="cryptidSighting"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="cryptidSighting https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-sightings-0.2.xsd">
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
     <accountOfSighting>
         <observerName>Wilson, Robert Kenneth</observerName>
         <cryptidSeen>
-            <cryptidCanonicalName>Loch Ness monster</cryptidCanonicalName>
+            <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85077967">Loch Ness monster</cryptidCanonicalName>
         </cryptidSeen>
-        <descriptionOfReport>Robert Kenneth Wilson went to Loch Ness, Scotland in 1934 determined to get a photograph of the monster. He succeeded, resulting in the most popular photograph of the monster, titled the "Surgeon's Photograph." The picture was published in the Daily Mail which sparked international interest.</descriptionOfReport>
+        <descriptionOfReport>Robert Kenneth Wilson went to Loch Ness, Scotland in 1934 determined to get a photograph of the monster. He succeeded, resulting in the most popular photograph of the monster, titled the "Surgeon's Photograph." The picture depicts a creature with a long neck and round head. The picture was published in the Daily Mail which sparked international interest.</descriptionOfReport>
         <mediaSource>
             <mediaType>Web Article</mediaType>
             <mediaName>Loch Ness monster</mediaName>
@@ -23,15 +23,14 @@
     <sightingDate>
         <approximateDate>1934</approximateDate>
     </sightingDate>
-    <sightingTime>
-        <approximateTime></approximateTime>
-    </sightingTime>
     <sightingLocation>
         <postalAddress>
             <addressCountry>GB</addressCountry>
             <addressRegion>Scotland</addressRegion>
         </postalAddress>
     </sightingLocation>
-    <evidenceAffirmative></evidenceAffirmative>
+    <evidenceAffirmative>
+        <evidenceType>Photograph</evidenceType>
+    </evidenceAffirmative>
     <evidenceNegative></evidenceNegative>
 </sighting>

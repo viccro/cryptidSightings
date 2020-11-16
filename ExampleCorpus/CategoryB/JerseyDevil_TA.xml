@@ -5,10 +5,10 @@
     <accountOfSighting>
         <observerName></observerName>
         <cryptidSeen>
-            <cryptidCanonicalName>Jersey Devil</cryptidCanonicalName>
+            <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh2011001461">Jersey Devil (Monster)</cryptidCanonicalName>
             <cryptidAlternativeName>Leed's Devil</cryptidAlternativeName>
         </cryptidSeen>
-        <descriptionOfReport>For a week in January of 1909, footprints were found across the Delaware Valley. These footprints were described as if a horse were to walk on its two hind legs.</descriptionOfReport>
+        <descriptionOfReport>For a week in January of 1909, footprints were found across the Delaware Valley. These footprints were described as if a horse were to walk on its two hind legs. Previous descriptions of this creature seem to depict a horse with wings and an angular head.</descriptionOfReport>
         <mediaSource>
             <mediaType>Web Article</mediaType>
             <mediaName>The Jersey Devil</mediaName>
@@ -24,15 +24,14 @@
     <sightingDate>
         <approximateDate>1909</approximateDate>
     </sightingDate>
-    <sightingTime>
-        <approximateTime></approximateTime>
-    </sightingTime>
     <sightingLocation>
         <postalAddress>
             <addressCountry>US</addressCountry>
             <addressRegion>New Jersey</addressRegion>
         </postalAddress>
     </sightingLocation>
-    <evidenceAffirmative></evidenceAffirmative>
+    <evidenceAffirmative>
+        <evidenceType>Newspaper Article</evidenceType>
+    </evidenceAffirmative>
     <evidenceNegative></evidenceNegative>
 </sighting>

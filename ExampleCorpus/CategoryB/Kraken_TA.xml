@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <observerName>Ferry, Lawrence de</observerName>
+        <cryptidSeen>
+            <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh2009002912">Kraken</cryptidCanonicalName>
+        </cryptidSeen>
+        <descriptionOfReport>While at sea (Norwegian Sea) in 1746, naval officer Lawrence de Ferry shot at the creature. After being hit, the creature descended back into the sea.</descriptionOfReport>
+        <mediaSource>
+            <mediaType>Web Article</mediaType>
+            <mediaName>The Kraken PROOF? Shock claime 'giant 60ft sea monster sunk British warship'</mediaName>
+            <mediaIdentifier>https://www.express.co.uk/news/weird/1057889/kraken-proof-sea-monster-sunk-british-warship-norwegian-sea-spt</mediaIdentifier>
+            <mediaAffiliation>Express.co.uk</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2018-12-12</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>309 words</mediaDimensions>
+            <mediaDescription>Following the release of a documentary about the Kraken, this article was written listing some of the claims and sightings.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    <sightingDate>
+        <approximateDate>1746</approximateDate>
+    </sightingDate>
+    <sightingLocation>
+        <geoCoordinates>
+            <longitude>68.8774</longitude>
+            <latitude>3.1397</latitude>
+        </geoCoordinates>
+    </sightingLocation>
+    <evidenceAffirmative></evidenceAffirmative>
+    <evidenceNegative></evidenceNegative>
+</sighting>

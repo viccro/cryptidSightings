@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
+    <accountOfSighting>
+        <observerName></observerName>
+        <cryptidSeen>
+            <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="wikiLC" ns1:termSourceID="The Rake">The Rake</cryptidCanonicalName>
+        </cryptidSeen>
+        <descriptionOfReport>After returning from a trip with her family, an anonymous woman tells how she was awoken at 4am, and saw a strange creature crouched at the end of her bed. This creature looked either like a naked man or a large hairless dog, and the position it was in is described as unnatural, as though it had been hit by a car. The creature stared into her husband's face for a moment before running out of the room. It attacked their daughter and ran out of the house. As the husband was rushing the daughter to the hospital, the car veered off the road and they both died.</descriptionOfReport>
+        <mediaSource>
+            <mediaType>Web Article</mediaType>
+            <mediaName>The Rake</mediaName>
+            <mediaIdentifier>https://creepypasta.fandom.com/wiki/The_Rake</mediaIdentifier>
+            <mediaAffiliation>Creepypasta.fandom.com</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2013-04-14</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>1313 words</mediaDimensions>
+            <mediaDescription>The collected accounts of The Rake. The account listed here is the most detailed.</mediaDescription>
+        </mediaSource>
+    </accountOfSighting>
+    <sightingDate>
+        <approximateDate>2003-05-04 - 2003-05-07</approximateDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime>4:00 AM</approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <postalAddress>
+            <addressCountry>US</addressCountry>
+            <addressRegion>New York</addressRegion>
+        </postalAddress>
+    </sightingLocation>
+    <evidenceAffirmative>
+    </evidenceAffirmative>
+    <evidenceNegative>
+    </evidenceNegative>
+</sighting>
