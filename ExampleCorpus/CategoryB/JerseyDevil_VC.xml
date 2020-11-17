@@ -4,12 +4,39 @@
     xmlns:cs="cryptidSighting"
     xsi:schemaLocation="cryptidSighting file:/Users/vicki/Documents/OtherStuff/SLIS/LIS_445/cryptidSightings/cryptid-sightings-0.3.xsd">
     <accountOfSighting>
-        <observer cs:type="individual"></observer>
+        <observer cs:type="individual">Mrs. Michael Ryan</observer>
         <cryptidSeen>
             <cryptidCanonicalName cs:termSource="wikiLoC" cs:termSourceID="Jersey Devil">Jersey Devil</cryptidCanonicalName>
             <cryptidAlternativeName>Leed's Devil</cryptidAlternativeName>
             <cryptidAlternativeName>Jabberwock</cryptidAlternativeName>
-            <cryptidDescription></cryptidDescription>
+            <cryptidAlternativeName>Wozzle Bug</cryptidAlternativeName>
+            <cryptidDescription>Hoofed creature, with "long thin legs and a long neck, with a dog-like head. It had wings and appeared to be stooping, as if about to jump." Observer could not identify "whether it had hair or feathers."</cryptidDescription>
         </cryptidSeen>
+        <descriptionOfAccount>Mrs. Ryan leaned out the window shortly after 6 o'clock, when she heard a noise in her alley. She saw hoof prints in the snow, leading through the alley and across a fence to her yard. She could only see the outline of the thing in the darkness.</descriptionOfAccount>
+        <mediaSource>
+            <mediaType cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>
+            <mediaName>Vampire Missing; Look Out, Jersey!</mediaName>
+            <mediaIdentifier cs:type="URL">https://www.newspapers.com/clip/27511272/the-philadelphia-inquirer/</mediaIdentifier>
+            <mediaAffiliation>The Philadelphia Inquirer</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>1909-01-22</exactDate>
+            </mediaPublicationDate>
+            <mediaDescription>A newspaper article describing multiple encounters with the "flying devil", published on the same day that the creature was "captured" by a hunting party.</mediaDescription>
+            <mediaLanguage>eng</mediaLanguage>
+        </mediaSource>
     </accountOfSighting>
+    <sightingDate>
+        <exactDate>1909-01-22</exactDate>
+    </sightingDate>
+    <sightingTime>
+        <approximateTime>18:05</approximateTime>
+    </sightingTime>
+    <sightingLocation>
+        <continent>NA</continent>
+        <postalAddress>
+            <addressCountry>US</addressCountry>
+            <addressLocality>Burlington</addressLocality>
+            <addressRegion>New Jersey</addressRegion>
+        </postalAddress>
+    </sightingLocation>
 </sighting>
