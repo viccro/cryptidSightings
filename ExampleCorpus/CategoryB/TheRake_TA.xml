@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sighting xmlns="cryptidSighting"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.3.xsd">
     <accountOfSighting>
-        <observerName></observerName>
+        <observer>Unknown</observer>
         <cryptidSeen>
             <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="wikiLC" ns1:termSourceID="The Rake">The Rake</cryptidCanonicalName>
+            <cryptidAlternativeName></cryptidAlternativeName>
+            <cryptidDescription>The Rake is described as either a malformed, naked man, or an overly large, hairless dog. It crawls on all fours and is very fast.</cryptidDescription>
         </cryptidSeen>
-        <descriptionOfReport>After returning from a trip with her family, an anonymous woman tells how she was awoken at 4am, and saw a strange creature crouched at the end of her bed. This creature looked either like a naked man or a large hairless dog, and the position it was in is described as unnatural, as though it had been hit by a car. The creature stared into her husband's face for a moment before running out of the room. It attacked their daughter and ran out of the house. As the husband was rushing the daughter to the hospital, the car veered off the road and they both died.</descriptionOfReport>
+        <descriptionOfAccount>After arriving home from a 4th of July weekend in 2003, an anonymous woman tells of how she was awoken at around 4am to her husband sitting in fear. After seeing what he sees, a man or large dog crouching at the end of their bed, she is also fearful. The creature comes around the bed to stare at her husband before running out of the room. The woman follows, worried about her children, and finds the creature above her bloodied daughter. The creature then leaves, and the husband rushes the daughter to the hospital. Unfortunately, their car veered off the road on the way and they both died.</descriptionOfAccount>
         <mediaSource>
-            <mediaType>Web Article</mediaType>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
             <mediaName>The Rake</mediaName>
             <mediaIdentifier>https://creepypasta.fandom.com/wiki/The_Rake</mediaIdentifier>
             <mediaAffiliation>Creepypasta.fandom.com</mediaAffiliation>
@@ -17,23 +19,59 @@
                 <exactDate>2013-04-14</exactDate>
             </mediaPublicationDate>
             <mediaDimensions>1313 words</mediaDimensions>
-            <mediaDescription>The collected accounts of The Rake. The account listed here is the most detailed.</mediaDescription>
+            <mediaDescription>This article lists multiple different sightings that were collected between 2003 and 2008.</mediaDescription>
+            <mediaLanguage>Original</mediaLanguage>
         </mediaSource>
     </accountOfSighting>
     <sightingDate>
         <approximateDate>2003-05-04 - 2003-05-07</approximateDate>
     </sightingDate>
     <sightingTime>
-        <approximateTime>4:00 AM</approximateTime>
+        <exactTime>04:00:00</exactTime>
     </sightingTime>
     <sightingLocation>
+        <continent>North America</continent>
         <postalAddress>
-            <addressCountry>US</addressCountry>
+            <addressCountry xmlns:ns1="cryptidSighting" ns1:termSource="ISO" ns1:termSourceID="840">US</addressCountry>
+            <addressLocality></addressLocality>
             <addressRegion>New York</addressRegion>
+            <postalCode></postalCode>
+            <streetAddress></streetAddress>
         </postalAddress>
+        <locationDescription>The most descriptive this article gets is that the sightings took place mostly in rural New York. The account of the anonymous woman also states that they had just returned from Niagara Falls.</locationDescription>
     </sightingLocation>
     <evidenceAffirmative>
+        <evidenceAgent>Anonymous Woman</evidenceAgent>
+        <evidenceType>Witness Account</evidenceType>
+        <mediaEvidence>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
+            <mediaName>The Rake</mediaName>
+            <mediaIdentifier>https://creepypasta.fandom.com/wiki/The_Rake</mediaIdentifier>
+            <mediaAffiliation>Creepypasta.fandom.com</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2013-04-14</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>1313 words</mediaDimensions>
+            <mediaDescription>The article lists the full account from the anonymous woman. This account was written down in 2006, 3 years after the event occurred.</mediaDescription>
+            <mediaLanguage>Original</mediaLanguage>
+        </mediaEvidence>
+        <evidenceDescription>The account of the anonymous woman, totaling 930 words.</evidenceDescription>
     </evidenceAffirmative>
     <evidenceNegative>
+        <evidenceAgent></evidenceAgent> <!-- Unsure what to put in this section, as there is no debunking, but there is also the fact that this was created as a creepypasta in the first place -->
+        <evidenceType></evidenceType>
+        <mediaEvidence>
+            <mediaType></mediaType>
+            <mediaName></mediaName>
+            <mediaIdentifier></mediaIdentifier>
+            <mediaAffiliation></mediaAffiliation>
+            <mediaPublicationDate>
+                <approximateDate></approximateDate>
+            </mediaPublicationDate>
+            <mediaDimensions></mediaDimensions>
+            <mediaDescription></mediaDescription>
+            <mediaLanguage></mediaLanguage>
+        </mediaEvidence>
+        <evidenceDescription></evidenceDescription>
     </evidenceNegative>
 </sighting>

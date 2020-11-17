@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/nalex/Documents/LIS%20445/cryptid-sightings-0.3.xsd">
+    <accountOfSighting>
+        <observer>Eric Shipton</observer>
+        <observer>Michael Ward</observer>
+        <cryptidSeen>
+            <cryptidCanonicalName   xmlns:ns1="cryptidSighting" ns1:termSource="https://en.wikipedia.org/wiki/List_of_cryptids">Yeti</cryptidCanonicalName>
+            <cryptidAlternativeName termSource="https://en.wikipedia.org/wiki/Yeti">Meh-Teh</cryptidAlternativeName>
+            <cryptidAlternativeName termSource="https://en.wikipedia.org/wiki/List_of_cryptids">Abominable Snowman</cryptidAlternativeName>
+            <cryptidDescription>While Shipton saw secondary evidence, he did not see the cryptid itself.  
+                The cryptid is supposed to be a large, furry humanoid.</cryptidDescription>
+        </cryptidSeen>
+        <descriptionOfAccount>Whle traversing the Menlunq glacier to return to camp, Eric Earle Shipton
+            and Michael Ward came across a trail of footprints, and photographed the largest.</descriptionOfAccount>
+        <mediaSource>
+            <mediaType>Article</mediaType>
+            <mediaName>"50 Years Ago This Month"</mediaName>
+            <mediaIdentifier  xmlns:ns1="cryptidSighting" ns1:type="URL">http://www.bigfootencounters.com/articles/50yearsago.htm</mediaIdentifier>
+            <mediaAffiliation>The Fortean Times</mediaAffiliation>
+            <mediaPublicationDate>
+                <approximateDate>November 2001</approximateDate>
+            </mediaPublicationDate>
+            <mediaDescription>An article discussing the legacy of Shipton's photograph,
+            reprinted on a Bigfoot enthusiasts' site</mediaDescription>
+            <mediaLanguage>English</mediaLanguage>
+        </mediaSource>
+    </accountOfSighting>
+    <sightingDate>
+        <exactDate>1951-11-09</exactDate>
+    </sightingDate>
+    <sightingTime>
+        <exactTime>16:00:00</exactTime>
+    </sightingTime>
+    <sightingLocation>
+        <continent>Asia</continent>
+        <postalAddress>
+            <addressCountry>NP</addressCountry>
+            <addressLocality>Menlunq Tsu Glacier</addressLocality>
+            <addressRegion>The Himalaya Mountains</addressRegion>
+        </postalAddress>
+        <locationDescription></locationDescription>
+    </sightingLocation>
+    <evidenceAffirmative>
+        <evidenceAgent>Eric Shipton</evidenceAgent>
+        <evidenceType>Photograph</evidenceType>
+        <mediaEvidence>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="AAT" ns1:termSourceID="300417379">digital photograph</mediaType>
+            <mediaName>File:Eric Shipton yeti footprint.png</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:type="URL">https://commons.wikimedia.org/wiki/File:Eric_Shipton_yeti_footprint.png</mediaIdentifier>
+            <mediaDimensions xmlns:ns1="cryptidSighting" ns1:type="File Size" ns1:unit="kb">908 KB</mediaDimensions>
+            <mediaDescription>A digitized version of Shipton's photograph.  It depicts a five-toed print in the snow, 13 inches in length</mediaDescription>
+        </mediaEvidence>
+        <evidenceDescription>Eric Shipton's photograph of an alleged Yeti footprint, 13 inches in length, shows five toes, with an apparent 'big toe.'</evidenceDescription>
+    </evidenceAffirmative>
+    <evidenceNegative>
+        <evidenceAgent>John Napier</evidenceAgent>
+        <evidenceType>Scientific Experties</evidenceType>
+        <mediaEvidence>
+            <mediaType>Article</mediaType>
+            <mediaName>"50 Years Ago This Month"</mediaName>
+            <mediaIdentifier  xmlns:ns1="cryptidSighting" ns1:type="URL">http://www.bigfootencounters.com/articles/50yearsago.htm</mediaIdentifier>
+            <mediaAffiliation>The Fortean Times</mediaAffiliation>
+            <mediaPublicationDate>
+                <approximateDate>November 2001</approximateDate>
+            </mediaPublicationDate>
+            <mediaDescription>An article discussing the legacy of Shipton's photograph,
+                reprinted on a Bigfoot enthusiasts' site</mediaDescription>
+            <mediaLanguage>English</mediaLanguage>
+        </mediaEvidence>
+        <evidenceDescription> Napier finds it puzzling that the ball of the alleged Yeti's foot leaves a convex impression rather than a concave one.
+            He suggests that the print was a double up made by the super - imposition of two prints - possibly melted combined prints of the forefoot and hind foot of a snow leopard. </evidenceDescription>
+    </evidenceNegative>
+    <evidenceNegative>
+        <evidenceAgent>Daniel Taylor</evidenceAgent>
+        <evidenceType>Scientific Expertise</evidenceType>
+        <mediaEvidence>
+            <mediaType>Article</mediaType>
+            <mediaName>This Man Searched for the Yeti for 60 Years—and Found It</mediaName>
+            <mediaIdentifier xmlns:ns1="cryptidSighting" ns1:type="URL">https://www.nationalgeographic.com/news/2017/08/yeti-abominable-snowman-bear-daniel-taylor/</mediaIdentifier>
+            <mediaAffiliation>National Geographic</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2017-08-19</exactDate>
+            </mediaPublicationDate>
+            <mediaDescription>Taylor suggests that the footprints were made by an Asian tree bear, which has an opposable thumb that would explain the positioning of the 'toes' in the photograph.</mediaDescription>
+        </mediaEvidence>
+    </evidenceNegative>
+</sighting>

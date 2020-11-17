@@ -2,8 +2,6 @@
 
 **Description:** An object identifying and describing a cryptid.
 
-**Repeatable, Required** 
-
 ## Sub-element: cryptidCanonicalName
 **Element tag:** `<cs:cryptidCanonicalName>`
 

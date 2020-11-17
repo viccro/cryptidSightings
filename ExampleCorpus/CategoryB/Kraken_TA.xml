@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sighting xmlns="cryptidSighting"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.3.xsd">
     <accountOfSighting>
-        <observerName>Ferry, Lawrence de</observerName>
+        <observer>de Ferry, Lawrence</observer>
         <cryptidSeen>
             <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh2009002912">Kraken</cryptidCanonicalName>
+            <cryptidAlternativeName></cryptidAlternativeName>
+            <cryptidDescription>The Kraken is described to be a giant squid of some sort, reaching to 60 feet in length.</cryptidDescription>
         </cryptidSeen>
-        <descriptionOfReport>While at sea (Norwegian Sea) in 1746, naval officer Lawrence de Ferry shot at the creature. After being hit, the creature descended back into the sea.</descriptionOfReport>
+        <descriptionOfAccount>While at sea (Norwegian Sea) in 1746, naval officer Lawrence de Ferry was abel to shoot at the creature. After being hit, it descended beneath the water.</descriptionOfAccount>
         <mediaSource>
-            <mediaType>Web Article</mediaType>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
             <mediaName>The Kraken PROOF? Shock claime 'giant 60ft sea monster sunk British warship'</mediaName>
             <mediaIdentifier>https://www.express.co.uk/news/weird/1057889/kraken-proof-sea-monster-sunk-british-warship-norwegian-sea-spt</mediaIdentifier>
             <mediaAffiliation>Express.co.uk</mediaAffiliation>
@@ -17,18 +19,63 @@
                 <exactDate>2018-12-12</exactDate>
             </mediaPublicationDate>
             <mediaDimensions>309 words</mediaDimensions>
-            <mediaDescription>Following the release of a documentary about the Kraken, this article was written listing some of the claims and sightings.</mediaDescription>
+            <mediaDescription>Following the release of a documentary about the Kraken, this article was written in order to list the different claims and sightings throughout the years.</mediaDescription>
+            <mediaLanguage>Original</mediaLanguage>
         </mediaSource>
     </accountOfSighting>
     <sightingDate>
         <approximateDate>1746</approximateDate>
     </sightingDate>
+    <sightingTime>
+        <approximateTime>Unknown</approximateTime>
+    </sightingTime>
     <sightingLocation>
         <geoCoordinates>
             <longitude>68.8774</longitude>
             <latitude>3.1397</latitude>
         </geoCoordinates>
+        <continent></continent>
+        <postalAddress>
+            <addressCountry xmlns:ns1="cryptidSighting" ns1:termSource="ISO" ns1:termSourceID="578">NO</addressCountry>
+            <addressLocality></addressLocality>
+            <addressRegion></addressRegion>
+            <postalCode></postalCode>
+            <streetAddress></streetAddress>
+        </postalAddress>
+        <locationDescription>The Norwegian Sea is a marginal sea within the Arctic Ocean.</locationDescription>
     </sightingLocation>
-    <evidenceAffirmative></evidenceAffirmative>
-    <evidenceNegative></evidenceNegative>
+    <evidenceAffirmative>
+        <evidenceAgent>Erich Pontoppidan</evidenceAgent>
+        <evidenceType>Book</evidenceType>
+        <mediaEvidence>
+            <mediaType>Book</mediaType>
+            <mediaName>The Natural History of Norway</mediaName>
+            <mediaIdentifier>https://www.google.com/books/edition/The_Natural_History_of_Norway/3OglUqRf_soC?hl=en</mediaIdentifier>
+            <mediaAffiliation>Google Books</mediaAffiliation>
+            <mediaPublicationDate>
+                <approximateDate>1775</approximateDate>
+            </mediaPublicationDate>
+            <mediaDimensions>611 pges</mediaDimensions>
+            <mediaDescription>Erich Pontoppidan's history of Norway, including accounts and sighting of the Kraken, especially Lawrence de Ferry's.</mediaDescription>
+            <mediaLanguage>Translated</mediaLanguage>
+        </mediaEvidence>
+        <evidenceDescription>Transcribed accounts of sightings of the Kraken</evidenceDescription>
+    </evidenceAffirmative>
+    <evidenceNegative>
+        <evidenceAgent></evidenceAgent> <!-- Not sure what to put here for this one, as it is just a possible debunk from the article -->
+        <evidenceType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</evidenceType>
+        <mediaEvidence>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
+            <mediaName>The Kraken PROOF? Shock claime 'giant 60ft sea monster sunk British warship'</mediaName>
+            <mediaIdentifier>https://www.express.co.uk/news/weird/1057889/kraken-proof-sea-monster-sunk-british-warship-norwegian-sea-spt</mediaIdentifier>
+            <mediaAffiliation>Express.co.uk</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2018-12-12</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>309 words</mediaDimensions>
+            <mediaDescription>The same article that listed out different sightings throughout history, but also with an additional possibility of what those sightings could have actually been.</mediaDescription>
+            <mediaLanguage>Original</mediaLanguage>
+        </mediaEvidence>
+        <evidenceDescription>This article states that many details of these sightings could actually be describing natural activity, such as undersea volcanic activity that would cause sudden bubbles and dangerous currents.</evidenceDescription>
+    </evidenceNegative>
 </sighting>

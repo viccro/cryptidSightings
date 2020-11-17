@@ -1,37 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sighting xmlns="cryptidSighting"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.2.xsd">
+    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.3.xsd">
     <accountOfSighting>
-        <observerName></observerName>
+        <observer>Unknown</observer>
         <cryptidSeen>
-            <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh2011001461">Jersey Devil (Monster)</cryptidCanonicalName>
+            <cryptidCanonicalName xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh2011001461">Jersey Devil</cryptidCanonicalName>
             <cryptidAlternativeName>Leed's Devil</cryptidAlternativeName>
+            <cryptidDescription>The Jersey Devil is described as having horse hooves on its back legs, talons on its front legs, bat-like wings, and devil horns and tail. It seems to be able to walk on two legs.</cryptidDescription>
         </cryptidSeen>
-        <descriptionOfReport>For a week in January of 1909, footprints were found across the Delaware Valley. These footprints were described as if a horse were to walk on its two hind legs. Previous descriptions of this creature seem to depict a horse with wings and an angular head.</descriptionOfReport>
+        <descriptionOfAccount>During the week of January 16-23, 1909, footprints were spotted in the snow through the Delaware Valley. These footprints were assumed to be the Jersey Devil because they were hoofprints that appeared to be from a two-legged horse.</descriptionOfAccount>
         <mediaSource>
-            <mediaType>Web Article</mediaType>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
             <mediaName>The Jersey Devil</mediaName>
             <mediaIdentifier>https://weirdnj.com/stories/jersey-devil/</mediaIdentifier>
-            <mediaAffiliation>weirdnj.com</mediaAffiliation>
+            <mediaAffiliation>WeirdNJ.com</mediaAffiliation>
             <mediaPublicationDate>
                 <approximateDate>2018</approximateDate>
             </mediaPublicationDate>
-            <mediaDimensions>3335 words</mediaDimensions>
-            <mediaDescription>This article goes into the history of the Jersey Devil, including the lore behind where the creature came from.</mediaDescription>
+            <mediaDimensions>3335 words.</mediaDimensions>
+            <mediaDescription>This article goes into the history and origin of the Jersey Devil, as well as the week in January 1909 that had caused multiple states in the North East to discuss what these footprints could be, and if they were from the Jersey Devil.</mediaDescription>
+            <mediaLanguage>Original</mediaLanguage>
         </mediaSource>
     </accountOfSighting>
     <sightingDate>
-        <approximateDate>1909</approximateDate>
+        <approximateDate>1909-01-16 - 1909-01-23</approximateDate>
     </sightingDate>
+    <sightingTime>
+        <approximateTime>Unknown</approximateTime>
+    </sightingTime>
     <sightingLocation>
+        <geoCoordinates>
+            <longitude>39.9526</longitude>
+            <latitude>75.1652</latitude>
+        </geoCoordinates>
+        <continent>North America</continent>
         <postalAddress>
-            <addressCountry>US</addressCountry>
+            <addressCountry xmlns:ns1="cryptidSighting" ns1:termSource="ISO" ns1:termSourceID="840">US</addressCountry>
+            <addressLocality></addressLocality>
             <addressRegion>New Jersey</addressRegion>
+            <postalCode></postalCode>
+            <streetAddress></streetAddress>
         </postalAddress>
+        <locationDescription>The sightings in the Delware Valley span across multiple states, including New Jersey, Delaware, and Pennsylvania. The Delaware Valley follows the Delaware River.</locationDescription>
     </sightingLocation>
     <evidenceAffirmative>
-        <evidenceType>Newspaper Article</evidenceType>
+        <evidenceAgent>The Philadelphia Inquirer</evidenceAgent>
+        <evidenceType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</evidenceType>
+        <mediaEvidence>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
+            <mediaName>The Jersey Devil, the tale of a viral story from 110 years ago</mediaName>
+            <mediaIdentifier>https://www.inquirer.com/news/new-jersey/jersey-devil-history-fake-news-norman-jeffries-20190123.html</mediaIdentifier>
+            <mediaAffiliation>The Philadelphia Inquirer</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2019-01-23</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>892 words</mediaDimensions>
+            <mediaDescription>This article revists the sighting 110 years after the fact, including newspaper articles from the time.</mediaDescription>
+            <mediaLanguage>Original</mediaLanguage>
+        </mediaEvidence>
+        <evidenceDescription>Multiple newspaper clippings with photographs of the footprints and reports of sightings.</evidenceDescription>
     </evidenceAffirmative>
-    <evidenceNegative></evidenceNegative>
+    <evidenceNegative>
+        <evidenceAgent>The Philadelphia Inquirer</evidenceAgent>
+        <evidenceType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</evidenceType>
+        <mediaEvidence>
+            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
+            <mediaName>The Jersey Devil, the tale of a viral story from 110 years ago</mediaName>
+            <mediaIdentifier>https://www.inquirer.com/news/new-jersey/jersey-devil-history-fake-news-norman-jeffries-20190123.html</mediaIdentifier>
+            <mediaAffiliation>The Philadelphia Inquirer</mediaAffiliation>
+            <mediaPublicationDate>
+                <exactDate>2019-01-23</exactDate>
+            </mediaPublicationDate>
+            <mediaDimensions>892 words</mediaDimensions>
+            <mediaDescription>This article also delves into how journalists at the time could be more lenient with what they reported on and could easily be bribed.</mediaDescription>
+            <mediaLanguage>Original</mediaLanguage>
+        </mediaEvidence>
+        <evidenceDescription>Journalists who can be bribed into reporting on something that is not real led to a week-long hunt for the Jersey Devil</evidenceDescription>
+    </evidenceNegative>
 </sighting>
