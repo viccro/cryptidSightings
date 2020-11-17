@@ -23,6 +23,7 @@
             <mediaIdentifier>http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>
             <mediaAffiliation>oddencounters.com</mediaAffiliation>
             <mediaDescription>A blog post describing the context and content of the Marble Mountain Bigfoot Video</mediaDescription>
+            <mediaLanguage cs:type="original">eng</mediaLanguage>
         </mediaSource>
         
         <mediaSource>
@@ -34,6 +35,7 @@
             </mediaPublicationDate>
             <mediaDimensions cs:type="duration" cs:unit="h">2</mediaDimensions>
             <mediaDescription>A Halloween Special episode of the show "Finding Bigfoot", produced by the Animal Planet network. The episode investigates both the Patterson-Gimlin film and the Marble Mountain film. Unfortunately, the episode is in the vault, and cannot be watched online. Description from wikipedia: "The team heads to the Mecca of Sasquatchery, Bluff Creek, California. While there they recreate the famous Patterson–Gimlin film, accompanied by Bob Gimlin himself. They also investigate the Marble Mountain footage. Later, while exploring the area, Ranae has an experience she's not likely to forget."</mediaDescription>
+            <mediaLanguage cs:type="original">eng</mediaLanguage>
         </mediaSource>
     </accountOfSighting>
     
@@ -61,7 +63,7 @@
             <mediaName>Marble Mountain Bigfoot Video</mediaName>
             <mediaDimensions cs:type="duration" cs:unit="s">407</mediaDimensions>
             <mediaDescription>A video taken by John Mills during the Campus Life youth retreat. The video starts by exploring the lair of "some kinda creature", with a structured shelter of branches and debris "snapped by mighty mighty strength", with claw marks on surrounding trees. As the group explores the area, someone shouts out "He's walking down. Bigfoot's walking down right now," referring to a ridge in the distance. The camera zooms in to the figure on the ridge, watching him descend to a cluster of trees. When he gets to the trees, the figure begins pacing back and forth, before continuing his descent. The video remained underground until Jim Mills' death in the summer of 2011.</mediaDescription>
-            <mediaLanguage>eng</mediaLanguage>
+            <mediaLanguage cs:type="original">eng</mediaLanguage>
         </mediaEvidence>
     </evidenceAffirmative>
     
@@ -77,7 +79,7 @@
             </mediaPublicationDate>
             <mediaDimensions>10:35</mediaDimensions>
             <mediaDescription>Youtuber Bigfoot Tony disputes claims from the Marble Mountain footage, starting with claims about the so-called lair and alleged scratch marks on the trees and continuing on to describe the figure on the ridge as a hiker with a backpacker.</mediaDescription>
-            <mediaLanguage>eng</mediaLanguage>
+            <mediaLanguage cs:type="original">eng</mediaLanguage>
         </mediaEvidence>
     </evidenceNegative>
 </sighting>

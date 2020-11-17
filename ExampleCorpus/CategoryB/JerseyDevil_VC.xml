@@ -22,7 +22,7 @@
                 <exactDate>1909-01-22</exactDate>
             </mediaPublicationDate>
             <mediaDescription>A newspaper article describing multiple encounters with the "flying devil", published on the same day that the creature was "captured" by a hunting party.</mediaDescription>
-            <mediaLanguage>eng</mediaLanguage>
+            <mediaLanguage cs:type="original">eng</mediaLanguage>
         </mediaSource>
     </accountOfSighting>
     <sightingDate>
