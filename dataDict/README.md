@@ -1,6 +1,5 @@
 # Cryptid Sighting schema
 
-***
 Cryptid Sightings Schema (Version 0.1) was created as a draft for LIS 445: Metadata at Simmons 
 University, in the School of Library and Information Science (SLIS). The schema was created by:
 * Tish Albro
@@ -13,7 +12,7 @@ This version of the schema will be documented at www.github.com/viccro/cryptidSi
 The Cryptid Sightings Schema will be used to document any sighting of a cryptid (any animal whose 
 existence is unsubstantiated). 
 
-The schema makes use of ___???
+The schema makes use of a lot of structures found in CDWAlite, especially with regards to attributes.
 
 Change log:
 * v0.2: 
