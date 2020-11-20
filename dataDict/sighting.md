@@ -1,33 +1,5 @@
 # Cryptid Sightings Schema
 
-***
-Cryptid Sightings Schema (Version 0.1) was created as a draft for LIS 445: Metadata at Simmons 
-University, in the School of Library and Information Science (SLIS). The schema was created by:
-* Tish Albro
-* Stephanie Bennett
-* Vicki Crosson
-* Alex Werbizky Ehrhardt
-
-This version of the schema will be documented at www.github.com/viccro/cryptidSightings/tree/main/dataDict/sighting.md
-
-The Cryptid Sightings Schema will be used to document any sighting of a cryptid (any animal whose 
-existence is unsubstantiated). 
-
-The schema makes use of ___???
-
-Change log:
-* v0.2: 
-    * cryptid contains xs:choice, not xs:all
-    * moved mediaSource (prev media) inside of accountOfSighting (prev reportOfSighting)
-    * canonicalName termsource and termsourceID moved to attributes
-    * offer exact and approx times, and type of time to qualify ranges
-        * require mediaName
-    * fleshed out docstrings for each field
-
-* v0.3: Corrections made after filling out Category A corpus
-    * descriptionOfReport renamed to descriptionOfAccount
-***
-
 ## Element: sighting
 Documentation surrounding a singular sighting of a cryptid
 
