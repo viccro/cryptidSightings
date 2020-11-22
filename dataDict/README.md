@@ -1,6 +1,6 @@
-# Cryptid Sighting schema
+# Cryptid Media schema
 
-Cryptid Sightings Schema (Version 0.1) was created as a draft for LIS 445: Metadata at Simmons 
+Cryptid Media Schema (Version 0.4) was created as a draft for LIS 445: Metadata at Simmons 
 University, in the School of Library and Information Science (SLIS). The schema was created by:
 * Tish Albro
 * Stephanie Bennett

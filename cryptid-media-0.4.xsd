@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- version 0.3: 2020-11-16: cryptid-sightings-0.3.xsd -->
+<!-- version 0.4: 2020-11-22: cryptid-sightings-0.4.xsd -->
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="cryptidSighting" targetNamespace="cryptidSighting" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:documentation>
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xx    Cryptid Sightings Schema (Version 0.3) was created as a draft for LIS 445: Metadata at Simmons 
+            xx    Cryptid Media Schema (Version 0.4) was created as a draft for LIS 445: Metadata at Simmons 
             xx    University, in the School of Library and Information Science (SLIS). The schema was created by:
             xx    * Tish Albro
             xx    * Stephanie Bennett
