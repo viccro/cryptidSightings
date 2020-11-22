@@ -39,7 +39,8 @@
             xx      v0.4: Changed from cryptid-sightings schema to cryptid-media schema
             xx            * root element is now mediaSource
             xx            * exactTime>date corrected to exactTime>time
-            xx            * 
+            xx            * rearranged objects to be in the order that they're used
+            xx            * restructured time to allow for description of what the timestamp is describing
             xx
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
@@ -49,6 +50,7 @@
     <xs:attribute name="type" type="xs:string"/>
     <xs:attribute name="unit" type="xs:string"/>
     <xs:attribute name="groupMembership" type="xs:string"/>
+    <xs:attribute name="evidenceSource" type="xs:string"/>
     
     <!--  
 		#####################################################################################################
@@ -61,112 +63,15 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="mediaIdentifier" minOccurs="0">
+                <xs:element name="mediaDetails" type="mediaDetails" minOccurs="1" maxOccurs="1">
                     <xs:annotation>
-                        <xs:documentation>A single URL, ISBN, or other identifier for the media</xs:documentation>
+                        <xs:documentation>Details about this media object that describes a cryptid sighting</xs:documentation>
                     </xs:annotation>
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute ref="type">
-                                    <xs:annotation>
-                                        <xs:documentation>The type of identifier listed: URI, URL, ISBN, etc.</xs:documentation>
-                                    </xs:annotation>
-                                </xs:attribute> 
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-                
-                <xs:element name="mediaName">
-                    <xs:annotation>
-                        <xs:documentation>A name identifying the piece of media. If none is known, use a unique phrase that identifies it by type, contents, and/or creators</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                
-                <xs:element name="mediaType" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Use to describe the type of content of the media: digital photograph, motion picture film, article, book, etc.</xs:documentation>
-                    </xs:annotation>
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute ref="termSource">
-                                    <xs:annotation>
-                                        <xs:documentation>The source of the term used</xs:documentation>
-                                    </xs:annotation>
-                                </xs:attribute>
-                                <xs:attribute ref="termSourceID">
-                                    <xs:annotation>
-                                        <xs:documentation>The ID of the term used</xs:documentation>
-                                    </xs:annotation>
-                                </xs:attribute>
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-                
-                
-                <xs:element name="mediaAffiliation" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>If the media was published in a collection, newspaper, etc, list that affiliation here.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                
-                <xs:element name="mediaPublicationDate" type="date" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>The publication date of the media, such as the copyright date of a book, or the date a blog was posted</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                
-                <xs:element name="mediaDimensions" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Dimensions related to the media: page count, size of book, seconds or frames of video, file size in bytes or pixels, etc</xs:documentation>
-                    </xs:annotation>
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute ref="unit">
-                                    <xs:annotation>
-                                        <xs:documentation>Unit of measurement as recommended in CCO and CDWA.</xs:documentation>
-                                    </xs:annotation>
-                                </xs:attribute> 
-                                <xs:attribute ref="type">
-                                    <xs:annotation>
-                                        <xs:documentation>A description of the dimension listed, as recommended in CCO and CDWA.</xs:documentation>
-                                    </xs:annotation>
-                                </xs:attribute> 
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType> 
-                </xs:element> 
-                
-                <xs:element name="mediaDescription">
-                    <xs:annotation>
-                        <xs:documentation>Free text, used to describe the role and content of a piece of media.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                
-                <xs:element name="mediaLanguage" minOccurs="0" maxOccurs="unbounded">
-                    <xs:annotation>
-                        <xs:documentation>The main language of the piece of media</xs:documentation>
-                    </xs:annotation>
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute ref="type">
-                                    <xs:annotation>
-                                        <xs:documentation>Recommended values include *translated* and *original*.</xs:documentation>
-                                    </xs:annotation>
-                                </xs:attribute> 
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>                
                 </xs:element>
                 
                 <xs:element name="accountOfSighting" type="account" minOccurs="1" maxOccurs="unbounded">
                     <xs:annotation>
-                        <xs:documentation>A consistent account of the sighting. An observer may give multiple conflicting accounts over time, and multiple observers may each disagree on details, resulting in multiple accounts per sighting.</xs:documentation>
+                        <xs:documentation>A consistent account of the sighting as described in this media source. Multiple observers may each disagree on details, resulting in multiple accounts per piece of media.</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 
@@ -194,6 +99,117 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    
+    <!--***** Media Details  *********************************** -->
+    
+    <xs:complexType name="mediaDetails">
+        <xs:annotation>
+            <xs:documentation>Details about a media object</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="mediaIdentifier" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A single URL, ISBN, or other identifier for the media</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="type">
+                                <xs:annotation>
+                                    <xs:documentation>The type of identifier listed: URI, URL, ISBN, etc.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute> 
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="mediaName">
+                <xs:annotation>
+                    <xs:documentation>A name identifying the piece of media. If none is known, use a unique phrase that identifies it by type, contents, and/or creators</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            
+            <xs:element name="mediaType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Use to describe the type of content of the media: digital photograph, motion picture film, article, book, etc.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="termSource">
+                                <xs:annotation>
+                                    <xs:documentation>The source of the term used</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute ref="termSourceID">
+                                <xs:annotation>
+                                    <xs:documentation>The ID of the term used</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="mediaAffiliation" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>If the media was published in a collection, newspaper, etc, list that affiliation here.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            
+            <xs:element name="mediaPublicationDate" type="date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The publication date of the media, such as the copyright date of a book, or the date a blog was posted</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            
+            <xs:element name="mediaDimensions" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Dimensions related to the media: page count, size of book, seconds or frames of video, file size in bytes or pixels, etc</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="unit">
+                                <xs:annotation>
+                                    <xs:documentation>Unit of measurement as recommended in CCO and CDWA.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute> 
+                            <xs:attribute ref="type">
+                                <xs:annotation>
+                                    <xs:documentation>A description of the dimension listed, as recommended in CCO and CDWA.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute> 
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType> 
+            </xs:element> 
+            
+            <xs:element name="mediaDescription">
+                <xs:annotation>
+                    <xs:documentation>Free text, used to describe the role and content of a piece of media.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            
+            <xs:element name="mediaLanguage" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The main language of the piece of media</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="type">
+                                <xs:annotation>
+                                    <xs:documentation>Recommended values include *translated* and *original*.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute> 
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>                
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
     
     <!--  
 		#####################################################################################################
@@ -234,13 +250,13 @@
                 </xs:annotation>
             </xs:element>
             
-            <xs:element name="sightingDate" type="date" minOccurs="0">
+            <xs:element name="sightingDate" type="date">
                 <xs:annotation>
                     <xs:documentation>The date on which a sighting occurred. If the same cryptid was seen over multiple days, multiple sighting objects should be used to describe these discrete sightings.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             
-            <xs:element name="sightingTime" type="time" minOccurs="0">
+            <xs:element name="sightingTime" type="time" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>The time or range of times on which a single sighting occurred.</xs:documentation>
                 </xs:annotation>
@@ -254,7 +270,7 @@
             
             <xs:element name="descriptionOfAccount" type="xs:string" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
-                    <xs:documentation>A description of what happened, according to this consistent telling of the sighting, including any details that distinguish this account from others</xs:documentation>
+                    <xs:documentation>A description of what happened, according to this consistent telling of the sighting, including any details that distinguish this account from others. May include quotes or paraphrased description of the event.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             
@@ -304,7 +320,6 @@
                 </xs:annotation>
             </xs:element>  
             
-            
         </xs:sequence>
     </xs:complexType>    
     
@@ -321,7 +336,8 @@
         <xs:choice> <!-- this choice type allows us to say "only one of these can exist" -->
             <xs:element name="exactDate" type="xs:date" >
                 <xs:annotation>
-                    <xs:documentation>Use if a single date is known for the sighting</xs:documentation>
+                    <xs:documentation>Use if a single date is known for the sighting.</xs:documentation>
+                    <xs:documentation>A date of the sighting using xml date format, ie. YYYY-MM-DD</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="approximateDate" type="xs:string">
@@ -336,26 +352,6 @@
             </xs:element>
         </xs:choice>        
     </xs:complexType>
-
-    <!--***** Exact Date  *********************************** -->
-    
-    <xs:complexType name="exactDate">
-        <xs:annotation>
-            <xs:documentation>An object describing a media accounting of the sighting, as in a newspaper article or book</xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element name="date" type="xs:date" >
-                <xs:annotation>
-                    <xs:documentation>A date of the sighting using xml date format, ie. YYYY-MM-DD</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="qualifier" type="xs:string" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>A qualifier on the date: for example "disputed by critics".</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
     
     <!--  
 		#####################################################################################################
@@ -366,10 +362,32 @@
         <xs:annotation>
             <xs:documentation>An object describing an exact or approximate time or range of times.</xs:documentation>
         </xs:annotation>
+        <xs:sequence>
+            <xs:element name="timeDetails" type="timeDetails">
+                <xs:annotation>
+                    <xs:documentation>The time a notable event took place during the sighting</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="timeType" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A description of the time noted, e.g. "Cryptid first seen", "cryptid submerged", or "cryptid no longer visible"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+            
+    </xs:complexType>
+    
+    <!--***** Time Details  *********************************** -->
+    
+    <xs:complexType name="timeDetails">
+        <xs:annotation>
+            <xs:documentation>An object describing the exact or approximate time that an event took place, or a boolean to denote that the time is entirely unknown</xs:documentation>
+        </xs:annotation>
         <xs:choice> <!-- this choice type allows us to say "only one of these can exist" -->
             <xs:element name="exactTime" type="xs:time" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Use if an exact time is known for the sighting</xs:documentation>
+                    <xs:documentation>A time of the sighting in xml standard, 24 hour time with as much precision as possible: hh:mm:ss.s. If time zone is known, use time offsets from UTC as in ISO 8601, eg 03:45:30+05</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="approximateTime" type="xs:string">
@@ -382,27 +400,7 @@
                     <xs:documentation>If no details at all are given about the time, set unknownTime to True.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-        </xs:choice>        
-    </xs:complexType>
-    
-    <!--***** Exact Time  *********************************** -->
-    
-    <xs:complexType name="exactTime">
-        <xs:annotation>
-            <xs:documentation>An object describing a media accounting of the sighting, as in a newspaper article or book</xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element name="time" type="xs:time" >
-                <xs:annotation>
-                    <xs:documentation>A time of the sighting in xml standard, 24 hour time with as much precision as possible: hh:mm:ss.s. If time zone is known, use time offsets from UTC as in ISO 8601, eg 03:45:30+05</xs:documentation>
-                </xs:annotation>         
-            </xs:element>
-            <xs:element name="typeOfTime">
-                <xs:annotation>
-                    <xs:documentation>Possible values include "Start" or "End", or any notable timestamps from the encounter.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
+        </xs:choice>
     </xs:complexType>
     
     <!--  
@@ -475,14 +473,14 @@
                     <xs:documentation>The country, using the two-letter ISO 3166-1 alpha-2 country code.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="addressLocality" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>The locality in which the street address is, and which is in the region. For example, Boston.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
             <xs:element name="addressRegion" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>The region in which the locality is, and which is in the country. For example, Massachusetts or another appropriate first-level Administrative division</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="addressLocality" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The locality in which the street address is, and which is in the region. For example, Boston.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="postalCode" minOccurs="0">
@@ -518,10 +516,10 @@
                 <xs:annotation>
                     <xs:documentation>The type of thing that comprises the evidence, taken from ??? controlled vocabulary</xs:documentation> <!-- TODO - cv -->
                 </xs:annotation>
-            </xs:element> 
-            <xs:element name="mediaEvidence" type="media" minOccurs="0">
+            </xs:element>                 
+            <xs:element name="mediaEvidence" type="mediaDetails" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
-                    <xs:documentation>Used to identify media evidence, like a video recording or photograph</xs:documentation>
+                    <xs:documentation>Details about a media object that serves as evidence for or against a cryptid sighting. If the media itself gives details about a cryptid sighting, a whole cryptidMedia object should be created, and only the mediaIdentifier of that object should be included. If the object is an image or footage, which doesn't contain enough information to create a full cryptidMedia entry, fill out this details block in full.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="evidenceDescription" minOccurs="0">
@@ -531,18 +529,5 @@
             </xs:element>
         </xs:sequence> 
     </xs:complexType>
-    <xs:attribute name="evidenceSource" type="xs:string"/>
-    
-    
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
     
 </xs:schema>

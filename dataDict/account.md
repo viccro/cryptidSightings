@@ -9,15 +9,18 @@
 
 **Description:** The name of one of the observers who stands by this account of the story.
 
-**Attributes:** *type*
+**Attributes:** *type, groupMembership*
 
 **Repeatable, Required**
 
-**Data values:**  The names, appellations, or other identifiers assigned to an individual, group of people, firm or other corporate body, or other entity that observed the cryptid. Use of a Name Authority is recommended. The name should be in natural order, if possible. For unknown observers, use the value *unknown*
+**Data values:**  The names, appellations, or other identifiers assigned to an individual, group of people, firm or other corporate body, or other entity that observed the cryptid. Use of a Name Authority is recommended. The name should be in natural order, if possible.  If there is no known creator, make a reference to the presumed culture or nationality of the unknown creator (e.g., use “Unknown Spanish woman” or “Unknown man” before "Unknown")
+
 
 **Recommended values for *type*:** The acceptable values are *individual* and *group*
 
-## Sub-Element: cryptidSeen
+**Recommended values for *groupMembership*:** If an individual is listed as part of a group, denote the name of the group with this attribute. For example, *Campus Life youth group*.
+
+## Sub-Element: [cryptidSeen](cryptid.md)
 
 **Element tag:** `<cs:cryptidSeen>`
 
@@ -25,7 +28,37 @@
 
 **Repeatable, Required**
 
-**Data values:** [cryptid object](cryptid.md)
+**Data values:** [cryptid](cryptid.md)
+
+
+## Sub-element: [sightingDate](date.md)
+**Element tag:** `<cs:sightingDate>`
+
+**Description:** The date on which a sighting occurred. If the same cryptid was seen over multiple days, multiple sighting objects should be used to describe these discrete sightings.
+
+**Required** 
+
+**Data values:** [sightingDate](sightingDate.md)
+
+
+## Sub-element: [sightingTime](time.md)
+**Element tag:** `<cs:sightingTime>`
+
+**Description:** A time or set of times describing when a single sighting occurred.
+
+**Repeatable, Required** 
+
+**Data values:** [sightingTime](sightingTime.md)
+
+
+## Sub-element: [sightingLocation](location.md)
+**Element tag:** `<cs:sightingLocation>`
+
+**Description:** The place that the cryptid was seen.
+
+**Repeatable, Required** 
+
+**Data values:** [sightingLocation](sightingLocation.md)
 
 
 ## Sub-Element: descriptionOfAccount
@@ -36,16 +69,6 @@
 
 **Non-repeatable, Optional**
 
-**Data values:** May include quotes or paraphrased description, as consistent with the parent account of the sighting
-
-## Sub-Element: mediaSource
-
-**Element tag:** `<cs:mediaSource>`
-
-**Description:** An object describing a media accounting of the sighting, as in a newspaper article or book.
-
-**Repeatable, Optional**
-
-**Data values:** [media object](media.md)
+**Data values:** A description of what happened, according to this consistent telling of the sighting, including any details that distinguish this account from others. May include quotes or paraphrased description of the event.
 
 
