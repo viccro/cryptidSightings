@@ -1,98 +1,67 @@
 ##Element: location
-**Element tag** <cs:location>
-**Description** An object describing a geographic location
-**Non-repeatable, required**
-//Not quite sure if this is correct//
 
-##Sub-Element: geoCoordinates
-**Element tag** <cs:geoCoordinates>
-**Type** type=xs:coordinates
+**Element tag** `<cs:location>`
+
+**Description** An object describing a geographic location. 
+
+##Sub-element: coordinates
+
+**Element tag** `<cs:coordinates>`
+
 **Description** An object describing a geographic location using the Geographic coordinate system
+
 **Optional**
+
+**Data values:** [geoCoordinates](geoCoordinates.md)
+
 
 ##Sub-Element: continent
+
 **Element tag** <cs:continent>
-**Description** An object describing the continent
+
+**Description** The two letter code describing the continent of the location.
+
+**Required**
+
+**Data values:** One of *AF, NA, OC, AN, AS, EU,* or *SA*.
+
+
+##Sub-Element: [geoCoordinates](coordinates.md)
+
+**Element tag** `<cs:geoCoordinates>`
+
+**Description** The geospatial coordinates of the location
+
 **Optional**
 
-##Sub-Element: postalAddress
-**Element tag** <cs:postalAddress>
-**Type** type=xs:postalAddress
-**Description** An object describing a geographic location using postal code standards
+**Data values:** [geoCoordinates](coordinates.md)
+
+##Sub-Element: [postalAddress](postalAddress.md)
+
+**Element tag** `<cs:postalAddress>`
+
+**Description** The location as specified by mailing address components. Complete as many fields as possible, even if the location is not at a specified street address location.
+
 **Optional**
+
+**Data values:** [postalAddress](postalAddress.md)
+
+##Sub-Element: unknownLocation
+
+**Element tag** `<cs:unknownLocation>`
+
+**Type:** `xs:boolean`
+
+**Description** Only use `True`. Rather than set this field to `False` for a known location, set the other location fields with more details.
+
+**Optional**
+
 
 ##Sub-Element: locationDescription
-**Element tag** <cs:locationDescription>
-**Description** //Unknown?//
-**Optional**
 
-##Element: coordinates
-**Element tag** <cs:coordinates>
-**Description** An object describing a geographic location using the Geographic coordinate system
+**Element tag** `<cs:locationDescription>`
 
-**Optional**
+**Description** A free text description of the location, prioritizing any details not described in other schema fields. 
 
-
-##Sub-Element: longitude
-
-**Element tag** <cs:longitude>
-
-**Type** type=xs:decimal
-
-**Description** The longitude of a location. For example -122.08585
-
-**Optional – but if one, then the other**	
-
-
-##Sub-Element: latitude
-
-**Element tag** <cs:latitude>
-
-**Type** type=xs:decimal
-
-**Description** The latitude of a location. For example 37.42242
-
-**Optional – but if one, then the other**
-
-
-##Element: postalAddress
-
-**Element tag** <cs:postalAddress>
-
-**Description** An object describing a geographic location using postal code standards
-
-**Optional**
-
-
-##Sub-Element: addressCountry
-**Element tag** <cs:addressCountry>
-**Description** The country, using the two-letter ISO 3166-1 alpha-2 country code
- 
-**Optional**
- 
- 
-##Sub-Element: addressLocality
- 
-**Element tag** <cs:addressLocality>
- 
-**Description** The locality in which the street address is, and which is in the region. For example, Boston
- 
-**Optional**
-
-
-##Sub-Element: addressRegion
-**Element tag** <cs:addressRegion>
-**Description** The region in which the locality is, and which is in the country. For example, Massachusetts or another appropriate first-level Administrative division
-
-**Optional**
-
-##Sub-Element: postalCode
-**Element tag** <cs:postalCode>
-**Description** The postal code. For example, 02115
-**Optional**
-
-##Sub-Element: streetAddress
-**Element tag** <cs:streetAddress>
-**Description** The street address. For example, 300 Fenway
 **Optional**
 

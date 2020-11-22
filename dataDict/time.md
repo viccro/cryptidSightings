@@ -1,25 +1,27 @@
 ##Element: time
+
 **Element tag** <cs:time>
-**Description** An object describing an exact or approximate time or range of times
 
-**Optional //I think//**
+**Description** An object describing an exact or approximate time. This type allows one and only one of exactTime, approximateTime, or unknownTime.
 
-##Sub-Element: exactTime
-**Element tag** <cs:exactTime>
-**Type** type=xs:time
-**Description** Use if an exact time is known for the sighting
+##Sub-Element: [timeDetails](timeDetails.md)
 
-**Required, Non-Repeatable**
+**Element tag** `<cs:timeDetails>`
+
+**Description** The time a notable event took place during the sighting
+
+**Required**
+
+**Data values:** [timeDetails](timeDetails.md)
 
 
-##Sub-Element: approximateTime
+##Sub-Element: timeType
 
-**Element tag** <cs:approximateTime>
+**Element tag** `<cs:timeType>`
 
-**Type** type=xs:string
+**Description** A description of the time noted, 
 
-**Description** Use if a range of times are known, or with the value 'unknown' if there is no way to narrow it down
+**Optional**
 
-**Required, Non-repeatable**
-
+**Data values:** Possible values include "cryptid first seen", "cryptid submerged", or "cryptid no longer visible"
 
