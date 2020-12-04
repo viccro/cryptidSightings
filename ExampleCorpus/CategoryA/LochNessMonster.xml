@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sighting xmlns="cryptidSighting"
+<cryptidMedia xmlns="cryptidSighting"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="cryptidSighting file:/C:/Users/tishf/OneDrive/Documents/Graduate%20School%20Papers/LIS%20445%20Fall%202020/cryptid-sightings-0.3.xsd">
+    xsi:schemaLocation="cryptidSighting https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-0.4.xsd">
+    <mediaDetails>
+        <mediaIdentifier>https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+        <mediaName>Loch Ness monster</mediaName>
+        <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
+        <mediaAffiliation>Britannica.com</mediaAffiliation>
+        <mediaPublicationDate>
+            <exactDate>2020-05-04</exactDate>
+        </mediaPublicationDate>
+        <mediaDimensions>512 words</mediaDimensions>
+        <mediaDescription>A history of sightings of the Loch Ness monster, including photographs, details of accounts, as well as debunking information.</mediaDescription>
+        <mediaLanguage>Original</mediaLanguage>
+    </mediaDetails>
     <accountOfSighting>
         <observer>Wilson, Robert Kenneth</observer>
         <cryptidSeen>
@@ -9,73 +21,67 @@
             <cryptidAlternativeName>Nessie</cryptidAlternativeName>
             <cryptidDescription>The creature has been compared to a plesiosaur, a prehistoric dinosaur. It has been described as being an enormous dragon-like creature. It is estimated to be 20 feet long.</cryptidDescription>
         </cryptidSeen>
+        <sightingDate>
+            <approximateDate>1934</approximateDate>
+        </sightingDate>
+        <sightingTime>
+            <timeDetails>
+                <unknownTime>true</unknownTime>
+            </timeDetails>
+            <timeType></timeType>
+        </sightingTime>
+        <sightingLocation>
+            <continent xmlns:ns1="cryptidSighting" ns1:termSource="ISO">EU</continent>
+            <geoCoordinates>
+                <longitude>57.3229</longitude>
+                <latitude>4.4244</latitude>
+            </geoCoordinates>
+            <postalAddress>
+                <addressCountry xmlns:ns1="cryptidSighting" ns1:termSource="ISO" ns1:termSourceID="826">GB</addressCountry>
+                <addressRegion>Scotland</addressRegion>
+                <addressLocality></addressLocality>
+                <postalCode></postalCode>
+                <streetAddress></streetAddress>
+            </postalAddress>
+            <unknownLocation>false</unknownLocation>
+            <locationDescription>Loch Ness, Scotland, is a freshwater loch that is located in the Scottish Highlands.</locationDescription>
+        </sightingLocation>
         <descriptionOfAccount>Robert Kenneth Wilson went to Loch Ness, Scotland in 1934 determined to gather evidence that the Loch Ness Monster existed. He saw a creature with a long neck and round head and managed to capture a photograph. This photograph is the most well-known and is known as the Surgeon's Photograph. It was published in the Daily Mail and sparked international interest.</descriptionOfAccount>
-        <mediaSource>
-            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
-            <mediaName>Loch Ness monster</mediaName>
-            <mediaIdentifier>https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
-            <mediaAffiliation>Britannica.com</mediaAffiliation>
-            <mediaPublicationDate>
-                <exactDate>2020-05-04</exactDate>
-            </mediaPublicationDate>
-            <mediaDimensions>512 words</mediaDimensions>
-            <mediaDescription>More sightings with their own type of evidence are listed in this article. Robert Kenneth Wilson's photograph is also included.</mediaDescription>
-            <mediaLanguage>Original</mediaLanguage>
-        </mediaSource>
     </accountOfSighting>
-    <sightingDate>
-        <approximateDate>1934</approximateDate>
-    </sightingDate>
-    <sightingTime>
-        <approximateTime>Unknown</approximateTime>
-    </sightingTime>
-    <sightingLocation>
-        <geoCoordinates>
-            <longitude>57.3229</longitude>
-            <latitude>4.4244</latitude>
-        </geoCoordinates>
-        <continent>Europe</continent>
-        <postalAddress>
-            <addressCountry xmlns:ns1="cryptidSighting" ns1:termSource="ISO" ns1:termSourceID="826">GB</addressCountry>
-            <addressLocality></addressLocality>
-            <addressRegion>Scotland</addressRegion>
-            <postalCode></postalCode>
-            <streetAddress></streetAddress>
-        </postalAddress>
-        <locationDescription>Loch Ness, Scotland, is a freshwater loch that is located in the Scottish Highlands.</locationDescription>
-    </sightingLocation>
-    <evidenceAffirmative>
-        <evidenceAgent>Robert Kenneth Wilson</evidenceAgent>
-        <evidenceType>The Surgeon's Photograph</evidenceType>
-        <mediaEvidence>
-            <mediaType>Photograph</mediaType>
-            <mediaName>The Surgeon's Photograph</mediaName>
-            <mediaIdentifier>https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
-            <mediaAffiliation>Britannica.com</mediaAffiliation>
-            <mediaPublicationDate>
-                <exactDate>2020-05-04</exactDate>
-            </mediaPublicationDate>
-            <mediaDimensions>662px; 450px</mediaDimensions>
-            <mediaDescription>The digitized version of the photograph orignally taken in 1934 by Robert Kenneth Wilson</mediaDescription>
-            <mediaLanguage></mediaLanguage>
-        </mediaEvidence>
-        <evidenceDescription>The Surgeon's Photograph of what Robert Kenneth Wilson saw in 1934</evidenceDescription>
-    </evidenceAffirmative>
-    <evidenceNegative>
-        <evidenceAgent>Marmaduke Wetherell</evidenceAgent>
-        <evidenceType></evidenceType> <!-- Not sure what to put here as the photograph Wilson took was proven to be a hoax by Wetherell, and the photograph is a children's toy taped to a toy submarine -->
-        <mediaEvidence>
-            <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
-            <mediaName>Loch Ness monster</mediaName>
-            <mediaIdentifier>https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
-            <mediaAffiliation>Britannica.com</mediaAffiliation>
-            <mediaPublicationDate>
-                <exactDate>2020-05-04</exactDate>
-            </mediaPublicationDate>
-            <mediaDimensions>512 words</mediaDimensions>
-            <mediaDescription>Part of this article also explains that in 1994 it was discovered that Marmaduke Wetherell had created a monster out of a children's toy submarine and a plastic and wooden head attached.</mediaDescription>
-            <mediaLanguage>Original</mediaLanguage>
-        </mediaEvidence>
-        <evidenceDescription>The creature captured in the photograph is a creation by Marmaduke Wetherell, created by combining different children's toys.</evidenceDescription>
-    </evidenceNegative>
-</sighting>
+    <mentionedEvidence>
+        <evidenceAffirmative>
+            <evidenceAgent>Wilson, Robert Kenneth</evidenceAgent>
+            <evidenceType>Photograph</evidenceType>
+            <mediaEvidence>
+                <mediaIdentifier>https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+                <mediaName>The Surgeon's photograph</mediaName>
+                <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
+                <mediaAffiliation>Britannica.com</mediaAffiliation>
+                <mediaPublicationDate>
+                    <exactDate>2020-05-04</exactDate>
+                </mediaPublicationDate>
+                <mediaDimensions>662px; 450px</mediaDimensions>
+                <mediaDescription>The digitized version of the photograph orignally taken in 1934 by Robert Kenneth Wilson</mediaDescription>
+                <mediaLanguage>Original</mediaLanguage>
+            </mediaEvidence>
+            <evidenceDescription>The Surgeon's Photograph of what Robert Kenneth Wilson saw in 1934</evidenceDescription>
+        </evidenceAffirmative>
+        <evidenceNegative>
+            <evidenceAgent>Wetherell, Marmaduke</evidenceAgent>
+            <evidenceType>Word of Mouth</evidenceType>
+            <mediaEvidence>
+                <mediaIdentifier>https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+                <mediaName>Loch Ness monster</mediaName>
+                <mediaType xmlns:ns1="cryptidSighting" ns1:termSource="LOC" ns1:termSourceID="sh 85008151">Article</mediaType>
+                <mediaAffiliation>Britannica.com</mediaAffiliation>
+                <mediaPublicationDate>
+                    <exactDate>2020-05-04</exactDate>
+                </mediaPublicationDate>
+                <mediaDimensions>512 words</mediaDimensions>
+                <mediaDescription>Part of this article also explains that in 1994 it was discovered that Marmaduke Wetherell had created a monster out of a children's toy submarine and a plastic and wooden head attached.</mediaDescription>
+                <mediaLanguage>Original</mediaLanguage>
+            </mediaEvidence>
+            <evidenceDescription>The creature captured in the photograph is a creation by Marmaduke Wetherell, created by combining different children's toys.</evidenceDescription>
+        </evidenceNegative>
+    </mentionedEvidence>
+</cryptidMedia>
