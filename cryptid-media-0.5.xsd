@@ -42,6 +42,9 @@
             xx            * rearranged objects to be in the order that they're used
             xx            * restructured time to allow for description of what the timestamp is describing
             xx
+            xx      v0.5: Final revisions before v1.0 
+            xx            * made unknownLocation optional
+            xx
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
     </xs:annotation>
@@ -428,7 +431,7 @@
                     <xs:documentation>The location as specified by mailing address components.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="unknownLocation" type="xs:boolean">
+            <xs:element name="unknownLocation" type="xs:boolean" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>If no details at all are given about the location, set unknown to True.</xs:documentation>
                 </xs:annotation>
