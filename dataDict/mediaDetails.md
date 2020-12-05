@@ -1,10 +1,10 @@
 # Element: mediaDetails
 
-**Description:** Details about a media object
+**Description:** Root element. An object describing a media accounting of the sighting, such as those published in a newspaper article, book, or blog post
  
 ## Sub-element: mediaIdentifier
 
-**Description:** A single URL, ISBN, or other identifier for the media
+**Description:** A single URL, URI, ISBN, or other identifier for the media.
 
 **Required**
 
@@ -18,7 +18,7 @@
 
 ## Sub-element: mediaName
 
-**Description:** A name identifying the piece of media. 
+**Description:** A name identifying the piece of media, such as a fixed title 
 
 **Required**
 
