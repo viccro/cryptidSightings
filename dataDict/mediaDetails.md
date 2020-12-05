@@ -12,9 +12,9 @@
 
 **Element tag:** `<cs:mediaIdentifier>`
 
-**Attributes:** *type*
-
 **Data values:**  Uncontrolled. Free text description. Recommended use of permalinks for URL/URI addresses.
+
+**Attributes:** *type*
 
 **Recommended data values for *type*:** The type of identifier listed: URI, URL, ISBN, etc. AAT term preferred. 
 
