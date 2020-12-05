@@ -1,6 +1,6 @@
 # Element: cryptidMedia
 
-**Description:** Root element. An object describing a media accounting of the sighting, such as those published in a newspaper article, book, or blog post.
+**Description:** Root element. An media object relating an account of a cryptid sighting, such as those published in a newspaper article, book, or blog post
 
 **Element tag:** `<cs:mediaEvidence>`
 
