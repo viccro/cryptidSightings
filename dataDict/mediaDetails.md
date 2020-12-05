@@ -1,6 +1,6 @@
 # Element: mediaDetails
 
-**Description:** Root element. An object describing a media accounting of the sighting, such as those published in a newspaper article, book, or blog post
+**Description:** Details about the media object that describes a cryptid sighting
  
 ## Sub-element: mediaIdentifier
 
