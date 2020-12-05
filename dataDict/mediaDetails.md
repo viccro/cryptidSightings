@@ -1,6 +1,6 @@
 # Element: mediaDetails
 
-**Description:** Details about the media object that describes a cryptid sighting
+**Description:** Administrative and descriptive details about the media object that describes a cryptid sighting
  
 ## Sub-element: mediaIdentifier
 
