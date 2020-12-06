@@ -229,11 +229,7 @@
                     <xs:documentation>Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
-                    <xs:simpleContent>
-                        <xs:extension base="xs:string">
-                            <xs:attribute name="newAttribute" use="prohibited"/>
-                        </xs:extension>
-                    </xs:simpleContent>
+                    <xs:attribute ref="lang"></xs:attribute>
                 </xs:complexType>
             </xs:element>
 
@@ -322,6 +318,9 @@
                 <xs:annotation>
                     <xs:documentation>A description of what happened, according to this consistent telling of the sighting, including any details that distinguish this account from others. May include quotes or paraphrased description of the event.</xs:documentation>
                 </xs:annotation>
+		<xs:complexType>
+                    <xs:attribute ref="lang"></xs:attribute>
+                </xs:complexType>
             </xs:element>
 
         </xs:sequence>
@@ -384,6 +383,9 @@
                 <xs:annotation>
                     <xs:documentation>A description of the cryptid, as reported in this account, as told by the listed observer(s). This may include dimensions, colors, mode of locomotion, and other biological details.</xs:documentation>
                 </xs:annotation>
+		<xs:complexType>
+                    <xs:attribute ref="lang"></xs:attribute>
+                </xs:complexType>
             </xs:element>
 
         </xs:sequence>
@@ -506,6 +508,9 @@
                 <xs:annotation>
                     <xs:documentation>A free text description of the location, prioritizing any details not described in other schema fields. </xs:documentation>
                 </xs:annotation>
+		<xs:complexType>
+                    <xs:attribute ref="lang"></xs:attribute>
+                </xs:complexType>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
@@ -596,6 +601,9 @@
                 <xs:annotation>
                     <xs:documentation>Used to describe the role and content of a piece of evidence</xs:documentation>
                 </xs:annotation>
+		<xs:complexType>
+                    <xs:attribute ref="lang"></xs:attribute>
+                </xs:complexType>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
