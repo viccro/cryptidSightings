@@ -44,7 +44,11 @@
             xx
             xx      v0.5: Final revisions before v1.0 
             xx            * made unknownLocation optional
-	    xx		  * added attribute "supplied"
+		    xx			  * added attribute "supplied"
+			xx			  * mediaName is now required and repeatable
+			xx			  * mediaName now has limited attributes
+		    xx			  * mediaType is now required and repeatable
+			xx			  * mediaAffiliation now has limited attributes
             xx
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
@@ -151,9 +155,9 @@
                 </xs:complexType>
             </xs:element>
             
-            <xs:element name="mediaType" minOccurs="1">
+            <xs:element name="mediaType" minOccurs="1" maxOccurs="unbounded">
                 <xs:annotation>
-                    <xs:documentation>Required. Use to describe the media format type: digital photograph, motion picture film, article, book, etc. Recommended data value term source from Getty AAT.</xs:documentation>
+                    <xs:documentation>Required. Repeatable. Use to describe the media format type: digital photograph, motion picture film, article, book, etc. If a media object contains more than one format type, mediaType may be repeated. Recommended data value term source from Getty AAT. If the type of media cannot be determined, enter the value "undefined".</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
