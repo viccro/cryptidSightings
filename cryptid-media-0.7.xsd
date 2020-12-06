@@ -45,22 +45,24 @@
             xx
             xx      v0.5: Editing between the xsd and data dictionary to add detail and make them match 
             xx            * made unknownLocation optional
-            xx		      * added attribute "supplied"
-            xx	          * added attribute "lang"
+            xx		  * added attribute "supplied" fixed value "yes" to mediaName element ONLY
+            xx	          * added attribute "lang" to global attributes		
+            xx	          * linked attribute "lang" to mediaLanguage and described CV of LOC language abbreviations list
             xx	          * mediaName is now required and repeatable
-            xx		      * mediaName now has limited attributes
+            xx		  * mediaName now has limited attributes		
             xx	    	  * mediaType is now required and repeatable
-            xx		      * mediaAffiliation now has limited attributes
-            xx		      * Stephanie made an error on a line that made everything stop pulling correctly. created a version 0.6 from her desktop file, appears to be fixed.
+            xx		  * mediaType now has limited attributes		
+            xx		  * mediaAffiliation now has limited attributes
+            xx		  * Stephanie made an error on a line 85, Column 23 that made everything stop pulling correctly from the raw GitHub .xsd file into an .xml file. created a version 0.6 from her desktop file, appears to be fixed.
             xx
             xx      v0.6: Final revisions before v1.0 
-            xx            * added new element evidenceClassification
-            xx		      * prohibited attributes in mediaDescription
-            xx	          * 
-            xx	          * 
-            xx		      * 
+            xx            * added new element evidenceClassification with restricted attribute values
+            xx		  * prohibited attributes in mediaDescription
+            xx	          * prohibited attributes in evidenceDescription
+            xx	          * created attribute group termSourcePair to more easily link termSource and termSourceID to elements at the same time
+            xx		  * Stephanie added a V0.7 to GitHub because her changes were'nt being recognized in an .xml when referenceing the in the V0.6 raw GitHub .xsd
             xx	    	  * 
-            xx		      * 
+            xx		  * 
             xx            * 
             xx
             xx      v0.7: Last minute syncing
