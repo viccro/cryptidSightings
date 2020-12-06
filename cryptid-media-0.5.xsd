@@ -108,7 +108,7 @@
     
     <xs:complexType name="mediaDetails">
         <xs:annotation>
-            <xs:documentation>Details about a media object</xs:documentation>
+            <xs:documentation>Administrative and descriptive details about the media object. When the media object is a child of mentionedEvidence, the media object may or may not reference a cryptid sighting.</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element name="mediaIdentifier" minOccurs="0">
@@ -120,7 +120,7 @@
                         <xs:extension base="xs:string">
                             <xs:attribute ref="type">
                                 <xs:annotation>
-                                    <xs:documentation>The type of identifier listed: URI, URL, ISBN, etc.</xs:documentation>
+                                    <xs:documentation>The type of identifier listed: URI, URL, ISBN, etc. Getty AAT term preferred.</xs:documentation>
                                 </xs:annotation>
                             </xs:attribute> 
                         </xs:extension>
@@ -128,10 +128,27 @@
                 </xs:complexType>
             </xs:element>
             
-            <xs:element name="mediaName">
+            <xs:element name="mediaName" minOccurs="1" maxOccurs="unbounded">
                 <xs:annotation>
-                    <xs:documentation>A name identifying the piece of media. If none is known, use a unique phrase that identifies it by type, contents, and/or creators</xs:documentation>
+                    <xs:documentation>Required. A name identifying the piece of media, such as a fixed title. If none is known, create a unique phrase to name the media object by type, contents, and/or creators and define the attribute "supplied" as "yes."</xs:documentation>
                 </xs:annotation>
+                <xs:complexType>
+                    <xs:attribute ref="supplied">
+                        <xs:annotation>
+                            <xs:documentation>If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute.</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                    <xs:attribute ref="termSource">
+                        <xs:annotation>
+                            <xs:documentation>Reference the source of the name used, such as LOC for Library of Congress.</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                    <xs:attribute ref="termSourceID">
+                        <xs:annotation>
+                            <xs:documentation>Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                </xs:complexType>
             </xs:element>
             
             <xs:element name="mediaType" minOccurs="0">
