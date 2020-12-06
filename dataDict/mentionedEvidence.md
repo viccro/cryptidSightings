@@ -1,14 +1,20 @@
 # Element: mentionedEvidence
 
-**Description:** Used to list evidence mentioned in the media source, from media recordings to plaster casts, body parts or costume pieces.
+**Description:** Wrap used to contain affirmative evidence and or negative evidence mentioned in the media source, from media recordings to plaster casts, body parts or costume pieces. If no additional evidence is present, this element may be omitted.
+
+**Optional**
+
+**Non-repeatable**
 
 **Element tag:** `<cs:mentionedEvidence>`
 
 ## Sub-element: [evidenceAffirmative](evidence.md)
 
-**Description:** Evidence provided to prove the claims of the observers.
+**Description:** Evidence provided to prove the claims of the observers. If multiple distinct pieces of evidence are present, repeat this element.
 
-**Repeatable, Optional**
+**Optional**
+
+**Repeatable**
 
 **Element tag:** `<cs:evidenceAffirmative>`
 
@@ -17,9 +23,11 @@
 
 ## Sub-element: [evidenceNegative](evidence.md)
 
-**Description:** Evidence provided to discredit the claims of the observers.
+**Description:** Evidence provided to discredit the claims of the observers. If multiple distinct pieces of evidence are present, repeat this element.
 
-**Repeatable, Optional**
+**Optional**
+
+**Repeatable**
 
 **Element tag:** `<cs:evidenceNegative>`
 
