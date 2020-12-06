@@ -153,7 +153,7 @@
             
             <xs:element name="mediaType" minOccurs="0">
                 <xs:annotation>
-                    <xs:documentation>Use to describe the media format type: digital photograph, motion picture film, article, book, etc. Controlled data value term source from Getty AAT.</xs:documentation>
+                    <xs:documentation>Use to describe the media format type: digital photograph, motion picture film, article, book, etc. Recommended data value term source from Getty AAT.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
