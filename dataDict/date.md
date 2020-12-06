@@ -34,7 +34,7 @@
 
 **Type** `xs:boolean`
 
-**Description** If no details at all are given about the date, set unknownDate to True. This is strongly discouraged, but preferred to leaving the date field empty.
+**Description** If no details at all are given about the date, set unknownDate to "true". This is strongly discouraged, but preferred to leaving the date field empty. Omit this element if the date is available.
 
 **Optional**
 
