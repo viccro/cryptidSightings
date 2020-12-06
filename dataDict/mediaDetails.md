@@ -75,7 +75,7 @@
 
 **Recommended values for *termSource*:** Reference the source of the name used, such as LOC for Library of Congress.
 
-**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.
+**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If not present in a CV, use a URL/URI if possible such as www.joespapers.com for an article listed on Joe's Papers.
 
  
 ## Sub-element: [mediaPublicationDate](date.md)
