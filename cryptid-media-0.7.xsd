@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- version 0.4: 2020-11-22: cryptid-sightings-0.4.xsd -->
+<!-- version 0.7: 2020-12-06: cryptid-sightings-0.7.xsd -->
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="cryptidSighting"
-    targetNamespace="cryptidSighting" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="cryptidMedia"
+    targetNamespace="cryptidMedia" elementFormDefault="qualified">
     <xs:annotation>
         <xs:documentation>
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -52,7 +52,7 @@
             xx	    	  * mediaType is now required and repeatable
             xx		      * mediaAffiliation now has limited attributes
             xx		      * Stephanie made an error on a line that made everything stop pulling correctly. created a version 0.6 from her desktop file, appears to be fixed.
-            
+            xx
             xx      v0.6: Final revisions before v1.0 
             xx            * added new element evidenceClassification
             xx		      * prohibited attributes in mediaDescription
