@@ -43,11 +43,26 @@
             xx            * rearranged objects to be in the order that they're used
             xx            * restructured time to allow for description of what the timestamp is describing
             xx
-            xx      v0.5: Final revisions before v1.0 
+            xx      v0.5: Editing between the xsd and data dictionary to add detail and make them match 
             xx            * made unknownLocation optional
-            xx
-            xx
-            xx
+            xx		  * added attribute "supplied"
+	    xx	          * added attribute "lang"
+	    xx	          * mediaName is now required and repeatable
+	    xx		  * mediaName now has limited attributes
+	    xx	    	  * mediaType is now required and repeatable
+	    xx		  * mediaAffiliation now has limited attributes
+	    xx		  * Stephanie made an error on a line that made everything stop pulling correctly. created a version 0.6 from her desktop file, appears to be fixed.
+		
+	    xx      v0.6: Final revisions before v1.0 
+            xx            * added new element evidenceClassification
+            xx		  * prohibited attributes in mediaDescription
+	    xx	          * 
+	    xx	          * 
+	    xx		  * 
+	    xx	    	  * 
+	    xx		  * 
+	    xx            * 
+		
 		
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
