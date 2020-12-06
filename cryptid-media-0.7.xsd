@@ -488,7 +488,7 @@
             </xs:element>
             <xs:element name="unknownTime" type="xs:boolean">
                 <xs:annotation>
-                    <xs:documentation>If no details at all are given about the time, set unknownTime to True.</xs:documentation>
+                    <xs:documentation>If no details at all are given about the time, set unknownTime to True. This is strongly discouraged, but preferred to leaving the time field empty. Omit this element if the time is available.</xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:choice>
@@ -534,7 +534,7 @@
             </xs:element>
             <xs:element name="unknownLocation" type="xs:boolean" minOccurs="0">
                 <xs:annotation>
-                    <xs:documentation>If no details at all are given about the location, set unknown to True.</xs:documentation>
+                    <xs:documentation>If no details at all are given about the location, set unknownLocation to True. This is strongly discouraged, but preferred to leaving location fields empty. Omit this element if the location is available.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="locationDescription" minOccurs="0">
