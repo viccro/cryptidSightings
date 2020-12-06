@@ -1,6 +1,6 @@
 # Element: mediaDetails
 
-**Description:** Administrative and descriptive details about the media object that describes a cryptid sighting
+**Description:** Administrative and descriptive details about the media object. When the media object is a child of mentionedEvidence, the media object may or may not reference a cryptid sighting.
  
 ## Sub-element: mediaIdentifier
 
