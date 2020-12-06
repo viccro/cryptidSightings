@@ -82,8 +82,7 @@
                 
                 <xs:element name="accountOfSighting" type="account" minOccurs="1" maxOccurs="unbounded">
                     <xs:annotation>
-                        <xs:documentation>A consistent account of the sighting as described in this media source. Multiple observers may each disagree on details, resulting in multiple accounts per piece of media. Observers may have differing accounts of their own sighting event, resulting in multiple accounts per observer, per media object.>
-			</xs:documentation>
+                        <xs:documentation>A consistent account of the sighting as described in this media source. Multiple observers may each disagree on details, resulting in multiple accounts per piece of media. Observers may have differing accounts of their own sighting event, resulting in multiple accounts per observer, per media object.</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 
