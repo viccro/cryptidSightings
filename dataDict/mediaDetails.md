@@ -80,7 +80,7 @@
  
 ## Sub-element: [mediaPublicationDate](date.md)
 
-**Description:** The publication date of the media, such as the copyright date of a book, or the date a blog was posted
+**Description:** The publication date of the media, such as the copyright date of a book, or the date a blog was posted 
 
 **Optional**
 
@@ -89,6 +89,8 @@
 **Element tag:** `<cs:mediaPublicationDate>`
 
 **Element type:** [Date](date.md)
+
+**Data values:** Refer to **Sub-element: Date** for use description of exactDate, approximateDate, and dateUnknown options
  
 ## Sub-element: mediaDimensions
 
