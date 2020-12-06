@@ -63,7 +63,7 @@
     -->
     <xs:element name="cryptidMedia">
         <xs:annotation>
-            <xs:documentation>An object describing a media accounting of the sighting, as in a newspaper article or book</xs:documentation>
+            <xs:documentation>Root element. A media object relating the account(s) of a cryptid sighting, such as those published in a newspaper article, book, or blog post</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
