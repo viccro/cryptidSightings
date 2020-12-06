@@ -8,7 +8,9 @@
 
 **Description:** A person or organization who stands behind the piece of evidence
 
-**Repeatable, Optional**
+**Optional**
+
+**Repeatable**
 
 **Data values:**  Controlled. Recommended: Library of Congress Name Authority File
  
@@ -19,7 +21,21 @@
 
 **Description:** The type of thing that comprises the evidence, taken from the Local Evidence Dictionary or standard terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports controlled vocabulary
 
-**Repeatable, Optional**
+**Optional**
+
+**Non-repeatable** 
+
+**Data values:**  Controlled. Recommended: Local Evidence Dictionary or terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports Terms: ANSI/ASB Standard 019, Wildlife Forensics General Standards, First Edition, 2019 , ANSI/ASB Standard 028, Wildlife Forensics Morphology Standards, First Edition, 2019 , ANSI/ASB Standard 048, Wildlife Forensic DNA Standard Procedures, First Edition, 2019.
+
+## Sub-element: evidenceClassification
+
+**Element tag:** `<cs:evidenceClassification>`
+
+**Description:** The legal category corresponding to the evidenceType presented. Limited to physical, testimonial, demonstrative, and documentary
+
+**Optional**
+
+**Non-repeatable** 
 
 **Data values:**  Controlled. Recommended: Local Evidence Dictionary or terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports Terms: ANSI/ASB Standard 019, Wildlife Forensics General Standards, First Edition, 2019 , ANSI/ASB Standard 028, Wildlife Forensics Morphology Standards, First Edition, 2019 , ANSI/ASB Standard 048, Wildlife Forensic DNA Standard Procedures, First Edition, 2019.
 
@@ -32,6 +48,8 @@
 
 **Optional**
 
+**Non-repeatable** 
+
 **Data values:** [mediaDetails](mediaDetails.md)
 
 
@@ -39,7 +57,9 @@
 
 **Description:** Used to describe the role and content of a piece of evidence.
 
-**Repeatable, Optional**
+**Optional**
+
+**Non-repeatable** 
 
 **Element tag:** `<cs:evidenceDescription>`
 
