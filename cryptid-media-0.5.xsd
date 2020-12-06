@@ -223,7 +223,7 @@
             
             <xs:element name="mediaDescription">
                 <xs:annotation>
-                    <xs:documentation>Free text, used to describe the role and content of a piece of media.</xs:documentation>
+                    <xs:documentation>Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             
