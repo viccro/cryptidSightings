@@ -614,6 +614,23 @@
                     <!-- TODO - cv -->
                 </xs:annotation>
             </xs:element>
+	    <xs:element name="evidenceClassification">
+                <xs:annotation>
+                    <xs:documentation>The legal category corresponding to the evidenceType presented. Limited to physical, testimonial, demonstrative, and documentary.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                    <xs:attribute name="type" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="physical"/>
+                                <xs:enumeration value="testimonial"/>
+                                <xs:enumeration value="demonstrative"/>
+                                <xs:enumeration value="documentary"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="mediaEvidence" type="mediaDetails" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation>Details about a media object that serves as evidence for or against a cryptid sighting. If the media itself gives details about a cryptid sighting, a whole cryptidMedia object should be created, and only the mediaIdentifier of that object should be included. If the object is an image or footage, which doesn't contain enough information to create a full cryptidMedia entry, fill out this details block in full.</xs:documentation>
