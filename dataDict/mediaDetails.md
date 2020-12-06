@@ -84,6 +84,8 @@
 
 **Optional**
 
+**Non-repeatable**
+
 **Element tag:** `<cs:mediaPublicationDate>`
 
 **Element type:** [Date](date.md)
