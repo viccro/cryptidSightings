@@ -225,6 +225,13 @@
                 <xs:annotation>
                     <xs:documentation>Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.</xs:documentation>
                 </xs:annotation>
+				<xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="newAttribute" use="prohibited"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
             </xs:element>
             
             <xs:element name="mediaLanguage" minOccurs="0" maxOccurs="unbounded">
