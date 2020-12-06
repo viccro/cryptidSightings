@@ -90,7 +90,7 @@
 
 **Element type:** [Date](date.md)
 
-**Data values:** Refer to **Sub-element: Date** for use description of exactDate, approximateDate, and unknownDate options
+**Data values:** Refer to **Element: Date** for use description of exactDate, approximateDate, and unknownDate options
  
 ## Sub-element: mediaDimensions
 
