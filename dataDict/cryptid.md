@@ -5,7 +5,7 @@
 ## Sub-element: cryptidCanonicalName
 **Element tag:** `<cs:cryptidCanonicalName>`
 
-**Description:** The name of the cryptid as standardized by an external body, such as LOC or the Encyclopaedia of Cryptozoology online.
+**Description:** The name of the cryptid as standardized by an external body, such as wikiLC, LOC, or the Encyclopaedia of Cryptozoology online.
 
 **Attributes:** *termSource, termSourceId*
 
@@ -13,11 +13,12 @@
 
 **Data values:**  Controlled. Recommended: taken from the wikipedia List of Cryptids.
 
-**Recommended values for *termSource*:** *AAT*, *wikiLC*
+**Recommended values for *termSource*:** *AAT*, *wikiLC*. *wikiLLC*, *fandomWikiLC*. See reference index for full list.
 
-**Recommended values for *termSourceID*:** AAT number, Name listed in chart from wikipedia List of Cryptids
+**Recommended values for *termSourceID*:** URL or URI linking to the termsource
 
 ## Sub-element: cryptidAlternativeName
+
 **Element tag:** `<cs:cryptidAlternativeName>`
 
 **Description:** Any alternative name used to refer to the type of creature or individual creature observed
