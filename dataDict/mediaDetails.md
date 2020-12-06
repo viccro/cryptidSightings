@@ -16,7 +16,7 @@
 
 **Attributes:** *type*
 
-**Recommended data values for *type*:** The type of identifier listed: URI, URL, ISBN, etc. AAT term preferred. 
+**Recommended data values for *type*:** The type of identifier listed: URI, URL, ISBN, etc. Getty AAT term preferred. 
 
 ## Sub-element: mediaName
 
