@@ -124,12 +124,16 @@
 
 **Description:** The main language of the piece of media
 
-**Repeatable, Optional**
+**Optional**
+
+**Repeatable** 
 
 **Element tag:** `<cs:mediaLanguage>`
 
-**Attributes:** *type*
+**Attributes:** *type*, *lang*
 
 **Data values:**  Controlled. Recommended. Language formulated according to rules in the CCO and CDWA (i.e., ISO 639-2b, RFC 3066 and other encoding schemes may be used, or another authoritative source may be used, such as Ethnologue: Languages of the World. 14th edition. Barbara F. Grimes, ed. Dallas, Texas: SIL International, 2000). If ISO or other codes are used, they must be translated into common English for end-users. 
+
+**Recommended values for *lang*:** Language codes from Library of Congress language code for MARC. 
 
 **Recommended values for *type*:** current, former, translated, local, and others as recommended in CCO and CDWA. 
