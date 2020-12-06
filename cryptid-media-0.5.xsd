@@ -44,6 +44,7 @@
             xx
             xx      v0.5: Final revisions before v1.0 
             xx            * made unknownLocation optional
+	    xx		  * added attribute "supplied"
             xx
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
