@@ -13,6 +13,12 @@
 **Repeatable**
 
 **Data values:**  Controlled. Recommended: Library of Congress Name Authority File
+
+**Attributes:** *termSource*, *termSourceID*
+
+**Recommended values for *termSource*:** A controlled vocabulary such as the Library of Congress Name Authority File. If not present in a CV, enter the type of source, such as "URL".
+
+**Recommended values for *termSourceID*:** A controlled vocabulary identification number such as the Library of Congress Name Authority File. If not present in a CV, enter a unique identifier such as a URL address.
  
 
 ## Sub-element: evidenceType
@@ -25,7 +31,11 @@
 
 **Non-repeatable** 
 
-**Data values:**  Controlled. Recommended: Local Evidence Dictionary or terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports Terms: ANSI/ASB Standard 019, Wildlife Forensics General Standards, First Edition, 2019 , ANSI/ASB Standard 028, Wildlife Forensics Morphology Standards, First Edition, 2019 , ANSI/ASB Standard 048, Wildlife Forensic DNA Standard Procedures, First Edition, 2019.
+**Data values:**  Controlled. Recommended: Local Evidence Dictionary or terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports Terms: ANSI/ASB Standard 019, Wildlife Forensics General Standards, First Edition, 2019 [http://www.asbstandardsboard.org/wp-content/uploads/2019/05/019_Std_e1.pdf]; ANSI/ASB Standard 028, Wildlife Forensics Morphology Standards, First Edition, 2019 [http://www.asbstandardsboard.org/wp-content/uploads/2019/05/028_Std_e1.pdf]; ANSI/ASB Standard 048, Wildlife Forensic DNA Standard Procedures, First Edition, 2019 [http://www.asbstandardsboard.org/wp-content/uploads/2019/05/048_Std_e1.pdf].
+
+**Attributes:** *termSource*, *termSourceID*
+
+**Recommended values for *termSource*:** See list of local acronyms. Recommended are: WFSGeneral, WFSMorphology, and WFSDNA.
 
 ## Sub-element: evidenceClassification
 
@@ -37,7 +47,9 @@
 
 **Non-repeatable** 
 
-**Data values:**  Controlled. Recommended: Local Evidence Dictionary or terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports Terms: ANSI/ASB Standard 019, Wildlife Forensics General Standards, First Edition, 2019 , ANSI/ASB Standard 028, Wildlife Forensics Morphology Standards, First Edition, 2019 , ANSI/ASB Standard 048, Wildlife Forensic DNA Standard Procedures, First Edition, 2019.
+**Data values:** Optional. Repeat the attribute value for display text.
+
+**Attributes:** Controlled. Limited to physical, testimonial, demonstrative, and documentary
 
  
 ## Sub-element: mediaEvidence
