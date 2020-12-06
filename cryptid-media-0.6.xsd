@@ -54,7 +54,6 @@
     <xs:attribute name="type" type="xs:string"/>
     <xs:attribute name="unit" type="xs:string"/>
     <xs:attribute name="groupMembership" type="xs:string"/>
-    <xs:attribute name="supplied" fixed="yes"/>
     <xs:attribute name="lang" type="xs:string"/>
 
 
@@ -138,7 +137,7 @@
                     <xs:documentation>Required. A name identifying the piece of media, such as a fixed title. If none is known, create a unique phrase to name the media object by type, contents, and/or creators and define the attribute "supplied" as "yes."</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
-                    <xs:attribute ref="supplied">
+                    <xs:attribute name="supplied" fixed="yes">
                         <xs:annotation>
                             <xs:documentation>If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute.</xs:documentation>
                         </xs:annotation>
