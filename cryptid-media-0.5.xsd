@@ -177,6 +177,16 @@
                 <xs:annotation>
                     <xs:documentation>If the media was published in a collection, newspaper, etc, list that affiliation here.</xs:documentation>
                 </xs:annotation>
+					<xs:attribute ref="termSource">
+                        <xs:annotation>
+                            <xs:documentation>Reference the source of the name used, such as LOC for Library of Congress.</xs:documentation>
+                        </xs:annotation>
+                 	</xs:attribute>
+                    <xs:attribute ref="termSourceID">
+                        <xs:annotation>
+                            <xs:documentation>Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
             </xs:element>
             
             <xs:element name="mediaPublicationDate" type="date" minOccurs="0">
