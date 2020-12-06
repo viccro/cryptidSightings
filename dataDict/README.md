@@ -105,3 +105,36 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
     * exactTime>date corrected to exactTime>time
     * rearranged objects to be in the order that they're used
     * restructured time to allow for description of what the timestamp is describing
+    
+ * v0.5 - v0.7: Changes reflect global copy edits from checking against the reality of the .xsd functions in practice, reflect decisions from discussions, and Stephanie's edit notes on her practice v0.4 xml records.
+    * Created a googleDoc table of resources we reference in the data dictionary
+    * Created the global attribute "lang" and assigned a CV of LOC
+    * Updates to to the following sections:
+       * cryptid.md
+         * update cryptidCannonicalName description, values for termSource, and termSourceID
+       * cryptidMedia.md
+         * described cryptedMedia as the root element
+       * date.md
+         * updated unknownDate description for clarity
+       * evidence.md
+         * updated sub-elements to "non-repeatable" as they are coded in the .xsd. The evidenceAffirmative and evidenceNegative wrappers are repeatable, but the evidence sub-elements within those wrappers are non-repeatable. 
+       * location.md
+       * mediaDetails
+         * updated descriptions
+         * updated descriptions as necessary
+         * updated mediaLanguage with a link to the new arrtibute "lang" 
+         * added attribute "supplied" fixed value "yes" to mediaName element ONLY
+         * mediaName is now required and repeatable
+         * mediaName now has limited attributes		
+         * mediaType is now required and repeatable
+         * mediaType now has limited attributes		
+         * mediaAffiliation now has limited attributes
+         * prohibited attributes in mediaDescription
+         * mediaDimensions calls out "word count" and "page count" as a recommended terms
+       * mentionedEvidence
+         * updated annotation descriptions
+         * added element evidenceClassification with restricted attribute values. created use description
+         * prohibited attributes in evidenceDescription
+       * timeDetails
+         * defined terms "day" and "night"
+    
