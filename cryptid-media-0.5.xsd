@@ -45,6 +45,7 @@
             xx      v0.5: Final revisions before v1.0 
             xx            * made unknownLocation optional
 		    xx			  * added attribute "supplied"
+			xx			  * added attribute "lang"
 			xx			  * mediaName is now required and repeatable
 			xx			  * mediaName now has limited attributes
 		    xx			  * mediaType is now required and repeatable
@@ -59,6 +60,7 @@
     <xs:attribute name="unit" type="xs:string"/>
     <xs:attribute name="groupMembership" type="xs:string"/>
     <xs:attribute name="supplied" fixed="yes"></xs:attribute>
+	<xs:attribute name="lang" type="xs:string"/>
     
     <!--  
 		#####################################################################################################
@@ -241,6 +243,11 @@
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
+							<xs:attribute ref="lang">
+                                <xs:annotation>
+                                    <xs:documentation>Library of Congress language code for MARC</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
                             <xs:attribute ref="type">
                                 <xs:annotation>
                                     <xs:documentation>Recommended values include *translated* and *original*.</xs:documentation>
