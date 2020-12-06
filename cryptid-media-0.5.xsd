@@ -69,19 +69,19 @@
             <xs:sequence>
                 <xs:element name="mediaDetails" type="mediaDetails" minOccurs="1" maxOccurs="1">
                     <xs:annotation>
-                        <xs:documentation>Details about this media object that describes a cryptid sighting</xs:documentation>
+                        <xs:documentation>Administrative and descriptive details about the media object that describes a cryptid sighting</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 
                 <xs:element name="accountOfSighting" type="account" minOccurs="1" maxOccurs="unbounded">
                     <xs:annotation>
-                        <xs:documentation>A consistent account of the sighting as described in this media source. Multiple observers may each disagree on details, resulting in multiple accounts per piece of media.</xs:documentation>
+                        <xs:documentation>A consistent account of the sighting as described in this media source. Multiple observers may each disagree on details, resulting in multiple accounts per piece of media. Observers may have differing accounts of their own sighting event, resulting in multiple accounts per observer, per media object.>
                     </xs:annotation>
                 </xs:element>
                 
                 <xs:element name="mentionedEvidence" minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation>Used to list evidence mentioned in the media source, from media recordings to plaster casts, body parts or costume pieces.</xs:documentation>
+                        <xs:documentation>Used to list evidence mentioned in the media source to either affirm or reject the legitimacy of the sighting. Examples: media recordings, plaster casts, body parts, costume pieces, and more.</xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
