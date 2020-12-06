@@ -486,6 +486,18 @@
             <xs:element name="continent">
                 <xs:annotation>
                     <xs:documentation>The two letter code describing the continent of the location.</xs:documentation>
+		<xs:complexType>
+                    <xs:attribute ref="termSource">
+                        <xs:annotation>
+                            <xs:documentation>Recommended LOC or Getty TGN</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                    <xs:attribute ref="termSourceID">
+                        <xs:annotation>
+                            <xs:documentation>Recommended LOC identifier or Getty TGN number</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                </xs:complexType>
                 </xs:annotation>
             </xs:element>
             <xs:element name="geoCoordinates" type="coordinates" minOccurs="0">
