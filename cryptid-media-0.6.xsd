@@ -204,7 +204,7 @@
 
             <xs:element name="mediaDimensions" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
-                    <xs:documentation>Dimensions related to the media: page count, size of book, seconds or frames of video, file size in bytes or pixels, etc</xs:documentation>
+                    <xs:documentation>Dimensions related to the media: word count, page count, size of book, seconds or frames of video, file size in bytes or pixels, etc</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
