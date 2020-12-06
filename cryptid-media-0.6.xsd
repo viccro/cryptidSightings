@@ -46,9 +46,16 @@
             xx      v0.5: Final revisions before v1.0 
             xx            * made unknownLocation optional
             xx
+            xx
+            xx
+		
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
     </xs:annotation>
+    <xs:attributeGroup name="termSourcePair">
+        <xs:attribute ref="termSource"/>
+        <xs:attribute ref="termSourceID"/>
+    </xs:attributeGroup>
     <xs:attribute name="termSource" type="xs:string"/>
     <xs:attribute name="termSourceID" type="xs:string"/>
     <xs:attribute name="type" type="xs:string"/>
