@@ -62,6 +62,10 @@
             xx	    	  * 
             xx		      * 
             xx            * 
+            xx
+            xx      v0.7: Last minute syncing
+            xx            * Updated target namespace
+            xx            * Updated version/date docstring
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
     </xs:annotation>
