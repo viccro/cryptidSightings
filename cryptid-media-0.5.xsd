@@ -44,12 +44,12 @@
             xx
             xx      v0.5: Final revisions before v1.0 
             xx            * made unknownLocation optional
-		    xx			  * added attribute "supplied"
-			xx			  * added attribute "lang"
-			xx			  * mediaName is now required and repeatable
-			xx			  * mediaName now has limited attributes
-		    xx			  * mediaType is now required and repeatable
-			xx			  * mediaAffiliation now has limited attributes
+            xx		  * added attribute "supplied"
+	    xx	          * added attribute "lang"
+	    xx	          * mediaName is now required and repeatable
+	    xx		  * mediaName now has limited attributes
+	    xx	    	  * mediaType is now required and repeatable
+	    xx		  * mediaAffiliation now has limited attributes
             xx
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
