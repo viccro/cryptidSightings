@@ -18,6 +18,7 @@
 
 **Recommended data values for *type*:** The type of identifier listed: URI, URL, ISBN, etc. Getty AAT term preferred. 
 
+
 ## Sub-element: mediaName
 
 **Description:** A name identifying the piece of media, such as a fixed title 
@@ -38,31 +39,44 @@
 
 **Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.
 
+
 ## Sub-element: mediaType
 
 **Description:** Used to describe the type of content of the media: digital photograph, motion picture film, article, book, etc. 
 
-**Optional**
+**Repeatable**
+
+**Required**
 
 **Element tag:** `<cs:mediaType>`
 
 **Attributes:** *termSource, termSourceId*
 
-**Data values:**  Controlled. Recommended: Getty Art and Architecture Thesaurus 
+**Data values:** Use to describe the media format type: digital photograph, motion picture film, article, book, etc. If a media object contains more than one format type, mediaType may be repeated. Recommended data value term source from Getty AAT. If the type of media cannot be determined, enter the value "undefined". 
 
 **Recommended values for *termSource*:** *AAT* 
 
 **Recommended values for *termSourceID*:** AAT number
+
  
 ## Sub-element: mediaAffiliation
 
-**Description:** If the media was published in a collection, newspaper, etc, list that affiliation here.
+**Description:** If the media was published in association with a collection, newspaper, a media outlet, blog, social media platform, etc., list that affiliation here.
 
 **Optional**
+
+**Non-repeatable**
 
 **Element tag:** `<cs:mediaAffiliation>`
 
 **Data values:**  Use Library of Congress Name Authority File if possible. If an unlisted website, list the name of the site here, (e.g., Joe's Papers for an article listed at www.joespapers.com/article/listed/at/this/path).
+
+**Attributes:** *termsSource*, *termSourceId*
+
+**Recommended values for *termSource*:** Reference the source of the name used, such as LOC for Library of Congress.
+
+**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.
+
  
 ## Sub-element: [mediaPublicationDate](date.md)
 
@@ -78,7 +92,9 @@
 
 **Description:** Dimensions related to the media: page count, size of book, seconds or frames of video, file size in bytes or pixels, etc.
 
-**Repeatable, Optional**
+**Optional**
+
+**Repeatable**
 
 **Element tag:** `<cs:mediaDimensions>`
 
