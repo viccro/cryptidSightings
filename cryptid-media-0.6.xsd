@@ -644,8 +644,12 @@
                 <xs:annotation>
                     <xs:documentation>Used to describe the role and content of a piece of evidence</xs:documentation>
                 </xs:annotation>
-		<xs:complexType>
-                    <xs:attribute ref="lang"></xs:attribute>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="noAttribute" use="prohibited"/>
+                        </xs:extension>
+                    </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
