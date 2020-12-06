@@ -94,7 +94,7 @@
  
 ## Sub-element: mediaDimensions
 
-**Description:** Dimensions related to the media: page count, size of book, seconds or frames of video, file size in bytes or pixels, etc.
+**Description:** Dimensions related to the media: word count, page count, size of book, seconds or frames of video, file size in bytes or pixels, etc.
 
 **Optional**
 
@@ -106,7 +106,7 @@
 
 **Data values:**  Controlled. Recommended. CDWALite format where possible
 
-**Data values for *unit*:** *cm, mm, m, g, kg, kb, Mb, Gb, px*, and others as recommended in CCO and CDWA. 
+**Data values for *unit*:** *cm, mm, m, g, kg, kb, Mb, Gb, px, word count, page count*, and others as recommended in CCO and CDWA. 
 
 **Data values for *type*:** *height*, *duration*, and others as recommended in CCO and CDWA. 
  
