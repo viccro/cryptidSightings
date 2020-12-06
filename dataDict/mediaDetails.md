@@ -22,11 +22,21 @@
 
 **Description:** A name identifying the piece of media, such as a fixed title 
 
+**Repeatable**
+
 **Required**
 
 **Element tag:** `<cs:mediaName>`
 
-**Data values:**  Use a name that originally referred to the piece of media if possible, or a name that is commonly used to refer to the media. If none is known, use a unique phrase that identifies it by type, contents, and/or creators. 
+**Data values:**  Use a name that originally referred to the piece of media if possible, or a name that is commonly used to refer to the media. If none is known, use a unique phrase that identifies the cryptidMedia by type, contents, and/or creators. If more than one name is known, repeat the mediaName set.
+
+**Attributes:** *supplied*, *termsSource*, *termSourceId*
+
+**Fixed data values for *supplied*:** If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute. 
+
+**Recommended values for *termSource*:** Reference the source of the name used, such as LOC for Library of Congress.
+
+**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.
 
 ## Sub-element: mediaType
 
