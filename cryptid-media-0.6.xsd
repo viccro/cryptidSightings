@@ -604,6 +604,9 @@
                 <xs:annotation>
                     <xs:documentation>A person or organization who stands behind the piece of evidence</xs:documentation>
                 </xs:annotation>
+		<xs:complexType>
+                    <xs:attributeGroup ref="termSourcePair"></xs:attributeGroup>
+                </xs:complexType>
             </xs:element>
             <xs:element name="evidenceType">
                 <xs:annotation>
