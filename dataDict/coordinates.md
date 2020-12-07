@@ -5,7 +5,7 @@
 **Description** An object describing a geographic location using the Geographic coordinate system
 
 
-##Sub-Element: longitude
+## Sub-Element: longitude
 
 **Element tag** `<cs:longitude>`
 
@@ -19,7 +19,7 @@
 
 
 
-##Sub-Element: latitude
+## Sub-Element: latitude
 
 **Element tag** `<cs:latitude>`
 

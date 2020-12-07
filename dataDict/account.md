@@ -44,7 +44,7 @@
 ## Sub-element: [sightingTime](time.md)
 **Element tag:** `<cs:sightingTime>`
 
-**Description:** A time or set of times describing when a single sighting occurred.
+**Description:** A time or set of times describing when a single sighting occurred. If the time of more than one event in the sighting is known, use multiple sightingTime blocks.
 
 **Repeatable, Required** 
 
@@ -54,7 +54,7 @@
 ## Sub-element: [sightingLocation](location.md)
 **Element tag:** `<cs:sightingLocation>`
 
-**Description:** The place that the cryptid was seen.
+**Description:** The place that the cryptid was seen. If the sighting took place in multiple known locations, use multiple sightingLocation blocks.
 
 **Repeatable, Required** 
 
@@ -69,6 +69,6 @@
 
 **Non-repeatable, Optional**
 
-**Data values:** A description of what happened, according to this consistent telling of the sighting, including any details that distinguish this account from others. May include quotes or paraphrased description of the event.
+**Data values:** A description of what happened, according to this consistent telling of the sighting, including any details that distinguish this account from others. May include quotes or paraphrased description of the event. Do not use qualifier like "It appeared to" or "He claims that" unless the observers themselves used those words.
 
 

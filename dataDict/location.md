@@ -1,21 +1,11 @@
-##Element: location
+# Element: location
 
 **Element tag** `<cs:location>`
 
 **Description** An object describing a geographic location. 
 
-##Sub-element: coordinates
 
-**Element tag** `<cs:coordinates>`
-
-**Description** An object describing a geographic location using the Geographic coordinate system
-
-**Optional**
-
-**Data values:** [geoCoordinates](geoCoordinates.md)
-
-
-##Sub-Element: continent
+## Sub-Element: continent
 
 **Element tag** <cs:continent>
 
@@ -26,17 +16,17 @@
 **Data values:** One of *AF, NA, OC, AN, AS, EU,* or *SA*.
 
 
-##Sub-Element: [geoCoordinates](coordinates.md)
+## Sub-element: [geoCoordinates](coordinates.md)
 
 **Element tag** `<cs:geoCoordinates>`
 
-**Description** The geospatial coordinates of the location
+**Description** An object describing a geographic location using the Geographic coordinate system.
 
 **Optional**
 
-**Data values:** [geoCoordinates](coordinates.md)
+**Data values:** [coordinates](coordinates.md)
 
-##Sub-Element: [postalAddress](postalAddress.md)
+## Sub-Element: [postalAddress](postalAddress.md)
 
 **Element tag** `<cs:postalAddress>`
 
@@ -46,7 +36,7 @@
 
 **Data values:** [postalAddress](postalAddress.md)
 
-##Sub-Element: unknownLocation
+## Sub-Element: unknownLocation
 
 **Element tag** `<cs:unknownLocation>`
 
@@ -57,7 +47,7 @@
 **Optional**
 
 
-##Sub-Element: locationDescription
+## Sub-Element: locationDescription
 
 **Element tag** `<cs:locationDescription>`
 

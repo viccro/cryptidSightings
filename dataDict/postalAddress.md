@@ -1,11 +1,11 @@
-##Element: postalAddress
+# Element: postalAddress
 
 **Element tag** `<cs:postalAddress>`
 
 **Description** An object describing a geographic location using postal code standards
 
 
-##Sub-Element: addressCountry
+## Sub-Element: addressCountry
 
 **Element tag** `<cs:addressCountry>`
 
@@ -16,7 +16,7 @@
 **Data values:**  Use the two-letter ISO 3166-1 alpha-2 country code.
  
 
-##Sub-Element: addressRegion
+## Sub-Element: addressRegion
 
 **Element tag** `<cs:addressRegion>`
 
@@ -27,7 +27,7 @@
 **Data values:**  *Massachusetts*, *Nova Scotia*, *Scotland*, or another appropriate first-level administrative division.
 
  
-##Sub-Element: addressLocality
+## Sub-Element: addressLocality
  
 **Element tag** `<cs:addressLocality>`
  
@@ -38,7 +38,7 @@
 **Data values:**  Boston, for example.
 
 
-##Sub-Element: postalCode
+## Sub-Element: postalCode
 
 **Element tag** `<cs:postalCode>`
 
@@ -49,7 +49,7 @@
 **Data values:**  For example, 02115
 
 
-##Sub-Element: streetAddress
+## Sub-Element: streetAddress
 
 **Element tag** `<cs:streetAddress>`
 
