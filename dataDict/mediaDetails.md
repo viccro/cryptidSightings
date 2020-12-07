@@ -8,8 +8,6 @@
 
 **Non-repeatable**
 
-**Required**
-
 **Element tag:** `<cs:mediaIdentifier>`
 
 **Data values:**  Uncontrolled. Free text description. Recommended use of permalinks for URL/URI addresses.
@@ -23,9 +21,7 @@
 
 **Description:** A name identifying the piece of media, such as a fixed title 
 
-**Repeatable**
-
-**Required**
+**Repeatable, Required**
 
 **Element tag:** `<cs:mediaName>`
 
@@ -44,9 +40,7 @@
 
 **Description:** Used to describe the type of content of the media: digital photograph, motion picture film, article, book, etc. 
 
-**Repeatable**
-
-**Required**
+**Repeatable, Required**
 
 **Element tag:** `<cs:mediaType>`
 
@@ -65,17 +59,16 @@
 
 **Optional**
 
-**Non-repeatable**
-
 **Element tag:** `<cs:mediaAffiliation>`
 
 **Data values:**  Use Library of Congress Name Authority File if possible. If an unlisted website, list the name of the site here, (e.g., Joe's Papers for an article listed at www.joespapers.com/article/listed/at/this/path).
 
 **Attributes:** *termsSource*, *termSourceId*
 
-**Recommended values for *termSource*:** Reference the source of the name used, such as LOC for Library of Congress.
+**Recommended values for *termSource*:** Reference the source of the name used, such as LCNA for Library of Congress Name Authority.
 
 **Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If not present in a CV, use a URL/URI if possible such as www.joespapers.com for an article listed on Joe's Papers.
+TODO - should be blank for unknown website?
 
  
 ## Sub-element: [mediaPublicationDate](date.md)
@@ -83,8 +76,6 @@
 **Description:** The publication date of the media, such as the copyright date of a book, or the date a blog was posted 
 
 **Optional**
-
-**Non-repeatable**
 
 **Element tag:** `<cs:mediaPublicationDate>`
 
@@ -96,9 +87,7 @@
 
 **Description:** Dimensions related to the media: word count, page count, size of book, seconds or frames of video, file size in bytes or pixels, etc.
 
-**Optional**
-
-**Repeatable**
+**Repeatable, Optional**
 
 **Element tag:** `<cs:mediaDimensions>`
 
@@ -106,9 +95,9 @@
 
 **Data values:**  Controlled. Recommended. CDWALite format where possible
 
-**Data values for *unit*:** *cm, mm, m, g, kg, kb, Mb, Gb, px, word count, page count*, and others as recommended in CCO and CDWA. 
+**Data values for *unit*:** *cm, mm, m, g, kg, kb, Mb, Gb, px, words, pages*, and others as recommended in CCO and CDWA. 
 
-**Data values for *type*:** *height*, *duration*, and others as recommended in CCO and CDWA. 
+**Data values for *type*:** *height*, *duration*, *length*, *word count* and others as recommended in CCO and CDWA. 
  
 ## Sub-element: mediaDescription
 
@@ -124,9 +113,7 @@
 
 **Description:** The main language of the piece of media
 
-**Optional**
-
-**Repeatable** 
+**Repeatable, Optional** 
 
 **Element tag:** `<cs:mediaLanguage>`
 
