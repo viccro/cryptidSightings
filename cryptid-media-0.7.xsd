@@ -45,25 +45,22 @@
             xx
             xx      v0.5: Editing between the xsd and data dictionary to add detail and make them match 
             xx            * made unknownLocation optional
-            xx		  * added attribute "supplied" fixed value "yes" to mediaName element ONLY
+            xx		      * added attribute "supplied" fixed value "yes" to mediaName element ONLY
             xx	          * added attribute "lang" to global attributes		
             xx	          * linked attribute "lang" to mediaLanguage and described CV of LOC language abbreviations list
             xx	          * mediaName is now required and repeatable
-            xx		  * mediaName now has limited attributes		
+            xx		      * mediaName now has limited attributes		
             xx	    	  * mediaType is now required and repeatable
-            xx		  * mediaType now has limited attributes		
-            xx		  * mediaAffiliation now has limited attributes
-            xx		  * Stephanie made an error on a line 85, Column 23 that made everything stop pulling correctly from the raw GitHub .xsd file into an .xml file. created a version 0.6 from her desktop file, appears to be fixed.
+            xx		      * mediaType now has limited attributes		
+            xx		      * mediaAffiliation now has limited attributes
+            xx		      * Stephanie made an error on a line 85, Column 23 that made everything stop pulling correctly from the raw GitHub .xsd file into an .xml file. created a version 0.6 from her desktop file, appears to be fixed.
             xx
             xx      v0.6: Final revisions before v1.0 
             xx            * added new element evidenceClassification with restricted attribute values
-            xx		  * prohibited attributes in mediaDescription
+            xx		      * prohibited attributes in mediaDescription
             xx	          * prohibited attributes in evidenceDescription
             xx	          * created attribute group termSourcePair to more easily link termSource and termSourceID to elements at the same time
-            xx		  * Stephanie added a V0.7 to GitHub because her changes were'nt being recognized in an .xml when referenceing the in the V0.6 raw GitHub .xsd
-            xx	    	  * 
-            xx		  * 
-            xx            * 
+            xx		      * Stephanie added a V0.7 to GitHub because her changes were'nt being recognized in an .xml when referenceing the in the V0.6 raw GitHub .xsd
             xx
             xx      v0.7: Last minute syncing
             xx            * Updated target namespace
@@ -163,21 +160,25 @@
                     <xs:documentation>Required. A name identifying the piece of media, such as a fixed title. If none is known, create a unique phrase to name the media object by type, contents, and/or creators and define the attribute "supplied" as "yes."</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
-                    <xs:attribute name="supplied" fixed="yes">
-                        <xs:annotation>
-                            <xs:documentation>If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute.</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                    <xs:attribute ref="termSource">
-                        <xs:annotation>
-                            <xs:documentation>Reference the source of the name used, such as LOC for Library of Congress.</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                    <xs:attribute ref="termSourceID">
-                        <xs:annotation>
-                            <xs:documentation>Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="supplied" default="yes">
+                                <xs:annotation>
+                                    <xs:documentation>If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute ref="termSource">
+                                <xs:annotation>
+                                    <xs:documentation>Reference the source of the name used, such as LOC for Library of Congress.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute ref="termSourceID">
+                                <xs:annotation>
+                                    <xs:documentation>Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
 
