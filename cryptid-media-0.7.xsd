@@ -60,11 +60,15 @@
             xx		      * prohibited attributes in mediaDescription
             xx	          * prohibited attributes in evidenceDescription
             xx	          * created attribute group termSourcePair to more easily link termSource and termSourceID to elements at the same time
-            xx		      * Stephanie added a V0.7 to GitHub because her changes were'nt being recognized in an .xml when referenceing the in the V0.6 raw GitHub .xsd
+            xx		      * Stephanie added a V0.7 to GitHub because her changes weren't being recognized in an .xml when referenceing the in the V0.6 raw GitHub .xsd
             xx
             xx      v0.7: Last minute syncing
             xx            * Updated target namespace
             xx            * Updated version/date docstring
+            xx            * sightingLocation required
+            xx            * returned continent to simple two-letter code
+            xx            * moved evidenceClassification before evidenceType, so we continue to go broader -> narrower
+            xx            * Made evidenceClassification an enum, rather than having an enum attribute
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
     </xs:annotation>
@@ -343,7 +347,7 @@
                 </xs:annotation>
             </xs:element>
 
-            <xs:element name="sightingLocation" type="location" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="sightingLocation" type="location" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>The place that the cryptid was seen.</xs:documentation>
                 </xs:annotation>
@@ -411,12 +415,20 @@
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="cryptidDescription" maxOccurs="1">
+            <xs:element name="cryptidDescription">
                 <xs:annotation>
                     <xs:documentation>A description of the cryptid, as reported in this account, as told by the listed observer(s). This may include dimensions, colors, mode of locomotion, and other biological details.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
-                    <xs:attribute ref="lang"/>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="lang">
+                                <xs:annotation>
+                                    <xs:documentation>The language that the description is written in</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
 
@@ -519,18 +531,6 @@
                 <xs:annotation>
                     <xs:documentation>The two letter code describing the continent of the location.</xs:documentation>
                 </xs:annotation>
-                <xs:complexType>
-                    <xs:attribute ref="termSource">
-                        <xs:annotation>
-                            <xs:documentation>Recommended LOC or Getty TGN</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                    <xs:attribute ref="termSourceID">
-                        <xs:annotation>
-                            <xs:documentation>Recommended LOC identifier or Getty TGN number</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                </xs:complexType>
             </xs:element>
             <xs:element name="geoCoordinates" type="coordinates" minOccurs="0">
                 <xs:annotation>
@@ -627,33 +627,36 @@
                     <xs:documentation>A person or organization who stands behind the piece of evidence</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
-                    <xs:attributeGroup ref="termSourcePair"/>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="evidenceType">
-                <xs:annotation>
-                    <xs:documentation>The type of thing that comprises the evidence, taken from the Local Evidence Dictionary or standard terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports controlled vocabulary</xs:documentation>
-                    <!-- TODO - cv -->
-                </xs:annotation>
-                <xs:complexType>
-                    <xs:attributeGroup ref="termSourcePair"/>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attributeGroup ref="termSourcePair"/>
+                        </xs:extension>
+                    </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
             <xs:element name="evidenceClassification">
                 <xs:annotation>
                     <xs:documentation>The legal category corresponding to the evidenceType presented. Limited to physical, testimonial, demonstrative, and documentary.</xs:documentation>
                 </xs:annotation>
-                <xs:complexType mixed="true">
-                    <xs:attribute name="type" use="required">
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string">
-                                <xs:enumeration value="physical"/>
-                                <xs:enumeration value="testimonial"/>
-                                <xs:enumeration value="demonstrative"/>
-                                <xs:enumeration value="documentary"/>
-                            </xs:restriction>
-                        </xs:simpleType>
-                    </xs:attribute>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="physical"/>
+                        <xs:enumeration value="testimonial"/>
+                        <xs:enumeration value="demonstrative"/>
+                        <xs:enumeration value="documentary"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="evidenceType">
+                <xs:annotation>
+                    <xs:documentation>The type of thing that comprises the evidence, taken from the Local Evidence Dictionary or standard terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports controlled vocabulary</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attributeGroup ref="termSourcePair"/>
+                        </xs:extension>
+                    </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
             <xs:element name="mediaEvidence" type="mediaDetails" maxOccurs="1">
