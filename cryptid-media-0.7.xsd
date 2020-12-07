@@ -210,16 +210,20 @@
                     <xs:documentation>If the media was published in association with a collection, newspaper, social media platform, a media outlet, blog, etc., list that affiliation here.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
-                    <xs:attribute ref="termSource">
-                        <xs:annotation>
-                            <xs:documentation>Reference the source of the name used, such as LOC for Library of Congress.</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                    <xs:attribute ref="termSourceID">
-                        <xs:annotation>
-                            <xs:documentation>Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute ref="termSource">
+                                <xs:annotation>
+                                    <xs:documentation>Reference the source of the name used, such as LOC for Library of Congress.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute ref="termSourceID">
+                                <xs:annotation>
+                                    <xs:documentation>Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
 
