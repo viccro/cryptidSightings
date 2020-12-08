@@ -8,7 +8,7 @@
 
 **Non-repeatable**
 
-**Element tag:** `<cs:mediaIdentifier>`
+**Element tag:** `<mediaIdentifier>`
 
 **Data values:**  Uncontrolled. Free text description. Recommended use of permalinks for URL/URI addresses.
 
@@ -23,7 +23,7 @@
 
 **Repeatable, Required**
 
-**Element tag:** `<cs:mediaName>`
+**Element tag:** `<mediaName>`
 
 **Data values:**  Use a name that originally referred to the piece of media if possible, or a name that is commonly used to refer to the media. If none is known, use a unique phrase that identifies the cryptidMedia by type, contents, and/or creators. If more than one name is known, repeat the mediaName set.
 
@@ -42,7 +42,7 @@
 
 **Repeatable, Required**
 
-**Element tag:** `<cs:mediaType>`
+**Element tag:** `<mediaType>`
 
 **Attributes:** *termSource, termSourceId*
 
@@ -59,7 +59,7 @@
 
 **Optional**
 
-**Element tag:** `<cs:mediaAffiliation>`
+**Element tag:** `<mediaAffiliation>`
 
 **Data values:**  Use Library of Congress Name Authority File if possible. If an unlisted website, list the name of the site here, (e.g., Joe's Papers for an article listed at www.joespapers.com/article/listed/at/this/path).
 
@@ -77,7 +77,7 @@ TODO - should be blank for unknown website?
 
 **Optional**
 
-**Element tag:** `<cs:mediaPublicationDate>`
+**Element tag:** `<mediaPublicationDate>`
 
 **Element type:** [Date](date.md)
 
@@ -89,7 +89,7 @@ TODO - should be blank for unknown website?
 
 **Repeatable, Optional**
 
-**Element tag:** `<cs:mediaDimensions>`
+**Element tag:** `<mediaDimensions>`
 
 **Attributes:** *type, unit*
 
@@ -105,7 +105,7 @@ TODO - should be blank for unknown website?
 
 **Required**
 
-**Element tag:** `<cs:mediaDescription>`
+**Element tag:** `<mediaDescription>`
 
 **Data values:**  Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.
  
@@ -115,7 +115,7 @@ TODO - should be blank for unknown website?
 
 **Repeatable, Optional** 
 
-**Element tag:** `<cs:mediaLanguage>`
+**Element tag:** `<mediaLanguage>`
 
 **Attributes:** *type*, *lang*
 
@@ -124,3 +124,19 @@ TODO - should be blank for unknown website?
 **Recommended values for *lang*:** Language codes from Library of Congress language code for MARC. 
 
 **Recommended values for *type*:** current, former, translated, local, and others as recommended in CCO and CDWA. 
+
+## Tagging Examples:
+```
+<mediaDetails>
+    <mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>
+    <mediaName>Marble Mountain Bigfoot Video</mediaName>
+    <mediaType cs:termSource="AAT" cs:termSourceID="300265431">Web sites</mediaType>
+    <mediaAffiliation>Odd Encounters</mediaAffiliation>
+    <mediaPublicationDate>
+        <approximateDate>2011-2015</approximateDate>
+    </mediaPublicationDate>
+    <mediaDimensions cs:type="word count" cs:unit="words">262</mediaDimensions>
+    <mediaDescription>A blog post summarizing the Marble Mountain Bigfoot encounter and the Jim Mills video footage that stemmed from it.</mediaDescription>
+    <mediaLanguage>eng</mediaLanguage>
+</mediaDetails>
+```

@@ -1,12 +1,12 @@
 ## Element: date
 
-**Element tag** `<cs:date>`
+**Element tag** `<date>`
 
 **Description** An object describing an exact or approximate date. This type allows one and only one of exactDate, approximateDate, or unknownDate.
 
 ## Sub-Element: exactDate
 
-**Sub-element tag** `<cs:exactDate>`
+**Sub-element tag** `<exactDate>`
 
 **Type** `xs:date`
 
@@ -19,7 +19,7 @@
 
 ## Sub-Element: approximateDate
 
-**Element tag** `<cs:approximateDate>`
+**Element tag** `<approximateDate>`
 
 **Description** Use if a range of possible dates are known. 
 
@@ -30,7 +30,7 @@
 
 ## Sub-Element: unknownDate
 
-**Element tag** `<cs:unknownDate>`
+**Element tag** `<unknownDate>`
 
 **Type** `xs:boolean`
 
@@ -38,4 +38,23 @@
 
 **Optional**
 
-**Data values:** Only use `true`. Rather than set this field to `false` for a known date, set one of the other two fields within `<cs:date>` with more details.
+**Data values:** Only use `true`. Rather than set this field to `false` for a known date, set one of the other two fields within `<date>` with more details.
+
+### Tagging Examples:
+```
+<sightingDate>
+    <exactDate>1989-10-14</exactDate>
+</sightingDate>
+```
+
+```
+<sightingDate>
+    <approximateDate>2001-06</approximateDate>
+</sightingDate>
+```
+
+```
+<sightingDate>
+    <unknownDate>true</unknownDate>
+</sightingDate>
+```

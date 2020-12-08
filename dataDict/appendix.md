@@ -19,17 +19,17 @@ objects that can be touched, like animal parts.
 ###	Testimonial
 statements provided by either a layperson or expert witness.
 
-#### Recommended physical evidence terms supplement to the WFS report terms:
+#### Recommended testimonial evidence terms:
 * TODO
 
 ###	Demonstrative
 visual aids like photographs, maps, diagrams, and casts of physical evidence.
 
-#### Recommended physical evidence terms supplement to the WFS report terms:
+#### Recommended demonstrative evidence terms:
 * TODO
 
 ###	Documentary
 records, such as veterinary records and police logs.
 
-#### Recommended physical evidence terms supplement to the WFS report terms:
+#### Recommended documentary evidence terms:
 * TODO

@@ -1,13 +1,13 @@
 # Element: postalAddress
 
-**Element tag** `<cs:postalAddress>`
+**Element tag** `<postalAddress>`
 
 **Description** An object describing a geographic location using postal code standards
 
 
 ## Sub-Element: addressCountry
 
-**Element tag** `<cs:addressCountry>`
+**Element tag** `<addressCountry>`
 
 **Description** The country component of the location.
  
@@ -18,7 +18,7 @@
 
 ## Sub-Element: addressRegion
 
-**Element tag** `<cs:addressRegion>`
+**Element tag** `<addressRegion>`
 
 **Description** The region in which the locality is, and which is in the country. 
 
@@ -29,7 +29,7 @@
  
 ## Sub-Element: addressLocality
  
-**Element tag** `<cs:addressLocality>`
+**Element tag** `<addressLocality>`
  
 **Description** The locality in which the street address is, and which is in the region. 
  
@@ -40,7 +40,7 @@
 
 ## Sub-Element: postalCode
 
-**Element tag** `<cs:postalCode>`
+**Element tag** `<postalCode>`
 
 **Description** The postal code. 
 
@@ -51,10 +51,28 @@
 
 ## Sub-Element: streetAddress
 
-**Element tag** `<cs:streetAddress>`
+**Element tag** `<streetAddress>`
 
 **Description** The street address. 
 
 **Optional**
 
 **Data values:**  For example, 300 Fenway
+
+### Tagging Examples:
+```
+<postalAddress>
+    <addressCountry>US</addressCountry>
+    <addressRegion>California</addressRegion>
+</postalAddress>
+```
+
+```
+<postalAddress>
+    <addressCountry>US</addressCountry>
+    <addressRegion>Illinois</addressRegion>
+    <addressLocality>Chicago</addressLocality>
+    <postalCode>60613</postalCode>
+    <streetAddress>1060 West Addison</streetAddress>
+</postalAddress>
+```

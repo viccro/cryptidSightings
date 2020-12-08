@@ -1,13 +1,13 @@
 # Element: location
 
-**Element tag** `<cs:location>`
+**Element tag** `<location>`
 
 **Description** An object describing a geographic location. 
 
 
 ## Sub-Element: continent
 
-**Element tag** <cs:continent>
+**Element tag** `<continent>`
 
 **Description** The two letter code describing the continent of the location.
 
@@ -15,10 +15,14 @@
 
 **Data values:** One of *AF, NA, OC, AN, AS, EU,* or *SA*.
 
+### Tagging Examples:
+`<continent>NA</continent>`
+
+`<continent>OC</continent>`
 
 ## Sub-element: [geoCoordinates](coordinates.md)
 
-**Element tag** `<cs:geoCoordinates>`
+**Element tag** `<geoCoordinates>`
 
 **Description** An object describing a geographic location using the Geographic coordinate system.
 
@@ -28,7 +32,7 @@
 
 ## Sub-Element: [postalAddress](postalAddress.md)
 
-**Element tag** `<cs:postalAddress>`
+**Element tag** `<postalAddress>`
 
 **Description** The location as specified by mailing address components. Complete as many fields as possible, even if the location is not at a specified street address location.
 
@@ -38,7 +42,7 @@
 
 ## Sub-Element: unknownLocation
 
-**Element tag** `<cs:unknownLocation>`
+**Element tag** `<unknownLocation>`
 
 **Type:** `xs:boolean`
 
@@ -49,9 +53,11 @@
 
 ## Sub-Element: locationDescription
 
-**Element tag** `<cs:locationDescription>`
+**Element tag** `<locationDescription>`
 
 **Description** A free text description of the location, prioritizing any details not described in other schema fields. 
 
 **Optional**
 
+### Tagging Examples:
+`<locationDescription>20 miles from the nearest road, just below a ridgeline in a desolate area just north of Mt. Shasta. In the Marble Mountains.</locationDescription>`

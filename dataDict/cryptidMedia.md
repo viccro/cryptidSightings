@@ -2,7 +2,7 @@
 
 **Description:** Root element. A media object relating the account(s) of a cryptid sighting, such as those published in a newspaper article, book, or blog post
 
-**Element tag:** `<cs:mediaEvidence>`
+**Element tag:** `<mediaEvidence>`
 
 
 ## Sub-element: [mediaDetails](mediaDetails.md)
@@ -11,7 +11,7 @@
 
 **Non-repeatable, Required**
 
-**Element tag:** `<cs:mediaDetails>`
+**Element tag:** `<mediaDetails>`
 
 ## Sub-element: [accountOfSighting](account.md)
 
@@ -19,7 +19,7 @@
 
 **Repeatable, Required**
 
-**Element tag:** `<cs:accountOfSighting>`
+**Element tag:** `<accountOfSighting>`
 
 ## Sub-element: [mentionedEvidence](mentionedEvidence.md)
 
@@ -27,4 +27,4 @@
 
 **Repeatable, Optional**
 
-**Element tag:** `<cs:mentionedEvidence>`
+**Element tag:** `<mentionedEvidence>`

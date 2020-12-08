@@ -43,12 +43,3 @@
     <cryptidDescription>"It does not look like a person. It's arms are way too big; it's hands. Look at its hands, its hands hang down to its knees at least."</cryptidDescription>
 </cryptidSeen>
 ```
-
-```
-    <cryptidSeen>
-        <cryptidCanonicalName cs:termSource="wikiLLC" cs:termSourceID="https://en.wikipedia.org/wiki/Loveland_frog">Loveland frog</cryptidCanonicalName>
-        <cryptidAlternativeName>Loveland frogman</cryptidAlternativeName>
-        <cryptidAlternativeName>Loveland lizardman</cryptidAlternativeName>
-        <cryptidDescription>Bipedal, four-foot tall frog. Amphibious </cryptidDescription>
-    </cs:cryptidSeen>      
-```

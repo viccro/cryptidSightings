@@ -6,7 +6,7 @@
 
 **Non-repeatable**
 
-**Element tag:** `<cs:mentionedEvidence>`
+**Element tag:** `<mentionedEvidence>`
 
 ## Sub-element: [evidenceAffirmative](evidence.md)
 
@@ -16,7 +16,7 @@
 
 **Repeatable**
 
-**Element tag:** `<cs:evidenceAffirmative>`
+**Element tag:** `<evidenceAffirmative>`
 
 **Data values:** [evidenceAffirmative](evidence.md)
 
@@ -29,6 +29,6 @@
 
 **Repeatable**
 
-**Element tag:** `<cs:evidenceNegative>`
+**Element tag:** `<evidenceNegative>`
 
 **Data values:** [evidenceNegative](evidence.md)

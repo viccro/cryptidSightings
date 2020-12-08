@@ -1,12 +1,12 @@
 ## Element: timeDetails
 
-**Element tag** <cs:timeDetails>
+**Element tag** <timeDetails>
 
 **Description** An object describing an exact or approximate time. This type allows one and only one of exactTime, approximateTime, or unknownTime.
 
 ## Sub-Element: exactTime
 
-**Element tag** `<cs:exactTime>`
+**Element tag** `<exactTime>`
 
 **Type** `xs:time`
 
@@ -19,7 +19,7 @@
 
 ## Sub-Element: approximateTime
 
-**Element tag** `<cs:approximateTime>`
+**Element tag** `<approximateTime>`
 
 **Description** Use if a range of possible times are known. 
 
@@ -30,7 +30,7 @@
 
 ## Sub-Element: unknownTime
 
-**Element tag** `<cs:unknownTime>`
+**Element tag** `<unknownTime>`
 
 **Type** `xs:boolean`
 
@@ -38,4 +38,4 @@
 
 **Optional**
 
-**Data values:** Only use `true`. Rather than set this field to `false` for a known time, set one of the other two fields within `<cs:timeDetails>` with more details.
+**Data values:** Only use `true`. Rather than set this field to `false` for a known time, set one of the other two fields within `<timeDetails>` with more details.
