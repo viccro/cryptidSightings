@@ -67,8 +67,7 @@
 
 **Recommended values for *termSource*:** Reference the source of the name used, such as LCNA for Library of Congress Name Authority.
 
-**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If not present in a CV, use a URL/URI if possible such as www.joespapers.com for an article listed on Joe's Papers.
-TODO - should be blank for unknown website?
+**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If not present in a controlled vocabulary, use the term "none."
 
  
 ## Sub-element: [mediaPublicationDate](date.md)
