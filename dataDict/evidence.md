@@ -43,7 +43,7 @@
 
 **Attributes:** *termSource*, *termSourceID*
 
-**Recommended values for *termSource*:** See list of local acronyms. Recommended are: WFSGeneral, WFSMorphology, and WFSDNA.
+**Recommended values for *termSource*:** See list of local acronyms. Recommended are: WFSGeneral, WFSMorphology, and WFSDNA. Use the term "local" if supplied by the record creator.
 
  
 ## Sub-element: [mediaEvidence](mediaDetails.md)
