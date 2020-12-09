@@ -16,7 +16,7 @@
 
 **Recommended values for *termSource*:** A controlled vocabulary such as the Library of Congress Name Authority File. If not present in a CV, enter the type of source, such as "URL".
 
-**Recommended values for *termSourceID*:** A controlled vocabulary identification number such as the Library of Congress Name Authority File. If not present in a CV, enter a unique identifier such as a URL address.
+**Recommended values for *termSourceID*:** A controlled vocabulary identification number such as the Library of Congress Name Authority File. If not present in a CV, enter a unique identifier such as a URL address if available, or "none".
  
 ## Sub-element: evidenceClassification
 
@@ -43,7 +43,7 @@
 
 **Attributes:** *termSource*, *termSourceID*
 
-**Recommended values for *termSource*:** See list of local acronyms. Recommended are: WFSGeneral, WFSMorphology, and WFSDNA.
+**Recommended values for *termSource*:** See list of local acronyms. Recommended are: WFSGeneral, WFSMorphology, and WFSDNA. Use the term "local" if supplied by the record creator.
 
  
 ## Sub-element: [mediaEvidence](mediaDetails.md)
