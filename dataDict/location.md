@@ -1,5 +1,9 @@
 # Element: location
 
+**Required**
+
+**Repeatable**
+
 **Element tag** `<location>`
 
 **Description** An object describing a geographic location. 
@@ -12,6 +16,8 @@
 **Description** The two letter code describing the continent of the location.
 
 **Required**
+
+**Non-repeatable**
 
 **Data values:** One of *AF, NA, OC, AN, AS, EU,* or *SA*.
 
@@ -38,6 +44,8 @@
 
 **Optional**
 
+**Non-repeatable**
+
 **Data values:** [postalAddress](postalAddress.md)
 
 ## Sub-Element: unknownLocation
@@ -50,6 +58,7 @@
 
 **Optional**
 
+**Non-repeatable**
 
 ## Sub-Element: locationDescription
 
@@ -58,6 +67,8 @@
 **Description** A free text description of the location, prioritizing any details not described in other schema fields. 
 
 **Optional**
+
+**Non-repeatable**
 
 ### Tagging Examples:
 `<locationDescription>20 miles from the nearest road, just below a ridgeline in a desolate area just north of Mt. Shasta. In the Marble Mountains.</locationDescription>`
