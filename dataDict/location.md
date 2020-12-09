@@ -34,6 +34,8 @@
 
 **Optional**
 
+**Non-repeatable**
+
 **Data values:** [coordinates](coordinates.md)
 
 ## Sub-Element: [postalAddress](postalAddress.md)
