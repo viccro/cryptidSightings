@@ -116,13 +116,13 @@
 
 **Element tag:** `<mediaLanguage>`
 
-**Attributes:** *type*, *lang*
+**Attributes:** *type*, *termSource*
 
-**Data values:**  Controlled. Recommended. Language formulated according to rules in the CCO and CDWA (i.e., ISO 639-2b, RFC 3066 and other encoding schemes may be used, or another authoritative source may be used, such as Ethnologue: Languages of the World. 14th edition. Barbara F. Grimes, ed. Dallas, Texas: SIL International, 2000). If ISO or other codes are used, they must be translated into common English for end-users. 
-
-**Recommended values for *lang*:** Language codes from Library of Congress language code for MARC. 
+**Data values:**  Controlled. Recommended. Language formulated according to rules in the CCO and CDWA (i.e., ISO 639-2b, RFC 3066, Language codes from Library of Congress language code for MARC, and other encoding schemes may be used, or another authoritative source may be used, such as Ethnologue: Languages of the World. 14th edition. Barbara F. Grimes, ed. Dallas, Texas: SIL International, 2000). If ISO or other codes are used, they must be translated into common English for end-users. 
 
 **Recommended values for *type*:** current, former, translated, local, and others as recommended in CCO and CDWA. 
+
+**Recommended values for *termSource*:** Identify the controlled vocabulary used to populate the language data value
 
 ## Tagging Examples:
 ```
