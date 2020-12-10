@@ -15,7 +15,7 @@
 
 **Recommended values for *termSource*:** *AAT*, *[wikiLC](https://en.wikipedia.org/wiki/List_of_cryptids)*. *[wikiLLC](https://en.wikipedia.org/wiki/Lists_of_legendary_creatures)*, *[fandomWikiLC](https://cryptidz.fandom.com/wiki/List_of_Cryptids)*. See reference index for full list.
 
-**Recommended values for *termSourceID*:** URL or URI linking to the termsource
+**Recommended values for *termSourceID*:** URL or URI found in the termsource
 
 ## Sub-element: cryptidAlternativeName
 
@@ -30,7 +30,7 @@
 
 **Description:** A description of the cryptid, as reported in this account, as told by the listed observer(s). This may include dimensions, colors, mode of locomotion, and other biological details.
 
-**Repeatable, Optional** 
+**Non-Repeatable, Optional** 
 
 **Data values:** May include quotes or paraphrased description, as consistent with the parent account of the sighting
 
