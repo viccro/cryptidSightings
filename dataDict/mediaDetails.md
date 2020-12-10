@@ -48,9 +48,9 @@
 
 **Data values:** Use to describe the media format type: digital photograph, motion picture film, article, book, etc. If a media object contains more than one format type, mediaType may be repeated. Recommended data value term source from Getty AAT. If the type of media cannot be determined, enter the value "undefined". 
 
-**Recommended values for *termSource*:** *AAT* 
+**Recommended values for *termSource*:** `AAT`, `none` 
 
-**Recommended values for *termSourceID*:** AAT number
+**Recommended values for *termSourceID*:** AAT number, `none`
 
  
 ## Sub-element: mediaAffiliation
@@ -65,9 +65,9 @@
 
 **Attributes:** *termsSource*, *termSourceId*
 
-**Recommended values for *termSource*:** Reference the source of the name used, such as LCNA for Library of Congress Name Authority.
+**Recommended values for *termSource*:** Reference the source of the name used, such as LCNA for Library of Congress Name Authority. If no controlled source was used, enter `none`.
 
-**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If not present in a controlled vocabulary, use the term "none."
+**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no controlled source was used, enter `none`.
 
  
 ## Sub-element: [mediaPublicationDate](date.md)
