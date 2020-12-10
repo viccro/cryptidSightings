@@ -408,22 +408,6 @@
                 <xs:annotation>
                     <xs:documentation>Any alternative name used to refer to the type of creature or individual creature observed</xs:documentation>
                 </xs:annotation>
-                <xs:complexType>
-                    <xs:simpleContent>
-                        <xs:extension base="xs:string">
-                            <xs:attribute ref="termSource" use="required">
-                                <xs:annotation>
-                                    <xs:documentation>The source of the term used. If no CV is used, include link to the URL where it is labelled.</xs:documentation>
-                                </xs:annotation>
-                            </xs:attribute>
-                            <xs:attribute ref="termSourceID" use="required">
-                                <xs:annotation>
-                                    <xs:documentation>The ID of the term used. </xs:documentation>
-                                </xs:annotation>
-                            </xs:attribute>
-                        </xs:extension>
-                    </xs:simpleContent>
-                </xs:complexType>
             </xs:element>
             <xs:element name="cryptidDescription">
                 <xs:annotation>
