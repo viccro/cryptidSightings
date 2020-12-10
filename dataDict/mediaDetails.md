@@ -128,14 +128,14 @@
 ```
 <mediaDetails>
     <mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>
-    <mediaName>Marble Mountain Bigfoot Video</mediaName>
+    <mediaName cs:termSource="none" cs:termSourceID="none" supplied="false">Marble Mountain Bigfoot Video</mediaName>
     <mediaType cs:termSource="AAT" cs:termSourceID="300265431">Web sites</mediaType>
-    <mediaAffiliation>Odd Encounters</mediaAffiliation>
+    <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Odd Encounters</mediaAffiliation>
     <mediaPublicationDate>
         <approximateDate>2011-2015</approximateDate>
     </mediaPublicationDate>
     <mediaDimensions cs:type="word count" cs:unit="words">262</mediaDimensions>
     <mediaDescription>A blog post summarizing the Marble Mountain Bigfoot encounter and the Jim Mills video footage that stemmed from it.</mediaDescription>
-    <mediaLanguage>eng</mediaLanguage>
+    <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
 </mediaDetails>
 ```
