@@ -78,6 +78,8 @@
             xx            * Made continent an enum
             xx            * Attributes now required
             xx            * evidenceType repeated
+            xx            * mediaIdentifier required
+            xx            * set supplied attribute to true and false, rather than yes/no
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
     </xs:annotation>
@@ -150,7 +152,7 @@
             <xs:documentation>Administrative and descriptive details about the media object. When the media object is a child of mentionedEvidence, the media object may or may not reference a cryptid sighting.</xs:documentation>
         </xs:annotation>
         <xs:sequence>
-            <xs:element name="mediaIdentifier" minOccurs="0">
+            <xs:element name="mediaIdentifier">
                 <xs:annotation>
                     <xs:documentation>A single URL, ISBN, or other identifier for the media</xs:documentation>
                 </xs:annotation>
@@ -174,9 +176,9 @@
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
-                            <xs:attribute name="supplied" default="yes" >
+                            <xs:attribute name="supplied" default="false" >
                                 <xs:annotation>
-                                    <xs:documentation>If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute.</xs:documentation>
+                                    <xs:documentation>If the mediaName was created during the creation of the record, include the fixed attribute **supplied:`true`**. If the title was fixed before the creation of the cryptidMedia record, record `false`.</xs:documentation>
                                 </xs:annotation>
                             </xs:attribute>
                             <xs:attribute ref="termSource" use="required">
