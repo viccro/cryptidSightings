@@ -14,7 +14,7 @@
 
 **Attributes:** *type*
 
-**Recommended data values for *type*:** The type of identifier listed: URI, URL, ISBN, etc. Getty AAT term preferred. 
+**Recommended data values for *type*:** The type of identifier listed: `URI`, `URL`, `ISBN`, etc. Getty AAT term preferred. 
 
 
 ## Sub-element: mediaName
@@ -38,7 +38,7 @@
 
 ## Sub-element: mediaType
 
-**Description:** Used to describe the type of content of the media: digital photograph, motion picture film, article, book, etc. 
+**Description:** Used to describe the type of content of the media: `digital photograph`, `digital moving image formats`, `article`, `book`, etc. 
 
 **Repeatable, Required**
 
@@ -48,9 +48,9 @@
 
 **Data values:** Use to describe the media format type: digital photograph, motion picture film, article, book, etc. If a media object contains more than one format type, mediaType may be repeated. Recommended data value term source from Getty AAT. If the type of media cannot be determined, enter the value "undefined". 
 
-**Recommended values for *termSource*:** *AAT* 
+**Recommended values for *termSource*:** `AAT`, `none` 
 
-**Recommended values for *termSourceID*:** AAT number
+**Recommended values for *termSourceID*:** AAT number, `none`
 
  
 ## Sub-element: mediaAffiliation
@@ -61,13 +61,13 @@
 
 **Element tag:** `<mediaAffiliation>`
 
-**Data values:**  Use Library of Congress Name Authority File if possible. If an unlisted website, list the name of the site here, (e.g., Joe's Papers for an article listed at www.joespapers.com/article/listed/at/this/path).
+**Data values:**  Use Library of Congress Name Authority File if possible. If an unlisted website, list the name of the site here, (e.g., `Joe's Papers` for an article listed at www.joespapers.com/article/listed/at/this/path).
 
 **Attributes:** *termsSource*, *termSourceId*
 
-**Recommended values for *termSource*:** Reference the source of the name used, such as LCNA for Library of Congress Name Authority.
+**Recommended values for *termSource*:** Reference the source of the name used, such as `LCNA` for Library of Congress Name Authority. If no controlled source was used, enter `none`.
 
-**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If not present in a controlled vocabulary, use the term "none."
+**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no controlled source was used, enter `none`.
 
  
 ## Sub-element: [mediaPublicationDate](date.md)
@@ -94,9 +94,9 @@
 
 **Data values:**  Controlled. Recommended. CDWALite format where possible
 
-**Data values for *unit*:** *cm, mm, m, g, kg, kb, Mb, Gb, px, words, pages*, and others as recommended in CCO and CDWA. 
+**Data values for *unit*:** `cm`, `mm`, `m`, `g`, `kg`, `kb`, `Mb`, `Gb`, `px`, `words`, `pages`, and others as recommended in CCO and CDWA. 
 
-**Data values for *type*:** *height*, *duration*, *length*, *word count* and others as recommended in CCO and CDWA. 
+**Data values for *type*:** `height`, `duration`, `length`, `word count` and others as recommended in CCO and CDWA. 
  
 ## Sub-element: mediaDescription
 
@@ -120,22 +120,22 @@
 
 **Data values:**  Controlled. Recommended. Language formulated according to rules in the CCO and CDWA (i.e., ISO 639-2b, RFC 3066, Language codes from Library of Congress language code for MARC, and other encoding schemes may be used, or another authoritative source may be used, such as Ethnologue: Languages of the World. 14th edition. Barbara F. Grimes, ed. Dallas, Texas: SIL International, 2000). If ISO or other codes are used, they must be translated into common English for end-users. 
 
-**Recommended values for *type*:** current, former, translated, local, and others as recommended in CCO and CDWA. 
+**Recommended values for *type*:** `current`, `former`, `translated`, `local`, and others as recommended in CCO and CDWA. 
 
-**Recommended values for *termSource*:** Identify the controlled vocabulary used to populate the language data value
+**Recommended values for *termSource*:** Identify the controlled vocabulary used to populate the language data value. For example: `ISO 639-2b` or `RFC 3066`.
 
 ## Tagging Examples:
 ```
 <mediaDetails>
     <mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>
-    <mediaName>Marble Mountain Bigfoot Video</mediaName>
+    <mediaName cs:termSource="none" cs:termSourceID="none" supplied="false">Marble Mountain Bigfoot Video</mediaName>
     <mediaType cs:termSource="AAT" cs:termSourceID="300265431">Web sites</mediaType>
-    <mediaAffiliation>Odd Encounters</mediaAffiliation>
+    <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Odd Encounters</mediaAffiliation>
     <mediaPublicationDate>
         <approximateDate>2011-2015</approximateDate>
     </mediaPublicationDate>
     <mediaDimensions cs:type="word count" cs:unit="words">262</mediaDimensions>
     <mediaDescription>A blog post summarizing the Marble Mountain Bigfoot encounter and the Jim Mills video footage that stemmed from it.</mediaDescription>
-    <mediaLanguage>eng</mediaLanguage>
+    <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
 </mediaDetails>
 ```
