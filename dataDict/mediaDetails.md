@@ -6,7 +6,7 @@
 
 **Description:** A single URL, URI, ISBN, or other identifier for the media.
 
-**Non-repeatable**
+**Non-repeatable, Required**
 
 **Element tag:** `<mediaIdentifier>`
 
