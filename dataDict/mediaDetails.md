@@ -29,7 +29,7 @@
 
 **Attributes:** *supplied*, *termsSource*, *termSourceId*
 
-**Fixed data values for *supplied*:** If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute. 
+**Fixed data values for *supplied*:** If the mediaName was created during the creation of the record, set this attribute to `true`. If the title was fixed before the creation of the cryptidMedia record, set it to `false`.
 
 **Recommended values for *termSource*:** Reference the source of the name used, such as LOC for Library of Congress. If no control was use, enter `none`.
 
