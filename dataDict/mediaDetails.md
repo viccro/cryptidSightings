@@ -31,9 +31,9 @@
 
 **Fixed data values for *supplied*:** If the mediaName was created during the creation of the record, include the fixed attribute **supplied:"yes"**. If the title was fixed before the creation of the cryptidMedia record, omit this attribute. 
 
-**Recommended values for *termSource*:** Reference the source of the name used, such as LOC for Library of Congress.
+**Recommended values for *termSource*:** Reference the source of the name used, such as LOC for Library of Congress. If no control was use, enter 'None.
 
-**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number.
+**Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no control was use, enter 'None.
 
 
 ## Sub-element: mediaType
