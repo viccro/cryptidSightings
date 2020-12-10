@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cryptidMedia xmlns="cryptidMedia"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cs="cryptidMedia"
+    xsi:schemaLocation="cryptidMedia https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd">
+    <mediaDetails>
+        <mediaIdentifier cs:type="URL">https://web.archive.org/web/20201112020048/http://www.strangemag.com/chambers17.html</mediaIdentifier>
+        <mediaName cs:termSource="none" cs:termSourceID="none" supplied="false">The Makeup Man and the Monster: John Chambers and the Patterson Bigfoot Suit</mediaName>
+        <mediaType cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>
+        <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Strange Magazine</mediaAffiliation>
+        <mediaPublicationDate>
+            <approximateDate>Summer 1996</approximateDate>
+        </mediaPublicationDate>
+        <mediaDimensions cs:unit="words" cs:type="word count">8642</mediaDimensions>
+        <mediaDescription>"Mark Chorvinsky explores the case of make-up master John Chambers and the Patterson Bigfoot suit."</mediaDescription>
+        <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+    </mediaDetails>
+    
+    <accountOfSighting>
+        <observer cs:type="individual" cs:groupMembership="none">Patterson</observer>
+        <cryptidSeen>
+            <cryptidCanonicalName cs:termSource="LOC" cs:termSourceID="sh85117619">Sasquatch</cryptidCanonicalName>
+            <cryptidAlternativeName>Bigfoot</cryptidAlternativeName>
+        </cryptidSeen>
+        <sightingDate>
+            <exactDate>1967-10-20</exactDate>
+        </sightingDate>
+        <sightingTime>
+            <timeDetails>
+                <approximateTime>day</approximateTime>
+            </timeDetails>
+            <timeType>video recorded</timeType>
+        </sightingTime>
+        <sightingLocation>
+            <continent>NA</continent>
+        </sightingLocation>
+    </accountOfSighting>
+    
+    <mentionedEvidence>
+        <evidenceAffirmative>
+            <evidenceAgent cs:termSource="LCNAF" cs:termSourceID="http://id.loc.gov/authorities/names/no2015088569">Chambers, John, 1922-2001</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <evidenceDescription>John Chambers denies designing the suit.</evidenceDescription>
+        </evidenceAffirmative>
+        <evidenceNegative>
+            <evidenceAgent cs:termSource="none" cs:termSourceID="none">Alex Downs</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <evidenceDescription>Anthropologist/cryptozoologist Alex Downs reported that he heard that John Chambers made the ape suit from author/producer Don Glut.</evidenceDescription>
+        </evidenceNegative>
+        <evidenceNegative>
+            <evidenceAgent cs:termSource="none" cs:termSourceID="none">Dave Kindlon</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <evidenceDescription>Effects makeup artist Dave Kindlon learned of Chambers' involvement in the fabrication of the suit from friend makeup artist Howard Berger, who claimed that makeup artist Rick Baker told him.</evidenceDescription>
+        </evidenceNegative>
+        <evidenceNegative>
+            <evidenceAgent cs:termSource="none" cs:termSourceID="none">Howard Berger</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <evidenceDescription>Howard Berger, chief of Hollywood makeup effects studio KNB Effects Group, reports that he heard John Chambers made the suit from Rick Baker, confirming Dave Kindlon's story. </evidenceDescription>
+        </evidenceNegative>
+        <evidenceNegative>
+            <evidenceAgent cs:termSource="LCNAF" cs:termSourceID="http://id.loc.gov/authorities/names/no2012058537">Rick Baker</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <evidenceDescription>Rick Baker described the creature "looked like fake fur" in the past, but declined to be interviewed by the author.</evidenceDescription>
+        </evidenceNegative>
+        <evidenceNegative>
+            <evidenceAgent cs:termSource="LCNAF" cs:termSourceID="http://id.loc.gov/authorities/names/n00024111">Bob Burns</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <evidenceDescription>Ape impersonator Bob Burns reported that he had spent time with Rick Baker analyzing the Patterson-Gimlin footage. He also reported that "it's generally known in the special effects business here, that it's kind of common knowledge that the film footage was faked by John Chambers." He did not remember who had told him this, but denied that it was Rick Baker.</evidenceDescription>
+        </evidenceNegative>
+        <evidenceNegative>
+            <evidenceAgent cs:termSource="none" cs:termSourceID="none">Matt Croteau</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <evidenceDescription>Matt Croteau, makeup sculptor, reported that his independent knowledge that Chambers had worked on the suit came from a source very close to Chambers, though they chose to remain nameless. </evidenceDescription>
+        </evidenceNegative>
+        <evidenceNegative>
+            <evidenceAgent cs:termSource="LCNAF" cs:termSourceID="http://id.loc.gov/authorities/names/no2015088569">Chambers, John, 1922-2001</evidenceAgent>
+            <evidenceClassification>physical</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">other</evidenceType>
+            <evidenceDescription>John Chambers has admitted to creating the "Burbank Bigfoot" carcass, a "900-pound, seven-foot-four-inch Bigfoot model created by Chambers and his crew in the makeup artist's Burbank garage." "the body was an alginate life casting of the actor Richard Kiel, best known for his role as "Jaws" in two James Bond films. Chambers worked on the face to create an "apeman" look and ultimately the whole body was cast in plaster. The plaster body was meticulously painted by Chambers and then covered in three pounds of human hair."</evidenceDescription>
+        </evidenceNegative>
+    </mentionedEvidence>
+</cryptidMedia>
