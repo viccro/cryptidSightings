@@ -80,6 +80,7 @@
             xx            * evidenceType repeated
             xx            * mediaIdentifier required
             xx            * set supplied attribute to true and false, rather than yes/no
+            xx            * cryptidDescription optional
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
     </xs:annotation>
@@ -409,7 +410,7 @@
                     <xs:documentation>Any alternative name used to refer to the type of creature or individual creature observed</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="cryptidDescription">
+            <xs:element name="cryptidDescription" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>A description of the cryptid, as reported in this account, as told by the listed observer(s). This may include dimensions, colors, mode of locomotion, and other biological details.</xs:documentation>
                 </xs:annotation>
