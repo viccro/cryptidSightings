@@ -18,7 +18,7 @@
 
 **Recommended values for *type*:** The acceptable values are *individual* and *group*
 
-**Recommended values for *groupMembership*:** If an individual is listed as part of a group, denote the name of the group with this attribute. For example, *Campus Life youth group*.
+**Recommended values for *groupMembership*:** If an individual is listed as part of a group, denote the name of the group with this attribute. For example, `Campus Life youth group`. If no group is listed, enter `none`.
 
 ### Tagging Examples:
 ```
