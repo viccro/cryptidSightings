@@ -67,6 +67,8 @@
 
 **Optional**
 
+**Non-repeatable**
+
 **Element tag:** `<evidenceDescription>`
 
 **Data values:**  Uncontrolled. Free text description.
