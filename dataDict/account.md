@@ -13,7 +13,7 @@
 ## Sub-Element: observer
 **Element tag:** `<observer>`
 
-**Description:** The name of one of the observers who stands by this account of the story.
+**Description:** The name of an individual observer or group of observers who stands by this account of the story.
 
 **Attributes:** *type, groupMembership*
 
