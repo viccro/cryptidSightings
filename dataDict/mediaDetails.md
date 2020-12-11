@@ -65,7 +65,7 @@
 
 **Attributes:** *termsSource*, *termSourceId*
 
-**Recommended values for *termSource*:** Reference the source of the name used, such as `LCNA` for Library of Congress Name Authority. If no controlled source was used, enter `none`.
+**Recommended values for *termSource*:** Reference the source of the name used, such as `LCNAF` for Library of Congress Name Authority. If no controlled source was used, enter `none`.
 
 **Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no controlled source was used, enter `none`.
 
