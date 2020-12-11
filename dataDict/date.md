@@ -25,7 +25,7 @@
 
 **Optional**
 
-**Data values:** Possible entries include "2020-11", "2001-10-29 or 2001-10-30", "Summer 1982", "1850-1857", or "The 1600s".
+**Data values:** Free text description. Possible entries include "2020-11", "2001-10-29 or 2001-10-30", "Summer 1982", "1850-1857", or "The 1600s".
 
 
 ## Sub-Element: unknownDate
