@@ -4,7 +4,7 @@
 
 **Repeatable**
 
-**Element tag** '<account>'
+**Element tag** `<account>`
 
 **Attributes:** No associated attributes
 
