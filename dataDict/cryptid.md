@@ -11,11 +11,11 @@
 
 **Non-Repeatable, Required**
 
-**Data values:**  Controlled. Recommended: taken from the [wikipedia List of Cryptids](https://en.wikipedia.org/wiki/List_of_cryptids).
+**Data values:**  Controlled. Recommended: Library of Congress, the [wikipedia List of Cryptids](https://en.wikipedia.org/wiki/List_of_cryptids).
 
-**Recommended values for *termSource*:** *AAT*, *[wikiLC](https://en.wikipedia.org/wiki/List_of_cryptids)*. *[wikiLLC](https://en.wikipedia.org/wiki/Lists_of_legendary_creatures)*, *[fandomWikiLC](https://cryptidz.fandom.com/wiki/List_of_Cryptids)*. See reference index for full list.
+**Recommended values for *termSource*:** *LOC* *AAT*, *[wikiLC](https://en.wikipedia.org/wiki/List_of_cryptids)*. *[wikiLLC](https://en.wikipedia.org/wiki/Lists_of_legendary_creatures)*, *[fandomWikiLC](https://cryptidz.fandom.com/wiki/List_of_Cryptids)*. See reference index for full list.
 
-**Recommended values for *termSourceID*:** URL or URI found in the termsource
+**Recommended values for *termSourceID*:** LOC number, URL or URI found in the termsource
 
 ## Sub-element: cryptidAlternativeName
 
