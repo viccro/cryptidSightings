@@ -1,4 +1,8 @@
-## Element: time
+## Element: sightingTime
+
+**Required**
+
+**Repeatable**
 
 **Element tag** `<time>`
 
