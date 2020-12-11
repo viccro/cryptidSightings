@@ -14,6 +14,8 @@
 
 **Optional**
 
+**Non-repeatable**
+
 **Data values:** Uses xml date format, ie. YYYY-MM-DD
 
 
@@ -24,6 +26,8 @@
 **Description** Use if a range of possible dates are known. 
 
 **Optional**
+
+**Non-repeatable**
 
 **Data values:** Free text description. Possible entries include "2020-11", "2001-10-29 or 2001-10-30", "Summer 1982", "1850-1857", or "The 1600s".
 
@@ -37,6 +41,8 @@
 **Description** If no details at all are given about the date, set unknownDate to `true`. This is strongly discouraged, but preferred to leaving the date field empty. Omit this element if the date is available.
 
 **Optional**
+
+**Non-repeatable**
 
 **Data values:** Only use `true`. Rather than set this field to `false` for a known date, set one of the other two fields within `<date>` with more details.
 
