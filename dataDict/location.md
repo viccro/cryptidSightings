@@ -19,7 +19,7 @@
 
 **Non-repeatable**
 
-**Data values:** One of *AF, NA, OC, AN, AS, EU,* or *SA*.
+**Data values:** One of the two letter codes: *AF, NA, OC, AN, AS, EU, SA* or *AU*. (codes stand for Africa, North America, Oceania, Antarctica, Asia, Europe, South America, Australia)
 
 ### Tagging Examples:
 `<continent>NA</continent>`
