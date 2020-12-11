@@ -1,6 +1,12 @@
 # Element: account
 
-**Element tag** `<account>`
+**Required**
+
+**Repeatable**
+
+**Element tag** `<account>
+
+**Attributes:** No associated attributes
 
 **Description** The consistent account of the encounter, given by a single observer or group of observers of the incident
 
