@@ -12,6 +12,8 @@
 
 **Required**
 
+**Non-repeatable**
+
 **Data values:** [timeDetails](timeDetails.md)
 
 
@@ -22,6 +24,8 @@
 **Description** A description of the time noted, 
 
 **Optional**
+
+**Non-repeatable**
 
 **Data values:** Possible values include "cryptid first seen", "cryptid submerged", or "cryptid no longer visible"
 
