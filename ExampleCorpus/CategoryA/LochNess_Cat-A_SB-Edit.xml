@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cryptidMedia xmlns="cryptidMedia"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cs="cryptidMedia"
+    xsi:schemaLocation="cryptidMedia https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd">
+    <mediaDetails>
+        <mediaIdentifier  cs:type="URL">https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+        <mediaName  cs:termSource="none" cs:termSourceID="none">Loch Ness monster: legendary creature</mediaName>
+        <mediaType  cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>
+        <mediaAffiliation  cs:termSource="none" cs:termSourceID="none">Britannica</mediaAffiliation>
+        <mediaPublicationDate>
+            <exactDate>2020-05-04</exactDate>
+        </mediaPublicationDate>
+        <mediaDimensions  cs:unit="word count" cs:type="words">512</mediaDimensions>
+        <mediaDescription>A history of sightings of the Loch Ness monster, including photographs, details of accounts, as well as debunking information.</mediaDescription>
+        <mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+    </mediaDetails>
+    <accountOfSighting>
+        <observer  cs:type="individual" cs:groupMembership="none">Wilson, Robert Kenneth</observer>
+        <cryptidSeen>
+            <cryptidCanonicalName  cs:termSource="LOC" cs:termSourceID="sh 85077967">Loch Ness Monster</cryptidCanonicalName>
+            <cryptidAlternativeName>Nessie</cryptidAlternativeName>
+            <cryptidDescription>The creature has been compared to a plesiosaur, a prehistoric dinosaur. It has been described as being an enormous dragon-like creature. It is estimated to be 20 feet long.</cryptidDescription>
+        </cryptidSeen>
+        <sightingDate>
+            <approximateDate>1934</approximateDate>
+        </sightingDate>
+        <sightingTime>
+            <timeDetails>
+                <unknownTime>true</unknownTime>
+            </timeDetails>
+            <timeType>Cryptid photographed</timeType>
+        </sightingTime>
+        <sightingLocation>
+            <continent>EU</continent>
+            <geoCoordinates>
+                <longitude>57.3229</longitude>
+                <latitude>4.4244</latitude>
+            </geoCoordinates>
+            <locationDescription>Loch Ness, Scotland, is a freshwater loch that is located in the Scottish Highlands.</locationDescription>
+        </sightingLocation>
+        <descriptionOfAccount>Robert Kenneth Wilson went to Loch Ness, Scotland in 1934 determined to gather evidence that the Loch Ness Monster existed. He saw a creature with a long neck and round head and managed to capture a photograph. This photograph is the most well-known and is known as the Surgeon's Photograph. It was published in the Daily Mail and sparked international interest.</descriptionOfAccount>
+    </accountOfSighting>
+    <mentionedEvidence>
+        <evidenceAffirmative>
+            <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Wilson, Robert Kenneth</evidenceAgent>
+            <evidenceClassification>physical</evidenceClassification>
+            <evidenceType  cs:termSource="AAT" cs:termSourceID="300046300">photograph</evidenceType>
+            <mediaEvidence>
+                <mediaIdentifier  cs:type="URL">https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+                <mediaName  cs:termSource="none" cs:termSourceID="none">Loch Ness monster: legendary creature</mediaName>
+                <mediaType  cs:termSource="AAT" cs:termSourceID="300046300">photograph</mediaType>
+                <mediaAffiliation  cs:termSource="none" cs:termSourceID="none">Britannica</mediaAffiliation>
+                <mediaPublicationDate>
+                    <exactDate>2020-05-04</exactDate>
+                </mediaPublicationDate>
+                <mediaDimensions  cs:unit="pixels" cs:type="measurement">662; 450</mediaDimensions>
+                <mediaDescription>The digitized version of the photograph orignally taken in 1934 by Robert Kenneth Wilson</mediaDescription>
+                <mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+            </mediaEvidence>
+            <evidenceDescription>The Surgeon's Photograph of what Robert Kenneth Wilson saw in 1934</evidenceDescription>
+        </evidenceAffirmative>
+        <evidenceNegative>
+            <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Wetherell, Marmaduke</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType  cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+            <mediaEvidence>
+                <mediaIdentifier  cs:type="URL">https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+                <mediaName  cs:termSource="none" cs:termSourceID="none">Loch Ness monster: legendary creature</mediaName>
+                <mediaType  cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>
+                <mediaAffiliation  cs:termSource="none" cs:termSourceID="none">Britannica</mediaAffiliation>
+                <mediaPublicationDate>
+                    <exactDate>2020-05-04</exactDate>
+                </mediaPublicationDate>
+                <mediaDimensions  cs:unit="word count" cs:type="words">512</mediaDimensions>
+                <mediaDescription></mediaDescription>
+                <mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+            </mediaEvidence>
+            <evidenceDescription>The creature captured in the photograph is a creation by Marmaduke Wetherell, created by combining different children's toys.</evidenceDescription>
+        </evidenceNegative>
+    </mentionedEvidence>
+</cryptidMedia>
