@@ -23,7 +23,7 @@ statements provided by either a layperson or expert witness.
 * TODO
 
 ###	Demonstrative
-visual aids like photographs, maps, diagrams, and casts of physical evidence.
+visual aids like photographs, video recordings, maps, diagrams, and casts of physical evidence.
 
 #### Recommended demonstrative evidence terms:
 * TODO
