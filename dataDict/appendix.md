@@ -70,11 +70,11 @@ a piece of written, printed, or electronic matter that provides information that
 #### Recommended documentary evidence terms: use the Getty AAT and/or WFS reports for terms related to documentary evidence. 
 
 ### Example AAT terms: 
-books
-correspondence
-damage reports
-diaries
-speeches (documents)
+* books
+* correspondence
+* damage reports
+* diaries
+* speeches (documents)
 
 ### Example WFS report terms:
 * Taxonomic identification
