@@ -18,11 +18,15 @@
 
 **Recommended values for *termSourceID*:** A controlled vocabulary identification number such as the Library of Congress Name Authority File. If not present in a CV, enter a unique identifier such as a URL address if available, or "none".
 
-##### Example: Blogger name "Matt K." from Blogger.com appears as such: 
-** `<cs:evidenceAgent cs:termSource="Blogger" cs:termSourceID="https://www.blogger.com/profile/16529901596756078984">Matt K.</cs:evidenceAgent>`
+### Tagging Examples:
 
-##### Example: The recorder of a sighting testimony name "Batchelor, John, 1854-1944" from LCNAF appears as such:
-** `<cs:evidenceAgent cs:termSource="LCNAF" cs:termSourceId="85253806">Batchelor, John, 1854-1944</cs:evidenceAgent>`
+**Example: Blogger name "Matt K." from Blogger.com appears as such:** 
+```
+<cs:evidenceAgent cs:termSource="Blogger" cs:termSourceID="https://www.blogger.com/profile/16529901596756078984">Matt K.</cs:evidenceAgent>
+```
+**Example: The recorder of a sighting testimony name "Batchelor, John, 1854-1944" from LCNAF appears as such:**
+```<cs:evidenceAgent cs:termSource="LCNAF" cs:termSourceId="85253806">Batchelor, John, 1854-1944</cs:evidenceAgent>
+```
 
 ## Sub-element: evidenceClassification
 
