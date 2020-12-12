@@ -42,6 +42,7 @@ Statements provided by either a layperson or expert witness.
 * Interviews
 * Discussions (events)
 * Speeches (compositions)
+* Testimonies
 
 ###	Demonstrative
 Visual aids like photographs, video recordings, maps, diagrams, and casts of physical evidence.
