@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- version 0.7: 2020-12-06: cryptid-sightings-0.7.xsd -->
+<!-- version 1.0 : 2020-12-06: cryptid-sightings-1.0.xsd -->
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="cryptidMedia"
     targetNamespace="cryptidMedia" elementFormDefault="qualified">
