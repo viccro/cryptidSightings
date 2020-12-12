@@ -4,7 +4,7 @@ description: Supplementary type and term lists to the terms defined in the Wildl
 
 ## Evidence Classification
 ###	Physical
-objects that can be touched, like animal parts.
+Objects that can be touched, like animal parts. Sometimes referred to as "real" evidence.
 #### Recommended physical evidence terms supplement to the WFS report terms:
 * Animal (whole)
 * Animal (part)
@@ -17,19 +17,19 @@ objects that can be touched, like animal parts.
 * Track (Trail)
 
 ###	Testimonial
-statements provided by either a layperson or expert witness.
+Statements provided by either a layperson or expert witness.
 
 #### Recommended testimonial evidence terms:
 * TODO
 
 ###	Demonstrative
-visual aids like photographs, video recordings, maps, diagrams, and casts of physical evidence.
+Visual aids like photographs, video recordings, maps, diagrams, and casts of physical evidence.
 
 #### Recommended demonstrative evidence terms:
 * TODO
 
 ###	Documentary
-records, such as veterinary records and police logs.
+Records, such as veterinary records and police logs.
 
 #### Recommended documentary evidence terms:
 * TODO
