@@ -21,14 +21,11 @@
 ### Tagging Examples:
 
 **Example: Blogger name "Matt K." from Blogger.com appears as such:** 
-```
-<cs:evidenceAgent cs:termSource="Blogger" cs:termSourceID="https://www.blogger.com/profile/16529901596756078984">Matt K.</cs:evidenceAgent>
-```
+`<cs:evidenceAgent cs:termSource="Blogger" cs:termSourceID="https://www.blogger.com/profile/16529901596756078984">Matt K.</cs:evidenceAgent>`
 
 **Example: The recorder of a sighting testimony name "Batchelor, John, 1854-1944" from LCNAF appears as such:**
-```
-<cs:evidenceAgent cs:termSource="LCNAF" cs:termSourceId="85253806">Batchelor, John, 1854-1944</cs:evidenceAgent>
-```
+`<cs:evidenceAgent cs:termSource="LCNAF" cs:termSourceId="85253806">Batchelor, John, 1854-1944</cs:evidenceAgent>`
+
 
 ## Sub-element: evidenceClassification
 
@@ -36,14 +33,16 @@
 
 **Description:** The legal category corresponding to the evidenceType presented. Limited to physical, testimonial, demonstrative, and documentary
 
-**Optional**
-
-**Non-repeatable**
+**Non-repeatable, Optional**
 
 **Data values:** Optional. Repeat the attribute value for display text.
 
 **Attributes:** Controlled. Limited to physical, testimonial, demonstrative, and documentary
 
+### Tagging Examples:
+`<evidenceClassification>demonstrative</evidenceClassification>`
+
+`<evidenceClassification>physical</evidenceClassification>`
 
 ## Sub-element: evidenceType
 
@@ -51,16 +50,19 @@
 
 **Description:** The type of thing that comprises the evidence, taken from the Stadardized local supplement list to the WFS report terms, the standard terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports controlled vocabularies, the Library of Congress Subject Headings, and/or Getty AAT as described in the Data Dictionary Evidence element appendix. Repeat `<evidenceType>` as many times as needed.
 
-**Optional**
-
-**Repeatable**
+**Repeatable, Optional**
 
 **Data values:**  Controlled. See appendix. Recommended: Local Evidence Dictionary Appendix or terminology from the National Institute of Standard and Technology U.S. Department of Commerce Wildlife Forensics Subcommittee Reports Terms: ANSI/ASB Standard 019, Wildlife Forensics General Standards, First Edition, 2019 [http://www.asbstandardsboard.org/wp-content/uploads/2019/05/019_Std_e1.pdf]; ANSI/ASB Standard 028, Wildlife Forensics Morphology Standards, First Edition, 2019 [http://www.asbstandardsboard.org/wp-content/uploads/2019/05/028_Std_e1.pdf]; ANSI/ASB Standard 048, Wildlife Forensic DNA Standard Procedures, First Edition, 2019 [http://www.asbstandardsboard.org/wp-content/uploads/2019/05/048_Std_e1.pdf].
 
 **Attributes:** *termSource*, *termSourceID*
 
-**Recommended values for *termSource*:** See list of local acronyms. Recommended are: WFSGeneral, WFSMorphology, and WFSDNA. Use the term "local" if supplied by the record creator.
+**Recommended values for *termSource*:** See list of local acronyms. Recommended are: WFSGeneral, WFSMorphology, and WFSDNA. Use the term "local" if supplied by the record creator or localED if pulled from the local evidence dictionary appendix.
 
+**Recommended values for *termSourceID*:** Use URI, URL, or other unique identifier where supplied by term source. If using local or localED term, use term value here, in addition to using it as value of element.
+
+### Tagging Examples:
+`<evidenceType cs:termSource="AAT" cs:termSourceID="300028682">Video recordings (physical artifacts)</evidenceType>`
+`<evidenceType cs:termSource="localED" cs:termSourceID="Animal (whole)">Animal (whole)</evidenceType>`
  
 ## Sub-element: [mediaEvidence](mediaDetails.md)
 
@@ -72,43 +74,32 @@
 
 **Data values:** [mediaDetails](mediaDetails.md)
 
+### Tagging example:
+```
+<mediaEvidence>
+    <mediaIdentifier cs:type="URL">https://youtu.be/eD8XSQbayXs</mediaIdentifier>
+    <mediaName cs:termSource="none" cs:termSourceID="none">Marble Mountain Bigfoot Video</mediaName>
+    <mediaType cs:termSource="AAT" cs:termSourceID="300312050">Digital moving image formats</mediaType>
+    <mediaPublicationDate>
+        <exactDate>2011-07-06</exactDate>
+    </mediaPublicationDate>
+    <mediaDimensions cs:type="duration" cs:unit="s">417</mediaDimensions>
+    <mediaDescription>A video taken by John Mills during the Campus Life youth retreat. The video starts by exploring the lair of "some kinda creature", with a structured shelter of branches and debris "snapped by mighty mighty strength", with claw marks on surrounding trees. As the group explores the area, someone shouts out "He's walking down. Bigfoot's walking down right now," referring to a ridge in the distance. The camera zooms in to the figure on the ridge, watching him descend to a cluster of trees. When he gets to the trees, the figure begins pacing back and forth, before continuing his descent.</mediaDescription>
+    <mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+</mediaEvidence>
+```
 
 ## Sub-element: evidenceDescription
 
 **Description:** Used to describe the role and content of a piece of evidence.
 
-**Optional**
-
-**Non-repeatable**
+**Non-repeatable, Optional**
 
 **Element tag:** `<evidenceDescription>`
 
 **Data values:**  Uncontrolled. Free text description.
 
 ### Tagging Examples:
-```
-<evidenceAffirmative>
-    <evidenceAgent>Jim Mills</evidenceAgent>
-    <evidenceClassification>demonstrative</evidenceClassification>
-    <evidenceType>Video of creature</evidenceType>
-    <mediaEvidence>
-        <mediaIdentifier cs:type="URL">https://youtu.be/eD8XSQbayXs</mediaIdentifier>
-        <mediaName>Marble Mountain Bigfoot Video</mediaName>
-        <mediaType cs:termSource="AAT" cs:termSourceID="300312050">Digital moving image formats</mediaType>
-        <mediaPublicationDate>
-            <exactDate>2011-07-06</exactDate>
-        </mediaPublicationDate>
-        <mediaDimensions cs:type="duration" cs:unit="s">417</mediaDimensions>
-        <mediaDescription>A video taken by John Mills during the Campus Life youth retreat. The video starts by exploring the lair of "some kinda creature", with a structured shelter of branches and debris "snapped by mighty mighty strength", with claw marks on surrounding trees. As the group explores the area, someone shouts out "He's walking down. Bigfoot's walking down right now," referring to a ridge in the distance. The camera zooms in to the figure on the ridge, watching him descend to a cluster of trees. When he gets to the trees, the figure begins pacing back and forth, before continuing his descent.</mediaDescription>
-        <mediaLanguage cs:type="current">eng</mediaLanguage>
-    </mediaEvidence>
-</evidenceAffirmative>
-```
+`<evidenceDescription>The creature captured in the photograph is a creation by Marmaduke Wetherell, created by combining different children's toys.</evidenceDescription>`
 
-```
-<evidenceNegative>
-    <evidenceAgent>Philip Morris</evidenceAgent>
-    <evidenceClassification>demonstrative</evidenceClassification>
-    <evidenceType>Rubber Ape Suit</evidenceType>
-</evidenceNegative>
-```
+`<evidenceDescription>Eric Shipton's photograph of an alleged Yeti footprint, 13 inches in length, shows five toes, with an apparent 'big toe.'</evidenceDescription>`

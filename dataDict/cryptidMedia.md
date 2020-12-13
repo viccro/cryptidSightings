@@ -75,3 +75,46 @@
 **Repeatable, Optional**
 
 **Element tag:** `<mentionedEvidence>`
+
+### Tagging Example:
+```
+<mentionedEvidence>
+<evidenceAffirmative>
+    <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Wilson, Robert Kenneth</evidenceAgent>
+    <evidenceClassification>physical</evidenceClassification>
+    <evidenceType  cs:termSource="AAT" cs:termSourceID="300046300">photograph</evidenceType>
+    <mediaEvidence>
+        <mediaIdentifier  cs:type="URL">https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+        <mediaName  cs:termSource="none" cs:termSourceID="none">Loch Ness monster: legendary creature</mediaName>
+        <mediaType  cs:termSource="AAT" cs:termSourceID="300046300">photograph</mediaType>
+        <mediaAffiliation  cs:termSource="none" cs:termSourceID="none">Britannica</mediaAffiliation>
+        <mediaPublicationDate>
+            <exactDate>2020-05-04</exactDate>
+        </mediaPublicationDate>
+        <mediaDimensions  cs:unit="pixels" cs:type="height">450</mediaDimensions>
+        <mediaDimensions  cs:unit="pixels" cs:type="width">662</mediaDimensions>
+        <mediaDescription>The digitized version of the photograph orignally taken in 1934 by Robert Kenneth Wilson</mediaDescription>
+        <mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+    </mediaEvidence>
+    <evidenceDescription>The Surgeon's Photograph of what Robert Kenneth Wilson saw in 1934</evidenceDescription>
+</evidenceAffirmative>
+<evidenceNegative>
+    <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Wetherell, Marmaduke</evidenceAgent>
+    <evidenceClassification>testimonial</evidenceClassification>
+    <evidenceType  cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
+    <mediaEvidence>
+        <mediaIdentifier  cs:type="URL">https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>
+        <mediaName  cs:termSource="none" cs:termSourceID="none">Loch Ness monster: legendary creature</mediaName>
+        <mediaType  cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>
+        <mediaAffiliation  cs:termSource="LCNAF" cs:termSourceID="nr 89013909">Encyclopaedia Britannica</mediaAffiliation>
+        <mediaPublicationDate>
+            <exactDate>2020-05-04</exactDate>
+        </mediaPublicationDate>
+        <mediaDimensions  cs:unit="word count" cs:type="words">512</mediaDimensions>
+        <mediaDescription></mediaDescription>
+        <mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+    </mediaEvidence>
+    <evidenceDescription>The creature captured in the photograph is a creation by Marmaduke Wetherell, created by combining different children's toys.</evidenceDescription>
+</evidenceNegative>
+</mentionedEvidence>
+```    
