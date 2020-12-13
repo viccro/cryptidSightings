@@ -1,4 +1,4 @@
-# Element: cryptidSeen
+# Element: cryptid
 
 **Description:** An object identifying and describing a cryptid.
 

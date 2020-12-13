@@ -1,4 +1,4 @@
-## Element: sightingTime
+## Element: time
 
 **Required**
 
