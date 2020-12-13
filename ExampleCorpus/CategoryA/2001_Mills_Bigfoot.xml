@@ -2,18 +2,18 @@
 <cryptidMedia xmlns="cryptidMedia"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:cs="cryptidMedia"
-    xsi:schemaLocation="cryptidMedia file:/Users/vicki/Documents/OtherStuff/SLIS/LIS_445/cryptidSightings/cryptid-media-0.7.xsd">
+    xsi:schemaLocation="cryptidMedia https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd">
     <mediaDetails>
         <mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>
-        <mediaName>Marble Mountain Bigfoot Video</mediaName>
-        <mediaType cs:termSource="AAT" cs:termSourceID="300265431">Web sites</mediaType>
-        <mediaAffiliation>Odd Encounters</mediaAffiliation>
+        <mediaName cs:termSource="none" cs:termSourceID="none" supplied="false">Marble Mountain Bigfoot Video</mediaName>
+        <mediaType cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>
+        <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Odd Encounters</mediaAffiliation>
         <mediaPublicationDate>
             <approximateDate>2011-2015</approximateDate>
         </mediaPublicationDate>
         <mediaDimensions cs:type="word count" cs:unit="words">262</mediaDimensions>
         <mediaDescription>A blog post summarizing the Marble Mountain Bigfoot encounter and the Jim Mills video footage that stemmed from it.</mediaDescription>
-        <mediaLanguage>eng</mediaLanguage>
+        <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
     </mediaDetails>
     
     <accountOfSighting>
