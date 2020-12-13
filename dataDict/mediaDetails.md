@@ -16,6 +16,10 @@
 
 **Recommended data values for *type*:** The type of identifier listed: `URI`, `URL`, `ISBN`, etc. Getty AAT term preferred. 
 
+### Tagging Examples:
+`<mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>`
+
+`<mediaIdentifier  cs:type="URL">https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>`
 
 ## Sub-element: mediaName
 
@@ -35,6 +39,10 @@
 
 **Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no control was use, enter `none`.
 
+### Tagging Examples:
+`<mediaName cs:termSource="none" cs:termSourceID="none">Loch Ness monster: legendary creature</mediaName>`
+
+`<mediaName cs:termSource="none" cs:termSourceID="none" supplied="false">Marble Mountain Bigfoot Video</mediaName>`
 
 ## Sub-element: mediaType
 
@@ -52,6 +60,10 @@
 
 **Recommended values for *termSourceID*:** AAT number, `none`
 
+### Tagging Examples:
+`<mediaType cs:termSource="AAT" cs:termSourceID="300312050">Digital moving image formats</mediaType>`
+
+`<mediaType  cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>`
  
 ## Sub-element: mediaAffiliation
 
@@ -69,7 +81,11 @@
 
 **Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no controlled source was used, enter `none`.
 
- 
+### Tagging Examples:
+`<mediaAffiliation  cs:termSource="LCNAF" cs:termSourceID="nr 89013909">Encyclopaedia Britannica</mediaAffiliation>`
+
+`<mediaAffiliation cs:termSource="none" cs:termSourceID="none">Odd Encounters</mediaAffiliation>`
+
 ## Sub-element: [mediaPublicationDate](date.md)
 
 **Description:** The publication date of the media, such as the copyright date of a book, or the date a blog was posted 
@@ -82,9 +98,22 @@
 
 **Data values:** Refer to **Element: Date** for use description of exactDate, approximateDate, and unknownDate options
  
+### Tagging Examples:
+```
+<mediaPublicationDate>
+    <approximateDate>2011-2015</approximateDate>
+</mediaPublicationDate>
+```
+
+```
+<mediaPublicationDate>
+    <exactDate>2020-05-04</exactDate>
+</mediaPublicationDate>
+```
+
 ## Sub-element: mediaDimensions
 
-**Description:** Dimensions related to the media: word count, page count, size of book, seconds or frames of video, file size in bytes or pixels, etc.
+**Description:** Dimensions related to the media: word count, page count, size of book, seconds or frames of video, file size in bytes or pixels, etc. Do not include more than one dimension in each element; repeat mediaDimensions to add both height and width, for example.
 
 **Repeatable, Optional**
 
@@ -97,7 +126,15 @@
 **Data values for *unit*:** `cm`, `mm`, `m`, `g`, `kg`, `kb`, `Mb`, `Gb`, `px`, `words`, `pages`, and others as recommended in CCO and CDWA. 
 
 **Data values for *type*:** `height`, `duration`, `length`, `word count` and others as recommended in CCO and CDWA. 
- 
+
+### Tagging Examples:
+```
+<mediaDimensions  cs:unit="pixels" cs:type="height">450</mediaDimensions>
+<mediaDimensions  cs:unit="pixels" cs:type="width">662</mediaDimensions>
+```
+
+`<mediaDimensions cs:unit="s" cs:type="duration">417</mediaDimensions>`
+
 ## Sub-element: mediaDescription
 
 **Description:** Used to describe the role and content of a piece of media.
@@ -108,6 +145,13 @@
 
 **Data values:**  Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.
  
+### Tagging Examples:
+`<mediaDescription>A video taken by John Mills during the Campus Life youth retreat. The video starts by exploring the lair of "some kinda creature", with a structured shelter of branches and debris "snapped by mighty mighty strength", with claw marks on surrounding trees. As the group explores the area, someone shouts out "He's walking down. Bigfoot's walking down right now," referring to a ridge in the distance. The camera zooms in to the figure on the ridge, watching him descend to a cluster of trees. When he gets to the trees, the figure begins pacing back and forth, before continuing his descent.</mediaDescription>`
+
+`<mediaDescription>The digitized version of the photograph orignally taken in 1934 by Robert Kenneth Wilson</mediaDescription>`
+
+`<mediaDescription>A history of sightings of the Loch Ness monster, including photographs, details of accounts, as well as debunking information.</mediaDescription>`
+
 ## Sub-element: mediaLanguage
 
 **Description:** The main language of the piece of media
@@ -125,17 +169,9 @@
 **Recommended values for *termSource*:** Identify the controlled vocabulary used to populate the language data value. For example: `ISO 639-2b` or `RFC 3066`.
 
 ## Tagging Examples:
+`<mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>`
+
 ```
-<mediaDetails>
-    <mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>
-    <mediaName cs:termSource="none" cs:termSourceID="none" supplied="false">Marble Mountain Bigfoot Video</mediaName>
-    <mediaType cs:termSource="AAT" cs:termSourceID="300265431">Web sites</mediaType>
-    <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Odd Encounters</mediaAffiliation>
-    <mediaPublicationDate>
-        <approximateDate>2011-2015</approximateDate>
-    </mediaPublicationDate>
-    <mediaDimensions cs:type="word count" cs:unit="words">262</mediaDimensions>
-    <mediaDescription>A blog post summarizing the Marble Mountain Bigfoot encounter and the Jim Mills video footage that stemmed from it.</mediaDescription>
-    <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
-</mediaDetails>
+<mediaLanguage  cs:termSource="ISO 639-2b" cs:type="former">jpn</mediaLanguage>
+<mediaLanguage  cs:termSource="ISO 639-2b" cs:type="translated">tlh</mediaLanguage>
 ```
