@@ -90,3 +90,7 @@
 ```
 <descriptionOfAccount>Campus Life Youth Group, led by Jim Mills, found what appeared to be a shelter for something large. The shelter was described as being made of trees that were snapped by some massive force. Then, the group saw a strange figure walking along the ridgeline. Oddly proportioned, he stood taller than any man and was estimated to weight 700 pounds.</descriptionOfAccount>
 ```
+
+```
+<descriptionOfAccount>Robert Kenneth Wilson went to Loch Ness, Scotland in 1934 determined to gather evidence that the Loch Ness Monster existed. He saw a creature with a long neck and round head and managed to capture a photograph. This photograph is the most well-known and is known as the Surgeon's Photograph.</descriptionOfAccount>
+```
