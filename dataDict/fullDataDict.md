@@ -7,10 +7,11 @@ University, in the School of Library and Information Science (SLIS). The schema 
 * Vicki Crosson
 * Alex Werbizky Ehrhardt
 
-This version of the schema will be documented at www.github.com/viccro/cryptidSightings/tree/main/dataDict/
+This version of the schema will be documented [here](www.github.com/viccro/cryptidSightings/tree/main/dataDict/)
+
 The latest version of the schema may be downloaded [at this link](https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd).
 
-The Cryptid Sightings Schema will be used to document any sighting of a cryptid (any animal whose 
+The Cryptid Media Schema will be used to document any media pertaining to a sighting of a cryptid (any animal whose 
 existence is unsubstantiated). 
 
 The schema makes use of a lot of structures found in CDWAlite, especially with regards to attributes.
@@ -26,6 +27,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
         * [mediaPublicationDate](date.md)
         * [mediaDimensions](cryptidMedia.md#sub-element-mediaDimensions)
         * [mediaDescription](cryptidMedia.md#sub-element-mediadescription)
+        * [mediaLanguage](cryptidMedia.md#sub-element-medialanguage)
 
     * [accountOfSighting](account.md)
         * [observer](account.md#sub-element-observer)
@@ -669,7 +671,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 `<cryptidDescription>"It does not look like a person. It's arms are way too big; it's hands. Look at its hands, its hands hang down to its knees at least."</cryptidDescription>`
 
-## Element: date
+# Element: date
 
 **Element tag** `<date>`
 
@@ -728,7 +730,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 **Tagging Examples**
 `<unknownDate>true</unknownDate>`
 
-## Element: time
+# Element: time
 
 **Element tag** `<time>`
 
@@ -786,7 +788,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 `<timeType>Cryptid bumped the boat</timeType>`
 
-## Element: timeDetails
+# Element: timeDetails
 
 **Element tag** <timeDetails>
 

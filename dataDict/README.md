@@ -10,8 +10,8 @@ University, in the School of Library and Information Science (SLIS). The schema 
 This version of the schema will be documented at www.github.com/viccro/cryptidSightings/tree/main/dataDict/
 The latest version of the schema may be downloaded [at this link](https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd).
 
-The Cryptid Sightings Schema will be used to document any sighting of a cryptid (any animal whose 
-existence is unsubstantiated). 
+The Cryptid Media Schema will be used to document any media pertaining to a sighting of a cryptid (any animal whose 
+existence is unsubstantiated).
 
 The schema makes use of a lot of structures found in CDWAlite, especially with regards to attributes.
 
@@ -26,6 +26,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
         * [mediaPublicationDate](date.md)
         * [mediaDimensions](cryptidMedia.md#sub-element-mediaDimensions)
         * [mediaDescription](cryptidMedia.md#sub-element-mediadescription)
+        * [mediaLanguage](cryptidMedia.md#sub-element-medialanguage)
 
     * [accountOfSighting](account.md)
         * [observer](account.md#sub-element-observer)
@@ -61,9 +62,10 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
     * [mentionedEvidence](cryptidMedia.md#sub-element-mentionedevidence)
         * [evidenceAffirmative](evidence.md)
             * [evidenceAgent](evidence.md#sub-element-evidenceagent)
+            * [evidenceAgent](evidence.md#sub-element-evidenceclassification)
             * [evidenceType](evidence.md#sub-element-evidencetype)
             * [mediaEvidence](mediaDetails.md)
-            * [mediaIdentifier](cryptidMedia.md#sub-element-mediaIdentifier)
+                * [mediaIdentifier](cryptidMedia.md#sub-element-mediaIdentifier)
                 * [mediaName](cryptidMedia.md#sub-element-medianame)
                 * [mediaType](cryptidMedia.md#sub-element-mediatype)
                 * [mediaAffiliation](cryptidMedia.md#sub-element-mediaaffiliation)
@@ -73,9 +75,10 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
             * [evidenceDescription](evidence.md#sub-element-evidenceAgent)
         * [evidenceNegative](evidence.md)
             * [evidenceAgent](evidence.md#sub-element-evidenceagent)
+            * [evidenceAgent](evidence.md#sub-element-evidenceclassification)
             * [evidenceType](evidence.md#sub-element-evidencetype)
             * [mediaEvidence](mediaDetails.md)
-            * [mediaIdentifier](cryptidMedia.md#sub-element-mediaIdentifier)
+                * [mediaIdentifier](cryptidMedia.md#sub-element-mediaIdentifier)
                 * [mediaName](cryptidMedia.md#sub-element-medianame)
                 * [mediaType](cryptidMedia.md#sub-element-mediatype)
                 * [mediaAffiliation](cryptidMedia.md#sub-element-mediaaffiliation)

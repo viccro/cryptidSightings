@@ -1,4 +1,4 @@
-## Element: timeDetails
+# Element: timeDetails
 
 **Element tag** <timeDetails>
 

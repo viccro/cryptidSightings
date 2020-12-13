@@ -82,6 +82,7 @@
             xx            * set supplied attribute to true and false, rather than yes/no
             xx            * cryptidDescription optional
             xx            * mediaEvidence optional
+            xx            * sightingDate repeatable
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xs:documentation>
     </xs:annotation>
@@ -275,7 +276,7 @@
                 <xs:annotation>
                     <xs:documentation>Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.</xs:documentation>
                 </xs:annotation>
-                <xs:complexType>
+                <xs:complexType>sig
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
                             <xs:attribute name="noAttribute" use="prohibited"/>
@@ -347,21 +348,21 @@
                 </xs:annotation>
             </xs:element>
 
-            <xs:element name="sightingDate" type="date">
+            <xs:element name="sightingDate" type="date" maxOccurs="unbounded">
                 <xs:annotation>
-                    <xs:documentation>The date on which a sighting occurred. If the same cryptid was seen over multiple days, multiple sighting objects should be used to describe these discrete sightings.</xs:documentation>
+                    <xs:documentation>The date on which a sighting occurred. If the same cryptid was seen over multiple days, multiple sightingDate objects should be used to describe these discrete sightings.</xs:documentation>
                 </xs:annotation>
             </xs:element>
 
             <xs:element name="sightingTime" type="time" maxOccurs="unbounded">
                 <xs:annotation>
-                    <xs:documentation>The time or range of times on which a single sighting occurred.</xs:documentation>
+                    <xs:documentation>The time or range of times on which a single sighting occurred. If multiple sightings are described in the media, use multiple sightingTime objects to document them.</xs:documentation>
                 </xs:annotation>
             </xs:element>
 
             <xs:element name="sightingLocation" type="location" maxOccurs="unbounded">
                 <xs:annotation>
-                    <xs:documentation>The place that the cryptid was seen.</xs:documentation>
+                    <xs:documentation>The place that the cryptid was seen. If multiple locations were listed in the media, use multiple sightingLocation objects to document them.</xs:documentation>
                 </xs:annotation>
             </xs:element>
 

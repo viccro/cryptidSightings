@@ -57,7 +57,7 @@
 ## Sub-element: [sightingDate](date.md)
 **Element tag:** `<sightingDate>`
 
-**Description:** The date on which a sighting occurred. If the same cryptid was seen over multiple days, multiple sighting objects should be used to describe these discrete sightings.
+**Description:** The date on which a sighting occurred. If the same cryptid was seen over multiple days, multiple sightingDate objects should be used to describe these discrete sightings.
 
 **Required** 
 
@@ -85,7 +85,7 @@
 ## Sub-element: [sightingTime](time.md)
 **Element tag:** `<sightingTime>`
 
-**Description:** A time or set of times describing when a single sighting occurred. If the time of more than one event in the sighting is known, use multiple sightingTime blocks.
+**Description:** A time or set of times describing when a single sighting occurred. If the time of more than one event in the sighting is known, or if multiple sightings are described in the media, use multiple sightingTime objects. 
 
 **Repeatable, Required** 
 

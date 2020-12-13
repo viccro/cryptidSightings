@@ -1,4 +1,4 @@
-## Element: time
+# Element: time
 
 **Element tag** `<time>`
 

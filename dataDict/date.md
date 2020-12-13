@@ -1,4 +1,4 @@
-## Element: date
+# Element: date
 
 **Element tag** `<date>`
 
