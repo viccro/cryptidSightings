@@ -276,7 +276,7 @@
                 <xs:annotation>
                     <xs:documentation>Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.</xs:documentation>
                 </xs:annotation>
-                <xs:complexType>sig
+                <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
                             <xs:attribute name="noAttribute" use="prohibited"/>
