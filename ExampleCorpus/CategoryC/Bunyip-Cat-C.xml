@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cryptidMedia xmlns="cryptidMedia"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cs="cryptidMedia"
+    xsi:schemaLocation="cryptidMedia
+    https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd">
+    <mediaDetails>
+        <mediaIdentifier cs:type="URL">https://trove.nla.gov.au/newspaper/article/64568063/6013145</mediaIdentifier>
+        <mediaName cs:termSource="none" cs:termSourceID="none">The Bunyip</mediaName>
+        <mediaType cs:termSource="AAT" cs:termSourceID="300048715">articles</mediaType>
+        <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Portland Guardian and Normanby General Advertiser</mediaAffiliation>
+        <mediaPublicationDate>
+            <exactDate>1857-03-23</exactDate>
+        </mediaPublicationDate>
+        <mediaDimensions cs:unit="words" cs:type="word count">565</mediaDimensions>
+        <mediaDescription>A reporter describing their impressions of the wildlife drawings of the bunyip by an artist named Mr. Stocqueler. The artist is likely Edwin Roper Loftus Stocqueler. He saw at least 6 bunyips over hundreds of miles of and down the Murray and Gouldburn rivers. The drawings were made as part of a commision from England to collect sketches of the Gold-fields and Australian scenery for the United Service Gazette. Note that Stocqueler is variably spelled Stocqueler throughout the article.</mediaDescription>
+        <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+    </mediaDetails>
+    
+    <accountOfSighting>
+        <observer cs:type="individual" cs:groupMembership="none">Stocqueler, Edwin, 1829-188?</observer>
+        <cryptidSeen>
+            <cryptidCanonicalName cs:termSource="wikiLC" cs:termSourceID="https://en.wikipedia.org/wiki/Bunyip">Bunyip</cryptidCanonicalName>
+            <cryptidDescription>Quoted text: 
+                "the Bunyip is a large freshwater seal, 
+                having two small paddles or fins attached 
+                to the shoulders, a long swan like neck, 
+                a head like a dog, and a curious bag hanging 
+                under the jaw, resembling the pouch 
+                of the pelican. The animal is covered with 
+                hair, like the platypus, and the colour is a 
+                glossy black."
+            </cryptidDescription>
+        </cryptidSeen>
+        <sightingDate>
+            <approximateDate>spring 1857</approximateDate>
+        </sightingDate>
+        <sightingTime>
+            <timeDetails>
+                <unknownTime>true</unknownTime>
+            </timeDetails>
+            <timeType>bunyip in its natural habitat</timeType>
+        </sightingTime>
+        <sightingLocation>
+            <continent>OC</continent>
+            <unknownLocation>false</unknownLocation>
+            <locationDescription>At least 6 bunyips were sighted up and down the Murray and Goulburn rivers in Australia before stopping in Albany, Australia, where the author of the article first saw the sketches of the bunyips drawn by Mr. Stocqueler.</locationDescription>
+        </sightingLocation>
+        <descriptionOfAccount>One account was noted in the article. Quoted text: 
+            "Mr. Stocqueler saw no less 
+            than six of these curious animals at different 
+            times; his boat was within thirty feet 
+            of one near M'Guire's punt on the Goulburn,
+            and he fired at the Bunyip, but did 
+            not succeed in capturing him. The smallest 
+            appeared to be about five feet in length, 
+            and the largest exceeded fifteen feet. The 
+            head of the largest was the size of a bullock's 
+            head, and three feet out of water."            
+        </descriptionOfAccount>
+    </accountOfSighting>
+    
+    <mentionedEvidence>
+        <evidenceAffirmative>
+            <evidenceAgent cs:termSource="Libraries Australia Authorities" cs:termSourceID="35377281">Stocqueler, Edwin, 1829-188?</evidenceAgent>
+            <evidenceClassification>demonstrative</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="">travel sketches</evidenceType>
+            <mediaEvidence>
+                <mediaIdentifier cs:type="URL">https://trove.nla.gov.au/newspaper/article/64568063/6013145</mediaIdentifier>
+                <mediaName cs:termSource="none" cs:termSourceID="none">The Bunyip</mediaName>
+                <mediaType cs:termSource="AAT" cs:termSourceID="300048715">articles</mediaType>
+                <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Portland Guardian and Normanby General Advertiser</mediaAffiliation>
+                <mediaPublicationDate>
+                    <exactDate>1857-03-23</exactDate>
+                </mediaPublicationDate>
+                <mediaDimensions cs:unit="words" cs:type="word count">565</mediaDimensions>
+                <mediaDescription>A reporter describing their impressions of the wildlife drawings of the bunyip by an artist named Mr. Stocqueler. The artist is likely Edwin Roper Loftus Stocqueler. He saw at least 6 bunyips over hundreds of miles of and down the Murray and Gouldburn rivers. The drawings were made as part of a commision from England to collect sketches of the Gold-fields and Australian scenery for the United Service Gazette. Note that Stocqueler is variably spelled Stocqueler throughout the article.</mediaDescription>
+                <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+            </mediaEvidence>
+            <evidenceDescription>One sketch contained a likeness of the Bunyip's neck and shoulders.
+            </evidenceDescription>
+        </evidenceAffirmative>
+        
+        <evidenceAffirmative>
+            <evidenceAgent cs:termSource="none" cs:termSourceID="none">Group from the Aboriginal Goulburn tribe</evidenceAgent>
+            <evidenceClassification>testimonial</evidenceClassification>
+            <evidenceType cs:termSource="AAT" cs:termSourceID="300026392">interviews</evidenceType>
+            <mediaEvidence>
+                <mediaIdentifier cs:type="URL">https://trove.nla.gov.au/newspaper/article/64568063/6013145</mediaIdentifier>
+                <mediaName cs:termSource="none" cs:termSourceID="none">The Bunyip</mediaName>
+                <mediaType cs:termSource="AAT" cs:termSourceID="300048715">articles</mediaType>
+                <mediaAffiliation cs:termSource="none" cs:termSourceID="none">Portland Guardian and Normanby General Advertiser</mediaAffiliation>
+                <mediaPublicationDate>
+                    <exactDate>1857-03-23</exactDate>
+                </mediaPublicationDate>
+                <mediaDimensions cs:unit="words" cs:type="word count">565</mediaDimensions>
+                <mediaDescription>A reporter describing their impressions of the wildlife drawings of the bunyip by an artist named Mr. Stocqueler. The artist is likely Edwin Roper Loftus Stocqueler. He saw at least 6 bunyips over hundreds of miles of and down the Murray and Gouldburn rivers. The drawings were made as part of a commision from England to collect sketches of the Gold-fields and Australian scenery for the United Service Gazette. Note that Stocqueler is variably spelled Stocqueler throughout the article.</mediaDescription>
+                <mediaLanguage cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
+            </mediaEvidence>
+            <evidenceDescription>Quoted text: 
+                "After taking a sketch of the animal, Mr. 
+                Stocqueler showed it to several blacks of 
+                the Goulburn tribe, who declared that the 
+                picture was "Bunyip's brother," meaning 
+                a duplicate or likeness of the bunyip."
+            </evidenceDescription>
+        </evidenceAffirmative>
+    </mentionedEvidence>
+</cryptidMedia>
