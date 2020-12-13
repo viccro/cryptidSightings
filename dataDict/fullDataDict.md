@@ -167,7 +167,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Element tag:** `<mediaDetails>`
 
-### Tagging Example:
+**Tagging Example**
 ```
 <mediaDetails>
     <mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>
@@ -191,7 +191,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Element tag:** `<accountOfSighting>`
 
-### Tagging Example:
+**Tagging Example**
 ```
 <accountOfSighting>
     <observer cs:type="individual" cs:groupMembership="Campus Life youth group">Jim Mills</observer>
@@ -230,7 +230,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Element tag:** `<mentionedEvidence>`
 
-### Tagging Example:
+**Tagging Example**
 ```
 <mentionedEvidence>
 <evidenceAffirmative>
@@ -291,7 +291,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended data values for *type*:** The type of identifier listed: `URI`, `URL`, `ISBN`, etc. Getty AAT term preferred. 
 
-### Tagging Examples:
+**Tagging Examples**
 `<mediaIdentifier cs:type="URL">http://www.oddencounters.com/creatures/Marble-Mountain-Bigfoot-Video.html</mediaIdentifier>`
 
 `<mediaIdentifier  cs:type="URL">https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature</mediaIdentifier>`
@@ -314,7 +314,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no control was use, enter `none`.
 
-### Tagging Examples:
+**Tagging Examples**
 `<mediaName cs:termSource="none" cs:termSourceID="none">Loch Ness monster: legendary creature</mediaName>`
 
 `<mediaName cs:termSource="none" cs:termSourceID="none" supplied="false">Marble Mountain Bigfoot Video</mediaName>`
@@ -335,7 +335,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended values for *termSourceID*:** AAT number, `none`
 
-### Tagging Examples:
+**Tagging Examples**
 `<mediaType cs:termSource="AAT" cs:termSourceID="300312050">Digital moving image formats</mediaType>`
 
 `<mediaType  cs:termSource="AAT" cs:termSourceID="300048715">article</mediaType>`
@@ -356,7 +356,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended values for *termSourceID*:** Reference the unique identifier of the term used, if present, such as the Library of Congress identifier number. If no controlled source was used, enter `none`.
 
-### Tagging Examples:
+**Tagging Examples**
 `<mediaAffiliation  cs:termSource="LCNAF" cs:termSourceID="nr 89013909">Encyclopaedia Britannica</mediaAffiliation>`
 
 `<mediaAffiliation cs:termSource="none" cs:termSourceID="none">Odd Encounters</mediaAffiliation>`
@@ -373,7 +373,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** Refer to **Element: Date** for use description of exactDate, approximateDate, and unknownDate options
  
-### Tagging Examples:
+**Tagging Examples**
 ```
 <mediaPublicationDate>
     <approximateDate>2011-2015</approximateDate>
@@ -402,7 +402,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values for *type*:** `height`, `duration`, `length`, `word count` and others as recommended in CCO and CDWA. 
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <mediaDimensions  cs:unit="pixels" cs:type="height">450</mediaDimensions>
 <mediaDimensions  cs:unit="pixels" cs:type="width">662</mediaDimensions>
@@ -420,7 +420,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  Uncontrolled. Free text description of the media, prioritizing information that is not otherwise described in the schema.
  
-### Tagging Examples:
+**Tagging Examples**
 `<mediaDescription>A video taken by John Mills during the Campus Life youth retreat. The video starts by exploring the lair of "some kinda creature", with a structured shelter of branches and debris "snapped by mighty mighty strength", with claw marks on surrounding trees. As the group explores the area, someone shouts out "He's walking down. Bigfoot's walking down right now," referring to a ridge in the distance. The camera zooms in to the figure on the ridge, watching him descend to a cluster of trees. When he gets to the trees, the figure begins pacing back and forth, before continuing his descent.</mediaDescription>`
 
 `<mediaDescription>The digitized version of the photograph orignally taken in 1934 by Robert Kenneth Wilson</mediaDescription>`
@@ -479,7 +479,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended values for *groupMembership*:** If an individual is listed as part of a group, denote the name of the group with this attribute. For example, `Campus Life youth group`. If no group is listed, enter `none`.
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <observer cs:type="individual" cs:groupMembership="Campus Life youth group">Jim Mills</observer>
 <observer cs:type="group" cs:groupMembership="none">Campus Life youth group</observer>
@@ -498,7 +498,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [cryptid](cryptid.md)
 
-### Tagging Example:
+**Tagging Example**
 ```
 <cryptidSeen>
     <cryptidCanonicalName cs:termSource="LOC" cs:termSourceID="sh85117619">Sasquatch</cryptidCanonicalName>
@@ -516,7 +516,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [sightingDate](sightingDate.md)
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <sightingDate>
     <exactDate>1989-10-14</exactDate>
@@ -544,7 +544,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [time](time.md)
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <sightingTime>
     <timeDetails>
@@ -581,7 +581,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [sightingLocation](sightingLocation.md)
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <sightingLocation>
     <continent>AS</continent>
@@ -604,7 +604,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** A description of what happened, according to this consistent telling of the sighting, including any details that distinguish this account from others. May include quotes or paraphrased description of the event. Do not use qualifier like "It appeared to" or "He claims that" unless the observers themselves used those words.
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <descriptionOfAccount>Campus Life Youth Group, led by Jim Mills, found what appeared to be a shelter for something large. The shelter was described as being made of trees that were snapped by some massive force. Then, the group saw a strange figure walking along the ridgeline. Oddly proportioned, he stood taller than any man and was estimated to weight 700 pounds.</descriptionOfAccount>
 ```
@@ -632,7 +632,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended values for *termSourceID*:** LOC number, URL or URI found in the termsource
 
-### Tagging Examples:
+**Tagging Examples**
 `<cryptidCanonicalName  cs:termSource="LOC" cs:termSourceID="sh 85077967">Loch Ness Monster</cryptidCanonicalName>`
 
 `<cryptidCanonicalName cs:termSource="wikiLC" cs:termSourceID="https://en.wikipedia.org/wiki/Mongolian_death_worm">Mongolian Death Worm</cryptidCanonicalName>`
@@ -645,7 +645,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Repeatable, Optional** 
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <cryptidAlternativeName>Leed's Devil</cryptidAlternativeName>
 <cryptidAlternativeName>Jabberwock</cryptidAlternativeName>
@@ -664,7 +664,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** May include quotes or paraphrased description, as consistent with the parent account of the sighting
 
-### Tagging Examples:
+**Tagging Examples**
 `<cryptidDescription>Hoofed creature, with "long thin legs and a long neck, with a dog-like head. It had wings and appeared to be stooping, as if about to jump." Observer could not identify "whether it had hair or feathers."</cryptidDescription>`
 
 `<cryptidDescription>"It does not look like a person. It's arms are way too big; it's hands. Look at its hands, its hands hang down to its knees at least."</cryptidDescription>`
@@ -689,7 +689,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** Uses xml date format, ie. YYYY-MM-DD
 
-### Tagging Example:
+**Tagging Example**
 `<exactDate>1989-10-14</exactDate>`
 
 ## Sub-Element: approximateDate
@@ -704,7 +704,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** Free text description. Possible entries include "2020-11", "2001-10-29 or 2001-10-30", "Summer 1982", "1850-1857", or "The 1600s".
 
-### Tagging Examples:
+**Tagging Examples**
 `<approximateDate>Fall 2020</approximateDate>`
 
 `<approximateDate>day</approximateDate>`
@@ -725,7 +725,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** Only use `true`. Rather than set this field to `false` for a known date, set one of the other two fields within `<date>` with more details.
 
-### Tagging Examples:
+**Tagging Examples**
 `<unknownDate>true</unknownDate>`
 
 ## Element: time
@@ -747,7 +747,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [timeDetails](timeDetails.md)
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <timeDetails>
     <exactTime>17:56:02+05</exactTime>
@@ -778,7 +778,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** Possible values include "cryptid first seen", "cryptid submerged", or "cryptid no longer visible"
 
-### Tagging Examples:
+**Tagging Examples**
 
 `<timeType>Cryptid photographed</timeType>`
 
@@ -804,7 +804,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** A time of the sighting in xml standard, 24 hour time with as much precision as possible: hh:mm:ss.s. If time zone is known, use time offsets from UTC as in ISO 8601, eg 03:45:30+05
 
-### Tagging Examples:
+**Tagging Examples**
 `<exactTime>17:56:02Z</exactTime>`
 
 `<exactTime>22:10-05</exactTime>`
@@ -819,7 +819,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** Possible entries include "morning", "after 10pm", and "between 3pm and 4:30pm". The term "day" refers to all light hours, dawn to dusk. The term "night" refers to all dark hours, dusk to dawn. Photographic and video evidence taken during the day or night can be used to determine these approximate times.
 
-### Tagging Examples:
+**Tagging Examples**
 `<approximateTime>dawn</approximateTime>`
 
 `<approximateTime>between 8pm and 9:15pm</approximateTime>`
@@ -836,7 +836,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** Only use `true`. Rather than set this field to `false` for a known time, set one of the other two fields within `<timeDetails>` with more details.
 
-### Tagging Example:
+**Tagging Example**
 `<unknownTime>true</unknownTime>`
 
 # Element: location
@@ -856,7 +856,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** One of the two letter codes: *AF, NA, OC, AN, AS, EU, SA* or *AU*. (codes stand for Africa, North America, Oceania, Antarctica, Asia, Europe, South America, Australia)
 
-### Tagging Examples:
+**Tagging Examples**
 `<continent>NA</continent>`
 
 `<continent>OC</continent>`
@@ -871,7 +871,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [coordinates](coordinates.md)
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <geoCoordinates>
     <longitude>-71.100082</longitude>
@@ -889,7 +889,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [postalAddress](postalAddress.md)
 
-### Tagging Examples:
+**Tagging Examples**
 ```
 <postalAddress>
     <addressCountry>US</addressCountry>
@@ -917,7 +917,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Non-repeatable, Optional**
 
-### Tagging Example:
+**Tagging Example**
 `<unknownLocation>true</unknownLocation>`
 
 ## Sub-Element: locationDescription
@@ -928,7 +928,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Non-repeatable, Optional**
 
-### Tagging Examples:
+**Tagging Examples**
 `<locationDescription>20 miles from the nearest road, just below a ridgeline in a desolate area just north of Mt. Shasta. In the Marble Mountains.</locationDescription>`
 
 `<locationDescription>Loch Ness, Scotland, is a freshwater loch that is located in the Scottish Highlands.</locationDescription>`
@@ -970,7 +970,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  Use decimal format, e.g. 37.42242
 
-### Tagging Examples:
+**Tagging Examples**
 `<latitude>42.339199</latitude>`
 
 # Element: postalAddress
@@ -990,7 +990,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  Use the two-letter ISO 3166-1 alpha-2 country code.
 
-### Tagging Examples:
+**Tagging Examples**
 `<addressCountry>US</addressCountry>`
 
 `<addressCountry>GB</addressCountry>`
@@ -1007,7 +1007,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  *Massachusetts*, *Nova Scotia*, *Scotland*, or another appropriate first-level administrative division.
 
-### Tagging Examples:
+**Tagging Examples**
 `<addressRegion>Scotland</addressRegion>`
 
 `<addressRegion>The Himalaya Mountains</addressRegion>`
@@ -1022,7 +1022,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  Boston, for example.
 
-### Tagging Examples:
+**Tagging Examples**
 `<addressLocality>Inverness</addressLocality>`
 
 `<addressLocality>Menlunq Tsu Glacier</addressLocality>`
@@ -1037,7 +1037,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  For example, 02115
 
-### Tagging Examples:
+**Tagging Examples**
 `<postalCode>101000</postalCode>`
 
 `<postalCode>78213</postalCode>`
@@ -1054,7 +1054,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  For example, 300 Fenway
 
-### Tagging Examples:
+**Tagging Examples**
 `<streetAddress>улица Крымский Вал, 9</streetAddress>`
 
 `<streetAddress>1600 Pennsylvania Avenue</streetAddress>`
@@ -1114,7 +1114,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:** [evidenceNegative](evidence.md)
 
-### Tagging Example:
+**Tagging Example**
 
 ```
 <evidenceNegative>
@@ -1144,7 +1144,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended values for *termSourceID*:** A controlled vocabulary identification number such as the Library of Congress Name Authority File. If not present in a CV, enter a unique identifier such as a URL address if available, or "none".
 
-### Tagging Examples:
+**Tagging Examples**
 
 **Example: Blogger name "Matt K." from Blogger.com appears as such:** 
 `<cs:evidenceAgent cs:termSource="Blogger" cs:termSourceID="https://www.blogger.com/profile/16529901596756078984">Matt K.</cs:evidenceAgent>`
@@ -1165,7 +1165,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Attributes:** Controlled. Limited to physical, testimonial, demonstrative, and documentary
 
-### Tagging Examples:
+**Tagging Examples**
 `<evidenceClassification>demonstrative</evidenceClassification>`
 
 `<evidenceClassification>physical</evidenceClassification>`
@@ -1186,7 +1186,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Recommended values for *termSourceID*:** Use URI, URL, or other unique identifier where supplied by term source. If using local or localED term, use term value here, in addition to using it as value of element.
 
-### Tagging Examples:
+**Tagging Examples**
 `<evidenceType cs:termSource="AAT" cs:termSourceID="300028682">Video recordings (physical artifacts)</evidenceType>`
 `<evidenceType cs:termSource="localED" cs:termSourceID="Animal (whole)">Animal (whole)</evidenceType>`
  
@@ -1225,8 +1225,91 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
 
 **Data values:**  Uncontrolled. Free text description.
 
-### Tagging Examples:
+**Tagging Examples**
 `<evidenceDescription>The creature captured in the photograph is a creation by Marmaduke Wetherell, created by combining different children's toys.</evidenceDescription>`
 
 `<evidenceDescription>Eric Shipton's photograph of an alleged Yeti footprint, 13 inches in length, shows five toes, with an apparent 'big toe.'</evidenceDescription>`
 
+
+# APPENDIX: Local Evidence Dictionary for Cryptid Sightings
+description: Examples and supplementary type and term lists to the terms defined in the Wildlife Forensic Subcommittee Reports
+
+
+## Evidence Classification
+###	Physical
+Objects that can be touched, like animal parts.
+
+#### Recommended testimonial evidence terms: use the WFS reports, Stadardized local supplement list, and/or the Library of Congress Subject Headings for terms related to physical evidence.
+
+#### Stadardized local supplement list to the WFS report terms: 
+* Animal (whole)
+* Animal (part)
+* Fur
+* Muscular
+* Skin
+* Skeletal
+* Other
+* Track (Single)
+* Track (Trail)
+
+#### Examples WFS report terms:
+* Anthropogenic
+* Casework samples
+* Interspecific	
+* Individual matching
+* Taphonomy
+
+#### Examples Library of Congress terms:
+* Ear
+* Blood
+* Animal tracks
+* Footprints, fossil
+* Organs
+
+###	Testimonial
+Statements provided by either a layperson or expert witness.
+
+#### Recommended testimonial evidence terms: use the Getty AAT and/or WFS reports for terms related to testimonial evidence.
+
+#### Examples AAT terms:
+* Interviews
+* Discussions (events)
+* Speeches (compositions)
+* Testimonies
+
+###	Demonstrative
+Visual aids like photographs, video recordings, maps, diagrams, and casts of physical evidence.
+
+#### Recommended demonstrative evidence terms: use the Getty AAT and/or WFS reports for terms related to demonstrative evidence.
+
+### Examples AAT terms:
+* Casts (sculpture)
+* Forensic photographs
+* Photographs
+* Maps (documents)
+* Historical maps
+* Video recordings (physical artifacts)
+
+### Examples WFS report terms:
+* Anthropogenic
+* Casework reference samples
+* Reference materials
+* Voucher specimen
+* Curated collection
+
+
+###	Documentary
+a piece of written, printed, or electronic matter that provides information that serves as an official record. such as veterinary records, correspondence, and police logs.
+#### Recommended documentary evidence terms: use the Getty AAT and/or WFS reports for terms related to documentary evidence. 
+
+### Example AAT terms: 
+* books
+* correspondence
+* damage reports
+* diaries
+* speeches (documents)
+
+### Example WFS report terms:
+* Taxonomic identification
+* Chain of custody
+* Technical review
