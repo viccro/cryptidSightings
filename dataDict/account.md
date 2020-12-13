@@ -63,6 +63,24 @@
 
 **Data values:** [sightingDate](sightingDate.md)
 
+### Tagging Examples:
+```
+<sightingDate>
+    <exactDate>1989-10-14</exactDate>
+</sightingDate>
+```
+
+```
+<sightingDate>
+    <approximateDate>2001-06</approximateDate>
+</sightingDate>
+```
+
+```
+<sightingDate>
+    <unknownDate>true</unknownDate>
+</sightingDate>
+```
 
 ## Sub-element: [sightingTime](time.md)
 **Element tag:** `<sightingTime>`
