@@ -106,7 +106,7 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
     * rearranged objects to be in the order that they're used
     * restructured time to allow for description of what the timestamp is describing
     
- * v0.5 - v0.7: Changes reflect global copy edits from checking against the reality of the .xsd functions in practice, reflect decisions from discussions, and Stephanie's edit notes on her practice v0.4 xml records.
+* v0.5 - v0.7: Changes reflect global copy edits from checking against the reality of the .xsd functions in practice, reflect decisions from discussions, and Stephanie's edit notes on her practice v0.4 xml records.
     * Created a googleDoc table of resources we reference in the data dictionary
     * Created the global attribute "lang" and assigned a CV of LOC
     * Updates to to the following sections:
@@ -138,3 +138,15 @@ The schema makes use of a lot of structures found in CDWAlite, especially with r
        * timeDetails
          * defined terms "day" and "night"
     
+* v1.0 Minor edits made to align xsd with data dictionary
+    * Prefer 'None' to domain or empty for uncontrolled mediaAffiliations
+    * Remove lang attribute from mediaLanguage
+    * Add termSource attribute to mediaLanguage, to specify CV used
+    * Removed lang attribute from cryptidDescription
+    * Made continent an enum
+    * Attributes now required
+    * evidenceType repeated
+    * mediaIdentifier required
+    * set supplied attribute to true and false, rather than yes/no
+    * cryptidDescription optional
+    * mediaEvidence optional
