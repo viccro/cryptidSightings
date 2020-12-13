@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cryptidMedia xmlns="cryptidMedia"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cm="cryptidMedia"
+    xsi:schemaLocation="cryptidMedia https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd">
+    <mediaDetails>
+        <mediaIdentifier cm:type="URL">https://web.archive.org/web/20071011230219/http://www.westva.net/mothman/1966-11-16.htm</mediaIdentifier>
+        <mediaName cm:termSource="none" cm:termSourceID="none" supplied="false">Couples See Man-Sized Bird...Creature...Something</mediaName>
+        <mediaType  cm:termSource="AAT" cm:termSourceID="300048715">articles</mediaType>
+        <mediaAffiliation cm:termSource="none" cm:termSourceID="none">Point Pleasant Register</mediaAffiliation>
+        <mediaPublicationDate>
+            <exactDate>1966-11-16</exactDate>
+        </mediaPublicationDate>
+        <mediaDimensions cm:unit="words" cm:type="word count">552</mediaDimensions>
+        <mediaDescription>A local news report, written the day after the first sighting of the cryptid that would later become known as Mothman, directly quoting the observers.</mediaDescription>
+        <mediaLanguage cm:termSource="ISO 639-2" cm:type="current">eng</mediaLanguage>
+    </mediaDetails>
+    <accountOfSighting>
+        <observer cm:type="individual" cm:groupMembership="none">Steve Mallette</observer>
+        <observer cm:type="individual" cm:groupMembership="none">Roger Scarberry</observer>
+        <observer cm:type="group" cm:groupMembership="none">Unnamed Wives</observer>
+        <cryptidSeen>
+            <cryptidCanonicalName cm:termSource="WikiLC" cm:termSourceID="none">Mothman</cryptidCanonicalName>
+            <cryptidDescription>>The cryptid is described as being like a"man with wings" approximately six or seven feet tall, with an approximate ten-foot wingspan.  It had large red eyes, approximately 2 inches in diameter and six inches apart.  It was light grey in color</cryptidDescription>
+        </cryptidSeen>
+        <sightingDate>
+            <exactDate>1966-11-15</exactDate>
+        </sightingDate>
+        <sightingTime>
+            <timeDetails>
+                <approximateTime>Between 11:30 PM and 12:00 AM</approximateTime>
+            </timeDetails>
+            <timeType>Cryptid first sighted</timeType>
+        </sightingTime>
+        <sightingLocation>
+            <continent>NA</continent>
+            <geoCoordinates>
+                <longitude>-82.13709</longitude>
+                <latitude>38.84453</latitude>
+            </geoCoordinates>
+            <postalAddress>
+                <addressCountry cm:termSource="ISO 3166-1">US</addressCountry>
+                <addressRegion>West Virignia</addressRegion>
+                <addressLocality>Point Pleasant</addressLocality>
+                <postalCode>25550</postalCode>
+            </postalAddress>
+            <locationDescription>The cryptid was first seen near the old power plant next to the National Guard armory buildings.  It followed the observers along Route 62, past the armory, all the way to the C.C. Lewis farm.</locationDescription>
+        </sightingLocation>
+        <descriptionOfAccount>The four observers were in Scarberry's car at the time they saw the cryptid.  It was near the old power plant.  They describe it as being able to stand on two legs, and flying very quickly (over 100 MPH), but running clumsily.  The cryptid followed them along route 62, past the armory, through downtown.  The cryptid's eyes glowed red when their car lights shone on them, and it seemed to be afraid of the light.  At the C.C. Lewis farm, they heard the sound of wings flapping, and the cryptid rose straight up, and was gone.</descriptionOfAccount>
+    </accountOfSighting>
+</cryptidMedia>
