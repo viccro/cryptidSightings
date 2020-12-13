@@ -128,6 +128,18 @@
 
 **Data values:** [sightingLocation](sightingLocation.md)
 
+### Tagging Examples:
+```
+<sightingLocation>
+    <continent>AS</continent>
+    <postalAddress>
+        <addressCountry>NP</addressCountry>
+        <addressLocality>Menlunq Tsu Glacier</addressLocality>
+        <addressRegion>The Himalaya Mountains</addressRegion>
+    </postalAddress>
+    <locationDescription>Menlung Tsu Glacier, Menlung Basin, Gauri Sanka Range, Nepal, en route to Mount Everest.</locationDescription>
+</sightingLocation>
+```
 
 ## Sub-Element: descriptionOfAccount
 

@@ -14,7 +14,13 @@
 **Optional**
 
 **Data values:**  Use the two-letter ISO 3166-1 alpha-2 country code.
- 
+
+### Tagging Examples:
+`<addressCountry>US</addressCountry>`
+
+`<addressCountry>GB</addressCountry>`
+
+`<addressCountry>NP</addressCountry>`
 
 ## Sub-Element: addressRegion
 
@@ -26,6 +32,10 @@
 
 **Data values:**  *Massachusetts*, *Nova Scotia*, *Scotland*, or another appropriate first-level administrative division.
 
+### Tagging Examples:
+`<addressRegion>Scotland</addressRegion>`
+
+`<addressRegion>The Himalaya Mountains</addressRegion>`
  
 ## Sub-Element: addressLocality
  
@@ -37,6 +47,10 @@
 
 **Data values:**  Boston, for example.
 
+### Tagging Examples:
+`<addressLocality>Inverness</addressLocality>`
+
+`<addressLocality>Menlunq Tsu Glacier</addressLocality>`
 
 ## Sub-Element: postalCode
 
@@ -48,6 +62,12 @@
 
 **Data values:**  For example, 02115
 
+### Tagging Examples:
+`<postalCode>101000</postalCode>`
+
+`<postalCode>78213</postalCode>`
+
+`<postalCode>R3C 0V8</postalCode>`
 
 ## Sub-Element: streetAddress
 
@@ -60,19 +80,6 @@
 **Data values:**  For example, 300 Fenway
 
 ### Tagging Examples:
-```
-<postalAddress>
-    <addressCountry>US</addressCountry>
-    <addressRegion>California</addressRegion>
-</postalAddress>
-```
+`<streetAddress>улица Крымский Вал, 9</streetAddress>`
 
-```
-<postalAddress>
-    <addressCountry>US</addressCountry>
-    <addressRegion>Illinois</addressRegion>
-    <addressLocality>Chicago</addressLocality>
-    <postalCode>60613</postalCode>
-    <streetAddress>1060 West Addison</streetAddress>
-</postalAddress>
-```
+`<streetAddress>1600 Pennsylvania Avenue</streetAddress>`
