@@ -16,6 +16,13 @@
 
 **Data values:** A time of the sighting in xml standard, 24 hour time with as much precision as possible: hh:mm:ss.s. If time zone is known, use time offsets from UTC as in ISO 8601, eg 03:45:30+05
 
+### Tagging Examples:
+```
+<exactTime>17:56:02Z</exactTime>
+```
+```
+<exactTime>22:10-05</exactTime>
+```
 
 ## Sub-Element: approximateTime
 
@@ -27,6 +34,14 @@
 
 **Data values:** Possible entries include "morning", "after 10pm", and "between 3pm and 4:30pm". The term "day" refers to all light hours, dawn to dusk. The term "night" refers to all dark hours, dusk to dawn. Photographic and video evidence taken during the day or night can be used to determine these approximate times.
 
+### Tagging Examples:
+```
+<approximateTime>dawn</approximateTime>
+```
+
+```
+<approximateTime>between 8pm and 9:15pm</approximateTime>
+```
 
 ## Sub-Element: unknownTime
 
@@ -39,3 +54,8 @@
 **Optional**
 
 **Data values:** Only use `true`. Rather than set this field to `false` for a known time, set one of the other two fields within `<timeDetails>` with more details.
+
+### Tagging Example:
+```
+<unknownTime>true</unknownTime>
+```

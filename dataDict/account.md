@@ -89,8 +89,35 @@
 
 **Repeatable, Required** 
 
-**Data values:** [sightingTime](sightingTime.md)
+**Data values:** [time](time.md)
 
+### Tagging Examples:
+```
+<sightingTime>
+    <timeDetails>
+        <exactTime>19:07:33+05</exactTime>
+    </timeDetails>
+    <timeType>cell phone video begins</timeType>
+</sightingTime>
+```
+
+```
+<sightingTime>
+    <timeDetails>
+        <approximateTime>day</approximateTime>
+    </timeDetails>
+    <timeType>cryptid walked along ridge</timeType>
+</sightingTime>
+```
+
+```
+<sightingTime>
+    <timeDetails>
+        <unknownTime>true</unknownTime>
+    </timeDetails>
+    <timeType>cryptid rocked the boat</timeType>
+</sightingTime>
+```
 
 ## Sub-element: [sightingLocation](location.md)
 **Element tag:** `<sightingLocation>`

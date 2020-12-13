@@ -1,12 +1,9 @@
 ## Element: time
 
-**Required**
-
-**Repeatable**
-
 **Element tag** `<time>`
 
 **Description** An object describing an exact or approximate time. This type allows one and only one of exactTime, approximateTime, or unknownTime.
+
 
 ## Sub-Element: [timeDetails](timeDetails.md)
 
@@ -20,6 +17,24 @@
 
 **Data values:** [timeDetails](timeDetails.md)
 
+### Tagging Examples:
+```
+<timeDetails>
+    <exactTime>17:56:02+05</exactTime>
+</timeDetails>
+```
+
+```
+<timeDetails>
+    <approximateTime>night</approximateTime>
+</timeDetails>
+```
+
+```
+<timeDetails>
+    <unknownTime>true</unknownTime>
+</timeDetails>
+```
 
 ## Sub-Element: timeType
 
@@ -35,28 +50,11 @@
 
 ### Tagging Examples:
 ```
-<sightingTime>
-    <timeDetails>
-        <exactTime>19:07:33+05</exactTime>
-    </timeDetails>
-    <timeType>cell phone video begins</timeType>
-</sightingTime>
+<timeType>Cryptid photographed</timeType>
 ```
-
 ```
-<sightingTime>
-    <timeDetails>
-        <approximateTime>day</approximateTime>
-    </timeDetails>
-    <timeType>cryptid walked along ridge</timeType>
-</sightingTime>
+<timeType>Cryptid emerged from water</timeType>
 ```
-
 ```
-<sightingTime>
-    <timeDetails>
-        <unknownTime>true</unknownTime>
-    </timeDetails>
-    <timeType>cryptid rocked the boat</timeType>
-</sightingTime>
+<timeType>Cryptid bumped the boat</timeType>
 ```
