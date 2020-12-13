@@ -29,7 +29,7 @@
 ### Tagging Examples:
 ```
 <observer cs:type="individual" cs:groupMembership="Campus Life youth group">Jim Mills</observer>
-<observer cs:type="group">Campus Life youth group</observer>
+<observer cs:type="group" cs:groupMembership="none">Campus Life youth group</observer>
 ```
 ```
 <observer  cs:type="individual" cs:groupMembership="none">Robert Kenneth Wilson</observer>
@@ -45,6 +45,14 @@
 
 **Data values:** [cryptid](cryptid.md)
 
+### Tagging Example:
+```
+<cryptidSeen>
+    <cryptidCanonicalName cs:termSource="LOC" cs:termSourceID="sh85117619">Sasquatch</cryptidCanonicalName>
+    <cryptidAlternativeName>Bigfoot</cryptidAlternativeName>
+    <cryptidDescription>"It does not look like a person. It's arms are way too big; it's hands. Look at its hands, its hands hang down to its knees at least."</cryptidDescription>
+</cryptidSeen>
+```
 
 ## Sub-element: [sightingDate](date.md)
 **Element tag:** `<sightingDate>`

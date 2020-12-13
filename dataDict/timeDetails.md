@@ -25,7 +25,7 @@
 
 **Optional**
 
-**Data values:** Possible entries include "morning", "after 10pm", and "between 3pm and 4:30pm". The term "day" refers to all light hours, dawn to dusk. The term "night" refers to all dark hours, dusk to dawn.
+**Data values:** Possible entries include "morning", "after 10pm", and "between 3pm and 4:30pm". The term "day" refers to all light hours, dawn to dusk. The term "night" refers to all dark hours, dusk to dawn. Photographic and video evidence taken during the day or night can be used to determine these approximate times.
 
 
 ## Sub-Element: unknownTime

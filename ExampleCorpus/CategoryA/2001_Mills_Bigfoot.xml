@@ -18,7 +18,7 @@
     
     <accountOfSighting>
         <observer cs:type="individual" cs:groupMembership="Campus Life youth group">Jim Mills</observer>
-        <observer cs:type="group">Campus Life youth group</observer>
+        <observer cs:type="group" cs:groupMembership="none">Campus Life youth group</observer>
         <cryptidSeen>
             <cryptidCanonicalName cs:termSource="LOC" cs:termSourceID="sh85117619">Sasquatch</cryptidCanonicalName>
             <cryptidAlternativeName>Bigfoot</cryptidAlternativeName>
