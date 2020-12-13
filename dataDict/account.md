@@ -31,6 +31,9 @@
 <observer cs:type="individual" cs:groupMembership="Campus Life youth group">Jim Mills</observer>
 <observer cs:type="group">Campus Life youth group</observer>
 ```
+```
+<observer  cs:type="individual" cs:groupMembership="none">Robert Kenneth Wilson</observer>
+```
 
 ## Sub-Element: [cryptidSeen](cryptid.md)
 

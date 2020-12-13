@@ -16,7 +16,7 @@
         <mediaLanguage  cs:termSource="ISO 639-2b" cs:type="current">eng</mediaLanguage>
     </mediaDetails>
     <accountOfSighting>
-        <observer  cs:type="individual" cs:groupMembership="none">Wilson, Robert Kenneth</observer>
+        <observer  cs:type="individual" cs:groupMembership="none">Robert Kenneth Wilson</observer>
         <cryptidSeen>
             <cryptidCanonicalName  cs:termSource="LOC" cs:termSourceID="sh 85077967">Loch Ness Monster</cryptidCanonicalName>
             <cryptidAlternativeName>Nessie</cryptidAlternativeName>
