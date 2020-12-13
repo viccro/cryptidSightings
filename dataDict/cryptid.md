@@ -18,12 +18,9 @@
 **Recommended values for *termSourceID*:** LOC number, URL or URI found in the termsource
 
 ### Tagging Examples:
-```
-<cryptidCanonicalName  cs:termSource="LOC" cs:termSourceID="sh 85077967">Loch Ness Monster</cryptidCanonicalName>
-```
-```
-<cryptidCanonicalName cs:termSource="wikiLC" cs:termSourceID="https://en.wikipedia.org/wiki/Mongolian_death_worm">Mongolian Death Worm</cryptidCanonicalName>
-```
+`<cryptidCanonicalName  cs:termSource="LOC" cs:termSourceID="sh 85077967">Loch Ness Monster</cryptidCanonicalName>`
+
+`<cryptidCanonicalName cs:termSource="wikiLC" cs:termSourceID="https://en.wikipedia.org/wiki/Mongolian_death_worm">Mongolian Death Worm</cryptidCanonicalName>`
 
 ## Sub-element: cryptidAlternativeName
 
@@ -53,9 +50,6 @@
 **Data values:** May include quotes or paraphrased description, as consistent with the parent account of the sighting
 
 ### Tagging Examples:
-```
-<cryptidDescription>Hoofed creature, with "long thin legs and a long neck, with a dog-like head. It had wings and appeared to be stooping, as if about to jump." Observer could not identify "whether it had hair or feathers."</cryptidDescription>
-```
-```
-<cryptidDescription>"It does not look like a person. It's arms are way too big; it's hands. Look at its hands, its hands hang down to its knees at least."</cryptidDescription>
-```
+`<cryptidDescription>Hoofed creature, with "long thin legs and a long neck, with a dog-like head. It had wings and appeared to be stooping, as if about to jump." Observer could not identify "whether it had hair or feathers."</cryptidDescription>`
+
+`<cryptidDescription>"It does not look like a person. It's arms are way too big; it's hands. Look at its hands, its hands hang down to its knees at least."</cryptidDescription>`

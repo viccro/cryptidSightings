@@ -19,9 +19,7 @@
 **Data values:** Uses xml date format, ie. YYYY-MM-DD
 
 ### Tagging Example:
-```
-<exactDate>1989-10-14</exactDate>
-```
+`<exactDate>1989-10-14</exactDate>`
 
 ## Sub-Element: approximateDate
 
@@ -36,15 +34,11 @@
 **Data values:** Free text description. Possible entries include "2020-11", "2001-10-29 or 2001-10-30", "Summer 1982", "1850-1857", or "The 1600s".
 
 ### Tagging Examples:
-```
-<approximateDate>Fall 2020</approximateDate>
-```
-```
-<approximateDate>day</approximateDate>
-```
-```
-<approximateDate>1934</approximateDate>
-```
+`<approximateDate>Fall 2020</approximateDate>`
+
+`<approximateDate>day</approximateDate>`
+
+`<approximateDate>1934</approximateDate>`
 
 ## Sub-Element: unknownDate
 
@@ -61,6 +55,4 @@
 **Data values:** Only use `true`. Rather than set this field to `false` for a known date, set one of the other two fields within `<date>` with more details.
 
 ### Tagging Examples:
-```
-<unknownDate>true</unknownDate>
-```
+`<unknownDate>true</unknownDate>`

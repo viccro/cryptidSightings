@@ -49,12 +49,9 @@
 **Data values:** Possible values include "cryptid first seen", "cryptid submerged", or "cryptid no longer visible"
 
 ### Tagging Examples:
-```
-<timeType>Cryptid photographed</timeType>
-```
-```
-<timeType>Cryptid emerged from water</timeType>
-```
-```
-<timeType>Cryptid bumped the boat</timeType>
-```
+
+`<timeType>Cryptid photographed</timeType>`
+
+`<timeType>Cryptid emerged from water</timeType>`
+
+`<timeType>Cryptid bumped the boat</timeType>`
