@@ -80,7 +80,7 @@
 ```
 <mentionedEvidence>
 <evidenceAffirmative>
-    <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Wilson, Robert Kenneth</evidenceAgent>
+    <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Robert Kenneth Wilson</evidenceAgent>
     <evidenceClassification>physical</evidenceClassification>
     <evidenceType  cs:termSource="AAT" cs:termSourceID="300046300">photograph</evidenceType>
     <mediaEvidence>
@@ -99,7 +99,7 @@
     <evidenceDescription>The Surgeon's Photograph of what Robert Kenneth Wilson saw in 1934</evidenceDescription>
 </evidenceAffirmative>
 <evidenceNegative>
-    <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Wetherell, Marmaduke</evidenceAgent>
+    <evidenceAgent  cs:termSource="none" cs:termSourceID="none">Marmaduke Wetherell</evidenceAgent>
     <evidenceClassification>testimonial</evidenceClassification>
     <evidenceType  cs:termSource="AAT" cs:termSourceID="300026392">interview</evidenceType>
     <mediaEvidence>

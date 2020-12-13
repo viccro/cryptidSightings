@@ -1,6 +1,6 @@
 # Cryptid Media schema
 
-Cryptid Media Schema (Version 0.4) was created as a draft for LIS 445: Metadata at Simmons 
+Cryptid Media Schema (Version 1.0) was created as a final project for LIS 445: Metadata at Simmons 
 University, in the School of Library and Information Science (SLIS). The schema was created by:
 * Tish Albro
 * Stephanie Bennett
@@ -8,6 +8,7 @@ University, in the School of Library and Information Science (SLIS). The schema 
 * Alex Werbizky Ehrhardt
 
 This version of the schema will be documented at www.github.com/viccro/cryptidSightings/tree/main/dataDict/
+The latest version of the schema may be downloaded [at this link](https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-media-1.0.xsd).
 
 The Cryptid Sightings Schema will be used to document any sighting of a cryptid (any animal whose 
 existence is unsubstantiated). 
