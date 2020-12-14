@@ -40,7 +40,7 @@
             </geoCoordinates>
             <postalAddress>
                 <addressCountry cm:termSource="ISO 3166-1">US</addressCountry>
-                <addressRegion>West Virignia</addressRegion>
+                <addressRegion>West Virginia</addressRegion>
                 <addressLocality>Point Pleasant</addressLocality>
                 <postalCode>25550</postalCode>
             </postalAddress>
