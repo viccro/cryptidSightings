@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sighting xmlns="cryptidSighting"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ns1="cryptidSighting"
+    xsi:schemaLocation="cryptidSighting https://raw.githubusercontent.com/viccro/cryptidSightings/main/cryptid-sightings-0.2.xsd">
+    <reportOfSighting>
+        <observerName>Roger Patterson</observerName>
+        <cryptidSeen>
+            <cryptidCanonicalName>Sasquatch</cryptidCanonicalName>
+            <cryptidIdentifier ns1:termSource="LOC">sh85117619</cryptidIdentifier>
+            <cryptidAlternativeName>Bigfoot</cryptidAlternativeName>
+            <cryptidAlternativeName>Patty</cryptidAlternativeName>
+            <cryptidDescription>large, hairy, bipedal, apelike figure with short, dark reddish-brown hair covering most of its body, including its prominent breasts</cryptidDescription>
+            <estimatedDimensions>6 feet 6 inches to 7 feet tall</estimatedDimensions>
+        </cryptidSeen>
+        <descriptionOfReport>Roger Patterson's experience viewing the Bigfoot creature in Northern CA in 1967.</descriptionOfReport>
+    </reportOfSighting>
+    
+    <sightingDate>
+        <approximateDate>10/20/1967 (but critics think it was shot earlier)</approximateDate>
+    </sightingDate>
+    
+    <sightingTime>between 1:15 and 1:40 PM</sightingTime>
+    
+    <sightingLocation>
+        <continent>North America</continent>
+        <postalAddress>
+            <addressCountry>United States of America</addressCountry>
+            <addressLocality>California</addressLocality>
+            <addressRegion>Bluff Creek</addressRegion>
+        </postalAddress>
+        <geoCoordinates>
+            <longitude>N41°26.412'</longitude>
+            <latitude>W123°42.115</latitude>
+        </geoCoordinates>
+        <locationDescription>The footage was filmed alongside Bluff Creek, a tributary of the Klamath River, about 25 logging-road miles northwest of Orleans, California, in Del Norte County. The film site is roughly 38 miles south of Oregon and 18 miles east of the Pacific Ocean. It is just south of a north-running segment of the creek informally known as "the bowling alley".</locationDescription>
+    </sightingLocation>
+    
+    <mediaAccount>
+        <descriptionOfTheEncounter>I haven't figured out what the article says yet! Maybe this shouldn't be required.</descriptionOfTheEncounter>
+        <associatedMedia>
+            <mediaDescription>First interview, immediately post-sighting</mediaDescription>
+            <mediaAffiliation>Eureka Times-Standard</mediaAffiliation>
+        </associatedMedia>
+    </mediaAccount>
+    
+    <evidenceAffirmative>
+        <personWhoSaysThis>Robert Patterson</personWhoSaysThis>
+        <personWhoSaysThis>Bob Gimlin</personWhoSaysThis>
+        <evidenceType>motion picture</evidenceType>
+        <mediaEvidence>
+            <mediaDescription>The short film known as the Patterson-Gimlin film, in which a creature walks in front of the camera</mediaDescription>
+            <mediaDate>
+                <exactDate>10/20/1967</exactDate>
+            </mediaDate>
+            <mediaDimensions>954 frames; 59.5 seconds at 16 fps</mediaDimensions>
+            <mediaName>Patterson-Gimlin film</mediaName>
+        </mediaEvidence>
+    </evidenceAffirmative>
+    
+    <evidenceAffirmative>
+        <personWhoSaysThis>Robert Patterson</personWhoSaysThis>
+        <personWhoSaysThis>Bob Gimlin</personWhoSaysThis>
+        <evidenceType>plaster casts of footprints</evidenceType>
+    </evidenceAffirmative>
+</sighting>
